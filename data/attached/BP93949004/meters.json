@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT15771414",
+      "serialNumber": "CN1FUMEBDN",
+      "meterType": "E2",
+      "installationDate": "2023-11-05",
+      "status": "ACTIVE",
+      "registerCount": 3,
+      "isSmartMeter": false,
+      "readingCycle": "01",
+      "lastReadingDate": "2025-01-28",
+      "lastReadingValue": 157
+    }
+  ]
+]

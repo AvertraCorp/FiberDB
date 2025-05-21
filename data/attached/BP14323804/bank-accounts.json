@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "IOUYAYDK",
+      "accountNumber": "06407238",
+      "accountHolder": "Angelica Lubowitz",
+      "iban": "ME72008702237576050859",
+      "bic": "ZNKEEENP",
+      "validFrom": "2021-09-22",
+      "isDefault": true
+    }
+  ]
+]

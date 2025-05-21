@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Washington Boulevard",
+      "houseNumber": "25",
+      "postalCode": "45575",
+      "city": "South Whittier",
+      "country": "PG",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2023-09-08"
+    },
+    {
+      "street": "Boehm Bypass",
+      "houseNumber": "777",
+      "postalCode": "74246",
+      "city": "Lake Patsystead",
+      "country": "VC",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2021-03-17"
+    },
+    {
+      "street": "Reichert Point",
+      "houseNumber": "24",
+      "postalCode": "61837-6152",
+      "city": "Fort Violette",
+      "country": "JP",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2022-07-24"
+    }
+  ]
+]

@@ -1,0 +1,24 @@
+{
+  "id": "BP22420060",
+  "businessPartnerNumber": "BP22420060",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2021-02-17",
+  "lastModified": "2025-04-26",
+  "firstName": "41e96e54668225c2efd15b2b1dbfddb5",
+  "lastName": "5b1d45123264fe7cdc207e6b7709684c",
+  "gender": "Transmasculine",
+  "birthDate": "7b2a17c95b690d777e12ac14f6f712a7",
+  "nationality": "BD",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

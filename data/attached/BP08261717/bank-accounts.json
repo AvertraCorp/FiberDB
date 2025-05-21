@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "EPWUR8L9",
+      "accountNumber": "22552285",
+      "accountHolder": "Willard Marvin",
+      "iban": "CH0951005590YG7401142",
+      "bic": "HLFQUYXY",
+      "validFrom": "2021-03-29",
+      "isDefault": true
+    }
+  ]
+]

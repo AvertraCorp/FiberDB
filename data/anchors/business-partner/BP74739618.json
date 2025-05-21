@@ -1,0 +1,25 @@
+{
+  "id": "BP74739618",
+  "businessPartnerNumber": "BP74739618",
+  "category": "2",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "C",
+  "createdAt": "2023-10-06",
+  "lastModified": "2025-04-30",
+  "organizationName": "Lesch - Batz",
+  "organizationType": "GOVT",
+  "industryKey": "RETAIL",
+  "foundationDate": "2019-12-10",
+  "legalForm": "INC",
+  "vatNumber": "BH4TCSYU5U",
+  "taxNumber": "284200244",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

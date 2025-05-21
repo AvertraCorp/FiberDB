@@ -1,0 +1,25 @@
+{
+  "id": "BP94231517",
+  "businessPartnerNumber": "BP94231517",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2020-10-01",
+  "lastModified": "2025-05-12",
+  "firstName": "0ee067f5cfc1890d8dfbdc070c36eb9c",
+  "lastName": "ac2ac511f003ea88b68629fa564d70d5",
+  "title": "Mrs.",
+  "gender": "Demi-boy",
+  "birthDate": "376e0fcf6d54cd856e4170ba4ecc1683",
+  "nationality": "TC",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

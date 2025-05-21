@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Derby Road",
+      "houseNumber": "700",
+      "postalCode": "04902-7806",
+      "city": "South Mya",
+      "country": "GE",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2024-10-02"
+    },
+    {
+      "street": "West Road",
+      "houseNumber": "346",
+      "postalCode": "75940",
+      "city": "Zemlakworth",
+      "country": "HM",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2023-11-16"
+    }
+  ]
+]

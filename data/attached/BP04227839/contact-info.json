@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Alayna_Prohaska@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-10"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-391-806-9940 x509",
+      "isPrimary": true,
+      "validFrom": "2024-09-10"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(227) 920-9430 x056",
+      "isPrimary": false,
+      "validFrom": "2024-07-02"
+    },
+    {
+      "type": "FAX",
+      "value": "873.578.6313 x98836",
+      "isPrimary": false,
+      "validFrom": "2025-03-12"
+    }
+  ]
+]

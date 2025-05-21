@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT59899157",
+      "utilityType": "SEWER",
+      "startDate": "2023-02-24",
+      "status": "INACTIVE",
+      "tariffType": "SEWER_LNQ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

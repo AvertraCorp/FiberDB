@@ -1,0 +1,25 @@
+{
+  "id": "BP33721955",
+  "businessPartnerNumber": "BP33721955",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2023-03-26",
+  "lastModified": "2025-02-21",
+  "firstName": "f84e6fedd9fa3104b6407bccff93db49",
+  "lastName": "995f29a76ecfaa0f3d620e0246d6e503",
+  "title": "Mr.",
+  "gender": "Neutrois",
+  "birthDate": "0077015ec18189745b5c67b6d986bde0",
+  "nationality": "BZ",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

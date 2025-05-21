@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Bay Street",
+      "houseNumber": "15",
+      "postalCode": "70817-4172",
+      "city": "West Jadoncester",
+      "country": "BT",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2021-06-06"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "8HCM1CJB",
+      "accountNumber": "09653759",
+      "accountHolder": "Wm Bartell",
+      "iban": "IE62ZAQC30038125005001",
+      "bic": "SHTJMRMO53Q",
+      "validFrom": "2023-03-08",
+      "isDefault": true
+    },
+    {
+      "bankId": "CMPB890M",
+      "accountNumber": "14833229",
+      "accountHolder": "Gertrude Emard",
+      "iban": "XK885009601785082400",
+      "bic": "HQYEERJR",
+      "validFrom": "2023-05-13",
+      "isDefault": false
+    }
+  ]
+]

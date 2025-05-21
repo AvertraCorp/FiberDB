@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT72405780",
+      "utilityType": "ELEC",
+      "startDate": "2023-12-16",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_VVE",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT06404958",
+      "utilityType": "STRM",
+      "startDate": "2023-09-09",
+      "status": "PENDING",
+      "tariffType": "STRM_ZBZ",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

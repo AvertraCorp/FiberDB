@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Norris.Blanda13@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-09"
+    },
+    {
+      "type": "PHONE",
+      "value": "494-331-0847 x2792",
+      "isPrimary": true,
+      "validFrom": "2024-12-14"
+    },
+    {
+      "type": "MOBILE",
+      "value": "956.899.9713 x265",
+      "isPrimary": false,
+      "validFrom": "2025-03-01"
+    }
+  ]
+]

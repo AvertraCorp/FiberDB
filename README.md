@@ -223,6 +223,22 @@ const result = await query({
     "addresses.city": { contains: "Springfield" }
   }
 });
+
+// Array membership check
+const result = await query({
+  primary: "business-partner",
+  filter: {
+    region: { in: ["WEST", "SOUTH"] }
+  }
+});
+
+// Inequality check
+const result = await query({
+  primary: "business-partner",
+  filter: {
+    customerClassification: { ne: "D" }
+  }
+});
 ```
 
 #### Combined Filters
@@ -328,6 +344,110 @@ const result = await query({
 console.log(result[0].__metrics);
 ```
 
+### Query Examples
+
+FiberDB includes comprehensive query examples demonstrating all available query types and performance optimizations:
+
+```bash
+# First, seed the database with test data
+bun run seed:sap
+
+# Then run the query examples
+bun run examples
+```
+
+> **Important**: The examples require data to be seeded first, otherwise all queries will return empty results.
+
+The examples are located in `src/examples/query-examples.ts` and cover:
+
+1. **Basic Queries**
+   - Single entity by ID
+   - All entities of a type
+   - Field selection
+   - Wildcard field inclusion
+   - Specific attachment selection
+
+2. **Filtering**
+   - Simple equality filters
+   - Multiple conditions (AND logic)
+   - Filtering on attached documents
+   - Combined primary and attachment filters
+
+3. **Advanced Filtering Operators**
+   - Equality (`eq`)
+   - Not Equal (`ne`)
+   - Greater Than (`gt`)
+   - Less Than (`lt`)
+   - Contains (text search)
+   - In (value in array)
+   - Combined operators
+
+4. **Security & Encryption**
+   - Queries with encrypted fields
+   - Queries with decryption key
+
+5. **Performance Optimizations**
+   - Caching system usage
+   - Parallel processing
+   - Index-based queries
+   - Performance metrics
+
+6. **API Integration**
+   - HTTP API request examples
+   - Header-based performance controls
+
+You can use these examples as templates for your own queries, adapting them to your specific use cases.
+
+### Testing
+
+FiberDB includes a comprehensive testing suite to ensure reliability and correctness:
+
+```bash
+# Run all tests
+bun run test
+```
+
+#### Test Architecture
+
+Our testing approach consists of three main strategies:
+
+1. **Unit Tests**: Testing individual components in isolation
+   - Core query methods
+   - Cache utilities
+   - API endpoints
+   
+2. **Integration Tests**: Testing interactions between components
+   - API router with endpoint handlers
+   - Query systems with storage layer
+   
+3. **Mock-based Testing**: Using mock dependencies for reliable tests
+   - File system mocks to avoid actual I/O operations
+   - Service mocks to simulate external dependencies
+   - Response mocks to verify correct output formats
+
+#### Test Organization
+
+```
+src/tests/
+├── api/                 # API-related tests
+│   ├── endpoints.test.ts # Tests for API endpoint handlers
+│   └── router.test.ts    # Tests for API routing
+├── core/                # Core functionality tests
+│   └── query-methods.test.ts # Tests for query engine
+└── utils/               # Utility tests
+    └── cache.test.ts    # Tests for caching system
+```
+
+#### Writing Tests
+
+When contributing new features, please follow these testing guidelines:
+
+1. Create tests in the appropriate directory based on the component being tested
+2. Use mocks to avoid external dependencies and filesystem operations
+3. Test both success and error cases
+4. Keep tests isolated and independent from one another
+5. Use descriptive test names that explain the expected behavior
+
 ### HTTP API Usage
 
 ```bash
@@ -395,6 +515,37 @@ Options:
 ## 📊 Performance Optimization
 
 FiberDB includes advanced performance optimizations:
+
+### Query Performance Control
+
+All performance optimizations can be controlled through query parameters:
+
+```ts
+// Enable all performance optimizations
+const result = await query({
+  primary: "business-partner",
+  filter: { customerClassification: "A" },
+  
+  // Performance control parameters
+  skipCache: false,        // Use cache when available
+  useParallel: true,       // Enable parallel processing
+  useIndexes: true,        // Use indexes for filtering
+  includePerformanceMetrics: true  // Include timing metrics
+});
+```
+
+When using the HTTP API, these controls can be set through request headers:
+
+```bash
+curl -X POST http://localhost:4000/query \
+  -H "Content-Type: application/json" \
+  -H "X-Skip-Cache: false" \
+  -H "X-Use-Parallel: true" \
+  -H "X-Include-Performance-Metrics: true" \
+  -d '{ "primary": "business-partner" }'
+```
+
+For comprehensive examples of all performance optimizations, see the [Query Examples](#query-examples) section.
 
 ### Caching System
 

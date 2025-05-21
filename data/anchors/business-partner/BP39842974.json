@@ -1,0 +1,25 @@
+{
+  "id": "BP39842974",
+  "businessPartnerNumber": "BP39842974",
+  "category": "2",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2024-04-26",
+  "lastModified": "2025-03-14",
+  "organizationName": "Marks Group",
+  "organizationType": "SOLE",
+  "industryKey": "RETAIL",
+  "foundationDate": "2006-01-22",
+  "legalForm": "GMBH",
+  "vatNumber": "JF4WZKDJVP",
+  "taxNumber": "297305636",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

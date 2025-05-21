@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT19956929",
+      "utilityType": "ELEC",
+      "startDate": "2022-12-07",
+      "status": "PENDING",
+      "tariffType": "ELEC_MQV",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT80888595",
+      "utilityType": "STRM",
+      "startDate": "2024-12-21",
+      "status": "ACTIVE",
+      "tariffType": "STRM_SNE",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    },
+    {
+      "contractId": "CT98586631",
+      "utilityType": "WASTE",
+      "startDate": "2023-09-06",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_TLI",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

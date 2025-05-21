@@ -1,0 +1,24 @@
+{
+  "id": "BP39506720",
+  "businessPartnerNumber": "BP39506720",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2024-06-27",
+  "lastModified": "2025-04-20",
+  "firstName": "a9c08eca73026076a6205c2038e022d1",
+  "lastName": "699a3fef78a1645d0520322f618eed7d",
+  "gender": "Neutrois",
+  "birthDate": "6b14142a83a1d414aabc0e5bb3a19f6d",
+  "nationality": "AG",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

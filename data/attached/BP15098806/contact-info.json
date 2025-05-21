@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Camryn64@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-02"
+    },
+    {
+      "type": "PHONE",
+      "value": "217.234.0924",
+      "isPrimary": true,
+      "validFrom": "2024-07-16"
+    }
+  ]
+]

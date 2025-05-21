@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "XPIOGIUG",
+      "accountNumber": "46576898",
+      "accountHolder": "Dr. Marcos Bins",
+      "iban": "GE07UD0065076504008061",
+      "bic": "IBYRNE4TXXX",
+      "validFrom": "2020-05-27",
+      "isDefault": true
+    },
+    {
+      "bankId": "MOUIF2ZI",
+      "accountNumber": "06657008",
+      "accountHolder": "Harold O'Conner",
+      "iban": "LB7100447B6G10J34E703JKH7596",
+      "bic": "JLTNLYHU",
+      "validFrom": "2024-03-22",
+      "isDefault": false
+    }
+  ]
+]

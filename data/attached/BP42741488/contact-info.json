@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Antonietta_Predovic@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-24"
+    },
+    {
+      "type": "PHONE",
+      "value": "460-549-4485 x9461",
+      "isPrimary": true,
+      "validFrom": "2025-03-21"
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Union Street",
+      "houseNumber": "530",
+      "postalCode": "14865",
+      "city": "East Cynthia",
+      "country": "LI",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2024-12-10"
+    },
+    {
+      "street": "Dickinson Glen",
+      "houseNumber": "951",
+      "postalCode": "47985-4817",
+      "city": "Rocky Mount",
+      "country": "BO",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2020-11-16"
+    },
+    {
+      "street": "W North Street",
+      "houseNumber": "75",
+      "postalCode": "19455-5624",
+      "city": "Overland Park",
+      "country": "KG",
+      "region": "NORTH",
+      "addressType": "MAIL",
+      "validFrom": "2021-05-02"
+    }
+  ]
+]

@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT86680384",
+      "utilityType": "WASTE",
+      "startDate": "2023-03-28",
+      "status": "ACTIVE",
+      "tariffType": "WASTE_MYJ",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT96460651",
+      "utilityType": "WASTE",
+      "startDate": "2025-05-15",
+      "status": "ACTIVE",
+      "tariffType": "WASTE_GRE",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT95617691",
+      "utilityType": "WASTE",
+      "startDate": "2024-02-07",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_IHK",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

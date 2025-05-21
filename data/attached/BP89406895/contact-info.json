@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Dario_Schmeler58@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-19"
+    },
+    {
+      "type": "PHONE",
+      "value": "520-971-0322 x8329",
+      "isPrimary": true,
+      "validFrom": "2025-03-23"
+    }
+  ]
+]

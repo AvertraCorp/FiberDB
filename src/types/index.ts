@@ -12,6 +12,7 @@ export interface QueryOptions {
   decryptionKey?: string;
   includePerformanceMetrics?: boolean;
   skipCache?: boolean;
+  skipTTL?: boolean;  // added to skip TTL filtering
   useIndexes?: boolean;
   useParallel?: boolean;
 }

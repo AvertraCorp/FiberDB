@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT65819285",
+      "serialNumber": "OIL4DJZFJH",
+      "meterType": "G2",
+      "installationDate": "2024-01-10",
+      "status": "ACTIVE",
+      "registerCount": 3,
+      "isSmartMeter": true,
+      "readingCycle": "06",
+      "lastReadingDate": "2025-05-05",
+      "lastReadingValue": 7027
+    }
+  ]
+]

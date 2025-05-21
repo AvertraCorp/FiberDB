@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Cherry Tree Close",
+      "houseNumber": "708",
+      "postalCode": "66659-9496",
+      "city": "Lacey",
+      "country": "GH",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2020-11-08"
+    },
+    {
+      "street": "Grove Road",
+      "houseNumber": "806",
+      "postalCode": "68683",
+      "city": "Adrielbury",
+      "country": "IO",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2020-10-05"
+    }
+  ]
+]

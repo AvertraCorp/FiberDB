@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Pearline94@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-05-13"
+    },
+    {
+      "type": "PHONE",
+      "value": "779.665.6678 x34803",
+      "isPrimary": true,
+      "validFrom": "2024-12-12"
+    }
+  ]
+]

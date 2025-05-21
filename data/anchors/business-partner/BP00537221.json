@@ -1,0 +1,25 @@
+{
+  "id": "BP00537221",
+  "businessPartnerNumber": "BP00537221",
+  "category": "2",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2023-04-25",
+  "lastModified": "2025-01-28",
+  "organizationName": "Halvorson Inc",
+  "organizationType": "GOVT",
+  "industryKey": "FIN",
+  "foundationDate": "2014-02-12",
+  "legalForm": "LTD",
+  "vatNumber": "CXNPB352HX",
+  "taxNumber": "999586960",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

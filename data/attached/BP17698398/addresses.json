@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Ferry Hollow",
+      "houseNumber": "758",
+      "postalCode": "25271",
+      "city": "Chetstad",
+      "country": "MS",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2021-09-01"
+    },
+    {
+      "street": "Eduardo Well",
+      "houseNumber": "927",
+      "postalCode": "19596-3349",
+      "city": "New Destanyfurt",
+      "country": "PH",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2020-09-07"
+    }
+  ]
+]

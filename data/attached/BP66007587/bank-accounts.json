@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "RUWAWVPI",
+      "accountNumber": "68022465",
+      "accountHolder": "Dr. Dan Wilkinson PhD",
+      "iban": "PT19770619014080682026385",
+      "bic": "ZDIUKRUU",
+      "validFrom": "2023-07-19",
+      "isDefault": true
+    }
+  ]
+]

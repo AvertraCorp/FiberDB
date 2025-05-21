@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT66526008",
+      "serialNumber": "H3O190YWIL",
+      "meterType": "ETF",
+      "installationDate": "2025-02-13",
+      "status": "ACTIVE",
+      "registerCount": 4,
+      "isSmartMeter": true,
+      "readingCycle": "04",
+      "lastReadingDate": "2024-12-12",
+      "lastReadingValue": 5408
+    }
+  ]
+]

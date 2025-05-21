@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "E2BIVO1Y",
+      "accountNumber": "81725773",
+      "accountHolder": "Lena Franecki",
+      "iban": "ME08985076087071051873",
+      "bic": "VALUAL08",
+      "validFrom": "2023-03-29",
+      "isDefault": true
+    },
+    {
+      "bankId": "NWTQX6AZ",
+      "accountNumber": "29885692",
+      "accountHolder": "Patrick Collins",
+      "iban": "GL0290040099705717",
+      "bic": "UHNFTDDU",
+      "validFrom": "2022-10-14",
+      "isDefault": false
+    }
+  ]
+]

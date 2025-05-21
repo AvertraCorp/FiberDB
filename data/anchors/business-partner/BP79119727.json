@@ -1,0 +1,25 @@
+{
+  "id": "BP79119727",
+  "businessPartnerNumber": "BP79119727",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2024-12-21",
+  "lastModified": "2025-05-02",
+  "firstName": "b497bde06d876be997f8d3e0d0642a32",
+  "lastName": "dc086ba970028938e14f88126a7f5ac0",
+  "title": "Dr.",
+  "gender": "Woman",
+  "birthDate": "adc25ab6be21e431610c62368abdeec5",
+  "nationality": "LI",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

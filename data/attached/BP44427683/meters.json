@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT94737783",
+      "serialNumber": "QKXXUJL1KA",
+      "meterType": "ETF",
+      "installationDate": "2022-11-17",
+      "status": "ACTIVE",
+      "registerCount": 2,
+      "isSmartMeter": false,
+      "readingCycle": "05",
+      "lastReadingDate": "2025-03-05",
+      "lastReadingValue": 5481
+    }
+  ]
+]

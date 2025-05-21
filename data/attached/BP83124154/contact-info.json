@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Marianna.Dickinson20@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-08-15"
+    },
+    {
+      "type": "PHONE",
+      "value": "701-382-5427",
+      "isPrimary": true,
+      "validFrom": "2024-07-06"
+    }
+  ]
+]

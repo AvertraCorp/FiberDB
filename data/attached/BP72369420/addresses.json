@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Richmond Road",
+      "houseNumber": "113",
+      "postalCode": "87245-5459",
+      "city": "Livermore",
+      "country": "KN",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2024-07-02"
+    }
+  ]
+]

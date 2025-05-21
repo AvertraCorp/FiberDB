@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Ahmed_Turner59@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-12-30"
+    },
+    {
+      "type": "PHONE",
+      "value": "599-376-8574",
+      "isPrimary": true,
+      "validFrom": "2025-02-05"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-293-665-0960 x539",
+      "isPrimary": false,
+      "validFrom": "2024-07-02"
+    }
+  ]
+]

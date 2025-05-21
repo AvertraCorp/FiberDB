@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "0JMRMEXA",
+      "accountNumber": "20864701",
+      "accountHolder": "Patrick Little",
+      "iban": "BH97IXWH992844404WT844",
+      "bic": "ORYTDZPCXXX",
+      "validFrom": "2022-03-02",
+      "isDefault": true
+    },
+    {
+      "bankId": "TUAFU6KZ",
+      "accountNumber": "44374831",
+      "accountHolder": "Ivan Jacobson",
+      "iban": "QA04JSQZ5324O97033167048405I7",
+      "bic": "MPPTAWKX819",
+      "validFrom": "2025-02-26",
+      "isDefault": false
+    }
+  ]
+]

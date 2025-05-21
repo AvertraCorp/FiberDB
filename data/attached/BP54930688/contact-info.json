@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Loyce12@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-17"
+    },
+    {
+      "type": "PHONE",
+      "value": "971-984-0535 x5423",
+      "isPrimary": true,
+      "validFrom": "2024-12-12"
+    }
+  ]
+]

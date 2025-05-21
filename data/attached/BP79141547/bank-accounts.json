@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "YSXEESCJ",
+      "accountNumber": "80139592",
+      "accountHolder": "Kristine Gulgowski",
+      "iban": "GL8697274950861005",
+      "bic": "BBQVRU2S",
+      "validFrom": "2021-09-20",
+      "isDefault": true
+    },
+    {
+      "bankId": "4GNRIWA4",
+      "accountNumber": "99334872",
+      "accountHolder": "Devin Hammes",
+      "iban": "TR173823220300710400150152",
+      "bic": "YPFHTOB8XXX",
+      "validFrom": "2023-11-18",
+      "isDefault": false
+    }
+  ]
+]

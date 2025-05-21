@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Elbert46@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-02"
+    },
+    {
+      "type": "PHONE",
+      "value": "581-278-3311 x81468",
+      "isPrimary": true,
+      "validFrom": "2025-03-05"
+    }
+  ]
+]

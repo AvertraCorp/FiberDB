@@ -1,0 +1,24 @@
+{
+  "id": "BP93565013",
+  "businessPartnerNumber": "BP93565013",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "A",
+  "createdAt": "2021-08-26",
+  "lastModified": "2025-03-30",
+  "firstName": "e0b662a5e67f0de524c7119b67507649",
+  "lastName": "9b57e2c1cf7634e8ae188842c812e2c6",
+  "gender": "Demi-woman",
+  "birthDate": "17dd21ae8aa3267cf14a4fffeb5550a1",
+  "nationality": "RW",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

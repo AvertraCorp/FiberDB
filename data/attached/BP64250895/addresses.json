@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Vickie Shores",
+      "houseNumber": "838",
+      "postalCode": "83017",
+      "city": "West Antwanview",
+      "country": "PN",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2024-12-22"
+    },
+    {
+      "street": "S Union Street",
+      "houseNumber": "774",
+      "postalCode": "71865-8383",
+      "city": "Fort Katrinetown",
+      "country": "US",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2024-08-09"
+    },
+    {
+      "street": "VonRueden Point",
+      "houseNumber": "54",
+      "postalCode": "38034-0368",
+      "city": "Fort Jake",
+      "country": "SH",
+      "region": "NORTH",
+      "addressType": "MAIL",
+      "validFrom": "2023-11-25"
+    }
+  ]
+]

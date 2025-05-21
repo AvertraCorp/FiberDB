@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Melvina_Ferry@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-16"
+    },
+    {
+      "type": "PHONE",
+      "value": "(949) 273-3530",
+      "isPrimary": true,
+      "validFrom": "2025-04-18"
+    }
+  ]
+]

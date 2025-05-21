@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Enola.McClure21@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-05-21"
+    },
+    {
+      "type": "PHONE",
+      "value": "967-336-8871 x184",
+      "isPrimary": true,
+      "validFrom": "2025-01-24"
+    }
+  ]
+]

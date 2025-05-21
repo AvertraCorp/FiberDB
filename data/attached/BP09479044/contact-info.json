@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Royal.Jerde23@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-05-30"
+    },
+    {
+      "type": "PHONE",
+      "value": "407-553-2881 x71466",
+      "isPrimary": true,
+      "validFrom": "2025-04-15"
+    }
+  ]
+]

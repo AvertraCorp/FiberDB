@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "ZFRQ00CK",
+      "accountNumber": "88319380",
+      "accountHolder": "Frank Bode Sr.",
+      "iban": "AL78909707744P2D262156I26571",
+      "bic": "BWKALYZFYMO",
+      "validFrom": "2021-07-02",
+      "isDefault": true
+    },
+    {
+      "bankId": "MDBXCTDA",
+      "accountNumber": "32884492",
+      "accountHolder": "Faye Lind",
+      "iban": "VG06CEJH0042677009890946",
+      "bic": "IAIGRUYUXXX",
+      "validFrom": "2021-06-19",
+      "isDefault": false
+    }
+  ]
+]

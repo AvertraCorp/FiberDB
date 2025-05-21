@@ -1,0 +1,21 @@
+{
+  "id": "BP25676378",
+  "businessPartnerNumber": "BP25676378",
+  "category": "3",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2020-09-26",
+  "lastModified": "2024-12-17",
+  "groupName": "Schiller Group Group",
+  "groupType": "FAMILY",
+  "memberCount": 4,
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

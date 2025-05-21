@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "KLJLYRMA",
+      "accountNumber": "43356366",
+      "accountHolder": "Loretta Pfannerstill",
+      "iban": "TN1070690066060047009567",
+      "bic": "JPJOBZB09N6",
+      "validFrom": "2021-01-02",
+      "isDefault": true
+    },
+    {
+      "bankId": "BMRR4MKU",
+      "accountNumber": "75099686",
+      "accountHolder": "Annie Gerhold",
+      "iban": "GE15GH0770088506009675",
+      "bic": "KMLFMPCYXXX",
+      "validFrom": "2021-08-23",
+      "isDefault": false
+    }
+  ]
+]

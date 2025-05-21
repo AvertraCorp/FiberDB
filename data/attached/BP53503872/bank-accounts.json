@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "BPSNIE57",
+      "accountNumber": "61030537",
+      "accountHolder": "Owen Buckridge",
+      "iban": "VG81XOAG9200298200705007",
+      "bic": "HOSWMGHE102",
+      "validFrom": "2024-08-04",
+      "isDefault": true
+    },
+    {
+      "bankId": "CN2LMU4O",
+      "accountNumber": "00721717",
+      "accountHolder": "Adrienne Leuschke",
+      "iban": "TR162206944200859720883782",
+      "bic": "AZIKTH9OLUN",
+      "validFrom": "2020-06-03",
+      "isDefault": false
+    }
+  ]
+]

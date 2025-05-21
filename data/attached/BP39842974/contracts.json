@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT24269209",
+      "utilityType": "STRM",
+      "startDate": "2023-03-29",
+      "status": "INACTIVE",
+      "tariffType": "STRM_TIV",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

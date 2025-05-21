@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Grace40@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-31"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-790-346-0036 x339",
+      "isPrimary": true,
+      "validFrom": "2025-05-08"
+    }
+  ]
+]

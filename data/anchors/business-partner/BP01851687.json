@@ -1,0 +1,25 @@
+{
+  "id": "BP01851687",
+  "businessPartnerNumber": "BP01851687",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2023-04-22",
+  "lastModified": "2024-11-21",
+  "firstName": "f0b0e8d3a7968fb8f4aff065596f1c6b",
+  "lastName": "3694cb7d877a5b56891eed7e3bd8541a",
+  "title": "Mr.",
+  "gender": "Male to female transgender woman",
+  "birthDate": "08f8e8af464db35992b5259e071be547",
+  "nationality": "IR",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

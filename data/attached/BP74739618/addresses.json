@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Gibson Orchard",
+      "houseNumber": "529",
+      "postalCode": "00528",
+      "city": "Lake Ameliemouth",
+      "country": "BF",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2023-08-19"
+    },
+    {
+      "street": "The Causeway",
+      "houseNumber": "494",
+      "postalCode": "06106-8684",
+      "city": "Port Taya",
+      "country": "SG",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2022-07-14"
+    }
+  ]
+]

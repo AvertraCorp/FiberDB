@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT20725118",
+      "utilityType": "ELEC",
+      "startDate": "2023-06-21",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_YKX",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT47308543",
+      "utilityType": "ELEC",
+      "startDate": "2022-08-17",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_RJL",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT84805938",
+      "utilityType": "STRM",
+      "startDate": "2022-11-21",
+      "status": "PENDING",
+      "tariffType": "STRM_UAL",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

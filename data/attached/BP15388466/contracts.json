@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT64373904",
+      "utilityType": "SEWER",
+      "startDate": "2024-07-16",
+      "status": "ACTIVE",
+      "tariffType": "SEWER_WGT",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT55412199",
+      "utilityType": "STRM",
+      "startDate": "2023-06-05",
+      "status": "INACTIVE",
+      "tariffType": "STRM_GBO",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT16467064",
+      "utilityType": "GAS",
+      "startDate": "2024-10-18",
+      "status": "ACTIVE",
+      "tariffType": "GAS_NSZ",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

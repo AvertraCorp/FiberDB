@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "CKZUDCEE",
+      "accountNumber": "74020260",
+      "accountHolder": "Phyllis Walker",
+      "iban": "PT13005160865018564020844",
+      "bic": "OOVAAIDO6AY",
+      "validFrom": "2022-01-11",
+      "isDefault": true
+    }
+  ]
+]

@@ -1,0 +1,24 @@
+{
+  "id": "BP84685961",
+  "businessPartnerNumber": "BP84685961",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "A",
+  "createdAt": "2021-05-20",
+  "lastModified": "2025-03-19",
+  "firstName": "b98fec22426698dff9684fd1676dcb4b",
+  "lastName": "3b1a72749c46594b7a834ac7b718be3e",
+  "gender": "Xenogender",
+  "birthDate": "0217176558b6c0e72b109941743450bd",
+  "nationality": "TZ",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

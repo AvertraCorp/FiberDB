@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Jermain_Walter65@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-30"
+    },
+    {
+      "type": "PHONE",
+      "value": "(217) 812-2799 x20055",
+      "isPrimary": true,
+      "validFrom": "2024-06-08"
+    }
+  ]
+]

@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT33394192",
+      "utilityType": "STRM",
+      "startDate": "2023-03-20",
+      "status": "ACTIVE",
+      "tariffType": "STRM_ZGV",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

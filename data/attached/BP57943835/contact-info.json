@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Dangelo_Friesen36@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-10-21"
+    },
+    {
+      "type": "PHONE",
+      "value": "(354) 674-8386",
+      "isPrimary": true,
+      "validFrom": "2024-07-12"
+    },
+    {
+      "type": "MOBILE",
+      "value": "912.281.9812 x0234",
+      "isPrimary": false,
+      "validFrom": "2024-06-15"
+    }
+  ]
+]

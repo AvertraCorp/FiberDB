@@ -1,0 +1,25 @@
+{
+  "id": "BP99556407",
+  "businessPartnerNumber": "BP99556407",
+  "category": "2",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2022-09-06",
+  "lastModified": "2025-03-10",
+  "organizationName": "O'Conner, Kiehn and Weber",
+  "organizationType": "SOLE",
+  "industryKey": "TECH",
+  "foundationDate": "2020-04-11",
+  "legalForm": "LTD",
+  "vatNumber": "8VGOPBZPWG",
+  "taxNumber": "945335517",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

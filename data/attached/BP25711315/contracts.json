@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT17346306",
+      "utilityType": "STRM",
+      "startDate": "2022-07-28",
+      "status": "ACTIVE",
+      "tariffType": "STRM_UOG",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT13348407",
+      "utilityType": "WATER",
+      "startDate": "2025-05-19",
+      "status": "INACTIVE",
+      "tariffType": "WATER_QIO",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    },
+    {
+      "contractId": "CT17306287",
+      "utilityType": "WATER",
+      "startDate": "2023-09-17",
+      "status": "PENDING",
+      "tariffType": "WATER_CUR",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

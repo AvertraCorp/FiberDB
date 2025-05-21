@@ -1,0 +1,24 @@
+{
+  "id": "BP09095207",
+  "businessPartnerNumber": "BP09095207",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "A",
+  "createdAt": "2022-10-30",
+  "lastModified": "2024-12-27",
+  "firstName": "fa4ea55d18240a864bbf63b3fbcbc9df",
+  "lastName": "f9526c1b8b8ff55c8832ae5299b8d0c3",
+  "gender": "Female to male transgender man",
+  "birthDate": "2445d0d7784de6d83e02c4a33d13ddb9",
+  "nationality": "RU",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

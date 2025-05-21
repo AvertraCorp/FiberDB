@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Leonardo_Feil54@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-11-04"
+    },
+    {
+      "type": "PHONE",
+      "value": "328-325-6566",
+      "isPrimary": true,
+      "validFrom": "2024-10-13"
+    }
+  ]
+]

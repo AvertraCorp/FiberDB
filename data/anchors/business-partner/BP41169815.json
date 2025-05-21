@@ -1,0 +1,25 @@
+{
+  "id": "BP41169815",
+  "businessPartnerNumber": "BP41169815",
+  "category": "2",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2024-11-14",
+  "lastModified": "2025-03-17",
+  "organizationName": "McDermott Inc",
+  "organizationType": "SOLE",
+  "industryKey": "TECH",
+  "foundationDate": "2016-03-08",
+  "legalForm": "AG",
+  "vatNumber": "VWQAFCOQSZ",
+  "taxNumber": "308618236",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

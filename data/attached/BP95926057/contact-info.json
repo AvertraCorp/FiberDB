@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Rusty_Dicki@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-03-17"
+    },
+    {
+      "type": "PHONE",
+      "value": "841.499.8361",
+      "isPrimary": true,
+      "validFrom": "2025-04-14"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(725) 876-2801 x97093",
+      "isPrimary": false,
+      "validFrom": "2025-03-23"
+    }
+  ]
+]

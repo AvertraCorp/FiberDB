@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Jennings Shoal",
+      "houseNumber": "413",
+      "postalCode": "71778",
+      "city": "Lake Alisha",
+      "country": "ES",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2022-11-29"
+    },
+    {
+      "street": "Gorczany Haven",
+      "houseNumber": "635",
+      "postalCode": "70782",
+      "city": "Ursulastead",
+      "country": "BA",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2023-09-10"
+    },
+    {
+      "street": "Elta Parks",
+      "houseNumber": "659",
+      "postalCode": "15430",
+      "city": "Metzport",
+      "country": "DK",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2022-11-02"
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Sycamore Avenue",
+      "houseNumber": "353",
+      "postalCode": "10031",
+      "city": "Kissimmee",
+      "country": "MM",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2023-06-19"
+    },
+    {
+      "street": "Kub Summit",
+      "houseNumber": "128",
+      "postalCode": "21038-2488",
+      "city": "New Mathias",
+      "country": "GS",
+      "region": "WEST",
+      "addressType": "INST",
+      "validFrom": "2021-08-25"
+    },
+    {
+      "street": "The Woodlands",
+      "houseNumber": "345",
+      "postalCode": "15462",
+      "city": "East Aprilfurt",
+      "country": "VC",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2021-06-02"
+    }
+  ]
+]

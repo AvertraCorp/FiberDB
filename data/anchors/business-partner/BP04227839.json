@@ -1,0 +1,24 @@
+{
+  "id": "BP04227839",
+  "businessPartnerNumber": "BP04227839",
+  "category": "1",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2023-08-04",
+  "lastModified": "2025-01-29",
+  "firstName": "a9fe7e60422624de94c439bc1ba573c7",
+  "lastName": "5d0e6ecf16a72a39027fecac66df14ea",
+  "gender": "Trans man",
+  "birthDate": "227724da103ba7d86360d1d3523b6a45",
+  "nationality": "LV",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

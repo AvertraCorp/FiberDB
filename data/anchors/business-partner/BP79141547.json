@@ -1,0 +1,21 @@
+{
+  "id": "BP79141547",
+  "businessPartnerNumber": "BP79141547",
+  "category": "3",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "B",
+  "createdAt": "2023-02-17",
+  "lastModified": "2025-02-07",
+  "groupName": "Cruickshank, Prohaska and Homenick Group",
+  "groupType": "FAMILY",
+  "memberCount": 3,
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

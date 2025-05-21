@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "YZ1HQZNW",
+      "accountNumber": "62016793",
+      "accountHolder": "Miss Jody Lindgren",
+      "iban": "FI1505614000262146",
+      "bic": "HAZGRO0W",
+      "validFrom": "2023-11-17",
+      "isDefault": true
+    }
+  ]
+]

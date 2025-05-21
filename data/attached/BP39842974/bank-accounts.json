@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "C61U91FY",
+      "accountNumber": "90526048",
+      "accountHolder": "Tony Harris",
+      "iban": "CY160020091189173W787928L410",
+      "bic": "LSLEJOD1",
+      "validFrom": "2024-08-16",
+      "isDefault": true
+    },
+    {
+      "bankId": "MS94MIGA",
+      "accountNumber": "45976374",
+      "accountHolder": "Roosevelt Block",
+      "iban": "AZ14VASB60408003870050523269",
+      "bic": "VUJIKRXHXXX",
+      "validFrom": "2021-03-30",
+      "isDefault": false
+    }
+  ]
+]

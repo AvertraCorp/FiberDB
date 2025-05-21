@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "NTPQMF9R",
+      "accountNumber": "14515162",
+      "accountHolder": "Joanna Bergnaum II",
+      "iban": "FI5570008446050525",
+      "bic": "YNIDNRXBXXX",
+      "validFrom": "2020-07-29",
+      "isDefault": true
+    }
+  ]
+]

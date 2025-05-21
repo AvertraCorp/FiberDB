@@ -1,0 +1,25 @@
+{
+  "id": "BP61340868",
+  "businessPartnerNumber": "BP61340868",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "C",
+  "createdAt": "2022-10-06",
+  "lastModified": "2025-03-26",
+  "firstName": "f6c65611931f4bf57bc9e31fc26d34ca",
+  "lastName": "ae12f71e5320af2cdd7ca69dd4f087cd",
+  "middleName": "Sage",
+  "gender": "Cis female",
+  "birthDate": "c156b410b2a3df18929c80d22ef4d582",
+  "nationality": "GU",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

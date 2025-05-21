@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT92323130",
+      "serialNumber": "IV0MJFRPVJ",
+      "meterType": "GSM",
+      "installationDate": "2024-10-18",
+      "status": "ACTIVE",
+      "registerCount": 3,
+      "isSmartMeter": true,
+      "readingCycle": "06",
+      "lastReadingDate": "2024-11-29",
+      "lastReadingValue": 6839
+    }
+  ]
+]

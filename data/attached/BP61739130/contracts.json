@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT47329266",
+      "utilityType": "WATER",
+      "startDate": "2023-04-19",
+      "status": "PENDING",
+      "tariffType": "WATER_GPN",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    },
+    {
+      "contractId": "CT15353757",
+      "utilityType": "SEWER",
+      "startDate": "2022-07-09",
+      "status": "ACTIVE",
+      "tariffType": "SEWER_IRR",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

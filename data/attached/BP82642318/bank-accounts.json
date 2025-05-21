@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "RFFEGTBR",
+      "accountNumber": "05086734",
+      "accountHolder": "Gene Hayes",
+      "iban": "SA0865Q3376Y4307680870U8",
+      "bic": "WPSGPRAE",
+      "validFrom": "2021-11-20",
+      "isDefault": true
+    },
+    {
+      "bankId": "TQBPAR7T",
+      "accountNumber": "21051013",
+      "accountHolder": "Vera Hirthe",
+      "iban": "FR13816808758341309TV556257",
+      "bic": "AIGWTL3Y",
+      "validFrom": "2023-04-22",
+      "isDefault": false
+    }
+  ]
+]

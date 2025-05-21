@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Ocie Burgs",
+      "houseNumber": "104",
+      "postalCode": "28287-0492",
+      "city": "Lake Fosterborough",
+      "country": "UZ",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2021-08-22"
+    },
+    {
+      "street": "W Broadway Avenue",
+      "houseNumber": "703",
+      "postalCode": "52500",
+      "city": "Port Jarrettville",
+      "country": "SR",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2023-05-05"
+    }
+  ]
+]

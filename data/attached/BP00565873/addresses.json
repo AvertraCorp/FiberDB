@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Litzy Plains",
+      "houseNumber": "949",
+      "postalCode": "44408-5864",
+      "city": "Kristinaton",
+      "country": "IL",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2022-01-28"
+    },
+    {
+      "street": "Manor Gardens",
+      "houseNumber": "36",
+      "postalCode": "50687",
+      "city": "Hammesfurt",
+      "country": "TN",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2021-06-07"
+    }
+  ]
+]

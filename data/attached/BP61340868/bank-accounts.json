@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "IY2W60NI",
+      "accountNumber": "11681142",
+      "accountHolder": "Darnell Walter",
+      "iban": "RS80356798503130702442",
+      "bic": "GRTJPYNEPFP",
+      "validFrom": "2022-07-25",
+      "isDefault": true
+    },
+    {
+      "bankId": "JR0WX6LI",
+      "accountNumber": "82318851",
+      "accountHolder": "Harvey Robel",
+      "iban": "GR600071003J104524PR4085X05",
+      "bic": "PAAZBASZXXX",
+      "validFrom": "2024-10-05",
+      "isDefault": false
+    }
+  ]
+]

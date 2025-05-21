@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT15209528",
+      "utilityType": "ELEC",
+      "startDate": "2024-02-25",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_GSR",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT39148455",
+      "utilityType": "WATER",
+      "startDate": "2022-06-08",
+      "status": "ACTIVE",
+      "tariffType": "WATER_WYZ",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT01898384",
+      "utilityType": "GAS",
+      "startDate": "2024-08-04",
+      "status": "ACTIVE",
+      "tariffType": "GAS_XSG",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT94391190",
+      "utilityType": "SEWER",
+      "startDate": "2024-07-10",
+      "status": "PENDING",
+      "tariffType": "SEWER_UKZ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Taya Fort",
+      "houseNumber": "744",
+      "postalCode": "80998-1432",
+      "city": "Jeromybury",
+      "country": "SS",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2023-09-29"
+    },
+    {
+      "street": "N Broad Street",
+      "houseNumber": "933",
+      "postalCode": "61508-6450",
+      "city": "South Cara",
+      "country": "AW",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2020-09-09"
+    },
+    {
+      "street": "Janessa Union",
+      "houseNumber": "114",
+      "postalCode": "45377",
+      "city": "New Jarod",
+      "country": "SI",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2022-08-26"
+    }
+  ]
+]

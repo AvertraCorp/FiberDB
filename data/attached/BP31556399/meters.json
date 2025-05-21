@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT73776184",
+      "serialNumber": "ARP53IDSE4",
+      "meterType": "G2",
+      "installationDate": "2025-05-20",
+      "status": "ACTIVE",
+      "registerCount": 1,
+      "isSmartMeter": false,
+      "readingCycle": "05",
+      "lastReadingDate": "2025-01-16",
+      "lastReadingValue": 9494
+    }
+  ]
+]

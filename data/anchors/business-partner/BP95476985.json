@@ -1,0 +1,25 @@
+{
+  "id": "BP95476985",
+  "businessPartnerNumber": "BP95476985",
+  "category": "2",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2025-02-15",
+  "lastModified": "2024-11-29",
+  "organizationName": "Volkman - Stracke",
+  "organizationType": "CORP",
+  "industryKey": "TECH",
+  "foundationDate": "2014-04-15",
+  "legalForm": "LTD",
+  "vatNumber": "U20ICLNZLE",
+  "taxNumber": "402674838",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

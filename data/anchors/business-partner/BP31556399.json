@@ -1,0 +1,26 @@
+{
+  "id": "BP31556399",
+  "businessPartnerNumber": "BP31556399",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "A",
+  "createdAt": "2024-12-01",
+  "lastModified": "2025-03-03",
+  "firstName": "9a0923eca0aefa2825532cf6dce4e681",
+  "lastName": "65ab1a9a1f005afe51f711cf7ba43505",
+  "middleName": "Elliott",
+  "title": "Mrs.",
+  "gender": "Cis woman",
+  "birthDate": "c9e4a07c06d43fc67f37c65b700d16ca",
+  "nationality": "NC",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

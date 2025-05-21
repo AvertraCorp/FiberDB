@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Lucio74@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-10-06"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-388-406-9433 x81332",
+      "isPrimary": true,
+      "validFrom": "2024-05-24"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(618) 660-5645 x371",
+      "isPrimary": false,
+      "validFrom": "2024-06-07"
+    },
+    {
+      "type": "FAX",
+      "value": "1-639-791-0309 x398",
+      "isPrimary": false,
+      "validFrom": "2024-07-15"
+    }
+  ]
+]

@@ -1,0 +1,26 @@
+{
+  "id": "BP08833063",
+  "businessPartnerNumber": "BP08833063",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2024-09-01",
+  "lastModified": "2025-04-06",
+  "firstName": "8fa212c46a14c377d154c5a2b6250d73",
+  "lastName": "0298b286e6ee7345c77d7632ec08548b",
+  "middleName": "Austin",
+  "title": "Dr.",
+  "gender": "Trans male",
+  "birthDate": "249c97ea65d6463ffa84385b89c5414c",
+  "nationality": "RE",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Meggie.Konopelski@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-05-06"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-863-458-2988",
+      "isPrimary": true,
+      "validFrom": "2024-09-12"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-851-874-0714 x180",
+      "isPrimary": false,
+      "validFrom": "2024-07-03"
+    }
+  ]
+]

@@ -1,0 +1,24 @@
+{
+  "id": "BP57270251",
+  "businessPartnerNumber": "BP57270251",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "A",
+  "createdAt": "2024-05-25",
+  "lastModified": "2025-01-14",
+  "firstName": "ef4a72369731d0b2570cce5992c2430d",
+  "lastName": "1278d909796256b87d13c7cfaf2bfc1b",
+  "gender": "Demi-woman",
+  "birthDate": "c25e92637286b1b3c1d8913110144510",
+  "nationality": "UM",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

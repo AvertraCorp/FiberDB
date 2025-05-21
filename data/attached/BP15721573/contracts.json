@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT48043988",
+      "utilityType": "WATER",
+      "startDate": "2024-01-21",
+      "status": "INACTIVE",
+      "tariffType": "WATER_ONS",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT62256273",
+      "utilityType": "WATER",
+      "startDate": "2024-11-27",
+      "status": "PENDING",
+      "tariffType": "WATER_YTC",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT63548197",
+      "utilityType": "WATER",
+      "startDate": "2022-10-04",
+      "status": "PENDING",
+      "tariffType": "WATER_WQU",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

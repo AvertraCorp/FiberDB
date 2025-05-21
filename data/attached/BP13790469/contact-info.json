@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Janet_Heidenreich14@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-01"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-508-554-6111 x02417",
+      "isPrimary": true,
+      "validFrom": "2025-05-18"
+    }
+  ]
+]

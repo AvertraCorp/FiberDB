@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Osborne Flat",
+      "houseNumber": "198",
+      "postalCode": "91903",
+      "city": "West Tillmanborough",
+      "country": "NP",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2021-06-10"
+    },
+    {
+      "street": "Park Crescent",
+      "houseNumber": "819",
+      "postalCode": "66661-2456",
+      "city": "Lake Christianworth",
+      "country": "MO",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2023-12-13"
+    },
+    {
+      "street": "8th Street",
+      "houseNumber": "607",
+      "postalCode": "64085",
+      "city": "Jovannyborough",
+      "country": "LK",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2024-12-19"
+    }
+  ]
+]

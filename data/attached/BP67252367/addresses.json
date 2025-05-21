@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Madilyn Manors",
+      "houseNumber": "192",
+      "postalCode": "52297",
+      "city": "Lynnshire",
+      "country": "GH",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2024-01-23"
+    },
+    {
+      "street": "Kane Estate",
+      "houseNumber": "919",
+      "postalCode": "90905-6491",
+      "city": "Willaton",
+      "country": "LI",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2023-04-14"
+    },
+    {
+      "street": "State Road",
+      "houseNumber": "831",
+      "postalCode": "30870-3641",
+      "city": "Salmamouth",
+      "country": "HK",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2021-08-27"
+    }
+  ]
+]

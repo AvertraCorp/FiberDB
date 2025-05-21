@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT08622593",
+      "utilityType": "WATER",
+      "startDate": "2022-09-12",
+      "status": "ACTIVE",
+      "tariffType": "WATER_ZDF",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

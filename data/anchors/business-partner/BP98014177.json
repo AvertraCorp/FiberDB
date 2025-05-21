@@ -1,0 +1,21 @@
+{
+  "id": "BP98014177",
+  "businessPartnerNumber": "BP98014177",
+  "category": "3",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2024-02-22",
+  "lastModified": "2025-05-16",
+  "groupName": "Littel - Jones Group",
+  "groupType": "HOUSEHOLD",
+  "memberCount": 3,
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

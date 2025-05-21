@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Piper_Conroy90@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-03"
+    },
+    {
+      "type": "PHONE",
+      "value": "210.500.7744 x98763",
+      "isPrimary": true,
+      "validFrom": "2025-01-08"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-726-707-7187 x8014",
+      "isPrimary": false,
+      "validFrom": "2025-04-05"
+    },
+    {
+      "type": "FAX",
+      "value": "1-491-314-0510 x9937",
+      "isPrimary": false,
+      "validFrom": "2024-09-23"
+    }
+  ]
+]

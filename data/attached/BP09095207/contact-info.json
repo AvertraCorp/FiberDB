@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Bethel.Windler@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-02-07"
+    },
+    {
+      "type": "PHONE",
+      "value": "(713) 718-8356 x19781",
+      "isPrimary": true,
+      "validFrom": "2024-09-18"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-600-526-9814",
+      "isPrimary": false,
+      "validFrom": "2025-02-20"
+    }
+  ]
+]

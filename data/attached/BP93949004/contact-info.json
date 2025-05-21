@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Chadd_Schneider@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-06-05"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-289-393-2828 x98741",
+      "isPrimary": true,
+      "validFrom": "2024-12-28"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-746-787-6261 x88728",
+      "isPrimary": false,
+      "validFrom": "2024-06-07"
+    },
+    {
+      "type": "FAX",
+      "value": "571-609-1235 x805",
+      "isPrimary": false,
+      "validFrom": "2024-09-04"
+    }
+  ]
+]

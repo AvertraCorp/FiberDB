@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Emmy_Leannon@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-05-19"
+    },
+    {
+      "type": "PHONE",
+      "value": "903-225-3016 x26351",
+      "isPrimary": true,
+      "validFrom": "2024-11-12"
+    },
+    {
+      "type": "MOBILE",
+      "value": "912.750.6349 x4431",
+      "isPrimary": false,
+      "validFrom": "2025-01-19"
+    }
+  ]
+]

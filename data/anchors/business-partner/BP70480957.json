@@ -1,0 +1,25 @@
+{
+  "id": "BP70480957",
+  "businessPartnerNumber": "BP70480957",
+  "category": "1",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2022-02-05",
+  "lastModified": "2025-01-23",
+  "firstName": "f3659a6efa7e5fe7be59987feda9ab2b",
+  "lastName": "40066561ad2ab1a6909dc7c498bad6bc",
+  "middleName": "Parker",
+  "gender": "FTM",
+  "birthDate": "0829dad7f4b8ce88e634f33dd085062e",
+  "nationality": "TM",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

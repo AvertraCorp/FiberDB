@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "CXR4DKAS",
+      "accountNumber": "16574724",
+      "accountHolder": "Rex Leannon",
+      "iban": "CR80710504218600028001",
+      "bic": "KNOOAG4Q",
+      "validFrom": "2021-05-17",
+      "isDefault": true
+    }
+  ]
+]

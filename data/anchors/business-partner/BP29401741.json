@@ -1,0 +1,26 @@
+{
+  "id": "BP29401741",
+  "businessPartnerNumber": "BP29401741",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2020-06-29",
+  "lastModified": "2025-04-26",
+  "firstName": "e1bfcaac9e6c0378a1edfaeb6da9efbc",
+  "lastName": "87e39a03829b9c23b4e9df70fb54239a",
+  "middleName": "Nico",
+  "title": "Mrs.",
+  "gender": "Demi-boy",
+  "birthDate": "65b159f5e59f239e02011fe9eb067a68",
+  "nationality": "SV",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

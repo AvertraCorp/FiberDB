@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT89108835",
+      "serialNumber": "9TTWJYQU9S",
+      "meterType": "E2",
+      "installationDate": "2024-04-23",
+      "status": "ACTIVE",
+      "registerCount": 3,
+      "isSmartMeter": true,
+      "readingCycle": "06",
+      "lastReadingDate": "2025-03-03",
+      "lastReadingValue": 9760
+    }
+  ]
+]

@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Reagan.Greenfelder@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-30"
+    },
+    {
+      "type": "PHONE",
+      "value": "(933) 890-6817 x243",
+      "isPrimary": true,
+      "validFrom": "2025-01-21"
+    }
+  ]
+]

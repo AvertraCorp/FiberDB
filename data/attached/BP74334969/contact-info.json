@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Armando_Zboncak2@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-02"
+    },
+    {
+      "type": "PHONE",
+      "value": "653.606.9217 x74790",
+      "isPrimary": true,
+      "validFrom": "2024-09-03"
+    },
+    {
+      "type": "MOBILE",
+      "value": "591.674.8215 x7368",
+      "isPrimary": false,
+      "validFrom": "2024-11-05"
+    }
+  ]
+]

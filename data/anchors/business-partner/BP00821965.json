@@ -1,0 +1,24 @@
+{
+  "id": "BP00821965",
+  "businessPartnerNumber": "BP00821965",
+  "category": "1",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2020-06-01",
+  "lastModified": "2025-01-12",
+  "firstName": "9d37b9350e8a5132492752c00fc7d737",
+  "lastName": "151ab79c7e2b0afbd3f45713d897cd9c",
+  "gender": "Demi-man",
+  "birthDate": "f8ec01fdf2e9e12a43104b2d54fd41f3",
+  "nationality": "IN",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

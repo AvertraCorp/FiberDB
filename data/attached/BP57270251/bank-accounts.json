@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "7YREEYIJ",
+      "accountNumber": "65263355",
+      "accountHolder": "Constance Schowalter III",
+      "iban": "FI2618508718001270",
+      "bic": "QZQTIDYS",
+      "validFrom": "2020-12-25",
+      "isDefault": true
+    }
+  ]
+]

@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "P7ZUPNIG",
+      "accountNumber": "02355268",
+      "accountHolder": "Julio Johnston",
+      "iban": "DE49300755949046800618",
+      "bic": "NYGUALDGXXX",
+      "validFrom": "2022-03-31",
+      "isDefault": true
+    }
+  ]
+]

@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT18889913",
+      "utilityType": "ELEC",
+      "startDate": "2024-07-29",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_GFH",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

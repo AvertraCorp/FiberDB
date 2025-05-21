@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT08973346",
+      "utilityType": "SEWER",
+      "startDate": "2023-03-27",
+      "status": "PENDING",
+      "tariffType": "SEWER_XCF",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

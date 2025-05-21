@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Antonio Falls",
+      "houseNumber": "119",
+      "postalCode": "41504-8237",
+      "city": "East Camila",
+      "country": "FJ",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2023-01-10"
+    },
+    {
+      "street": "Daugherty Pike",
+      "houseNumber": "226",
+      "postalCode": "40136-7389",
+      "city": "Koeppville",
+      "country": "VU",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2022-04-24"
+    }
+  ]
+]

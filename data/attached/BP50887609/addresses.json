@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Klein Corner",
+      "houseNumber": "634",
+      "postalCode": "89619-5853",
+      "city": "Arjunshire",
+      "country": "SI",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2023-07-17"
+    },
+    {
+      "street": "Emil Common",
+      "houseNumber": "729",
+      "postalCode": "66131-2749",
+      "city": "Zulauffield",
+      "country": "ER",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2020-08-11"
+    }
+  ]
+]

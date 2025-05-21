@@ -1,0 +1,26 @@
+{
+  "id": "BP25711315",
+  "businessPartnerNumber": "BP25711315",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "C",
+  "createdAt": "2022-10-19",
+  "lastModified": "2024-11-29",
+  "firstName": "26c407197e012b85e7b79f978b589e35",
+  "lastName": "5588e0dcd249e820e50769acb05ec3a8",
+  "middleName": "Sasha",
+  "title": "Ms.",
+  "gender": "Androgyne",
+  "birthDate": "5a86b3fe33e485dd46835558f531254e",
+  "nationality": "LT",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

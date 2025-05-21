@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "RT2ODFYM",
+      "accountNumber": "10338677",
+      "accountHolder": "Shane Hagenes",
+      "iban": "CZ0500302030803179992298",
+      "bic": "DVUGAQPLW4F",
+      "validFrom": "2023-06-20",
+      "isDefault": true
+    },
+    {
+      "bankId": "FD7O6JSX",
+      "accountNumber": "56185926",
+      "accountHolder": "Gayle Wehner-Rohan",
+      "iban": "AZ34ZVUA67213548051590802036",
+      "bic": "KEADOML9XXX",
+      "validFrom": "2021-04-15",
+      "isDefault": false
+    }
+  ]
+]

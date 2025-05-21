@@ -1,0 +1,25 @@
+{
+  "id": "BP86014338",
+  "businessPartnerNumber": "BP86014338",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2024-07-27",
+  "lastModified": "2024-11-22",
+  "firstName": "facc19271e49c31fddae45ffa6775975",
+  "lastName": "d619b255e8a467a140336549f39742f5",
+  "title": "Dr.",
+  "gender": "Trans",
+  "birthDate": "1b2eee6e9806e6fa037094173ba13788",
+  "nationality": "CL",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

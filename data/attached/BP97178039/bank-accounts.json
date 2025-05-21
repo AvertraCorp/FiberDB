@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "ULFGFH5P",
+      "accountNumber": "03770631",
+      "accountHolder": "Matt Bailey",
+      "iban": "LT670121007808027238",
+      "bic": "ARLOPWK0XXX",
+      "validFrom": "2022-07-14",
+      "isDefault": true
+    }
+  ]
+]

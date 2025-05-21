@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Ariel_Little@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-23"
+    },
+    {
+      "type": "PHONE",
+      "value": "(373) 763-6159",
+      "isPrimary": true,
+      "validFrom": "2024-06-29"
+    }
+  ]
+]

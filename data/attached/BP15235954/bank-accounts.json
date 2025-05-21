@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "CRZEAEF1",
+      "accountNumber": "94382597",
+      "accountHolder": "Guadalupe Graham",
+      "iban": "MK8253834245C065205",
+      "bic": "KGDSAEXU",
+      "validFrom": "2024-09-25",
+      "isDefault": true
+    },
+    {
+      "bankId": "UOCNKBF8",
+      "accountNumber": "41807994",
+      "accountHolder": "Ms. Deborah Feil-Skiles",
+      "iban": "AD6500302950C4Y50SP99178",
+      "bic": "QGVXNZ7R",
+      "validFrom": "2024-07-19",
+      "isDefault": false
+    }
+  ]
+]

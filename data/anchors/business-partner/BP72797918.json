@@ -1,0 +1,24 @@
+{
+  "id": "BP72797918",
+  "businessPartnerNumber": "BP72797918",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "C",
+  "createdAt": "2020-07-10",
+  "lastModified": "2025-03-21",
+  "firstName": "4cbc1817b57a64d5635542f9422dee07",
+  "lastName": "81a6c18ab6de475b7a5e972773b92b77",
+  "gender": "Cis",
+  "birthDate": "c14ede1d07ff56d7e736cc57af1bea3c",
+  "nationality": "TO",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

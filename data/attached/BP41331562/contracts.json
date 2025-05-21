@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT42917621",
+      "utilityType": "WASTE",
+      "startDate": "2025-04-15",
+      "status": "PENDING",
+      "tariffType": "WASTE_NVR",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT28230611",
+      "utilityType": "GAS",
+      "startDate": "2025-04-12",
+      "status": "INACTIVE",
+      "tariffType": "GAS_THK",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT59343620",
+      "utilityType": "WASTE",
+      "startDate": "2024-04-03",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_OCC",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

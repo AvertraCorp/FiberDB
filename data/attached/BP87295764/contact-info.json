@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Shanel_Renner5@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-04"
+    },
+    {
+      "type": "PHONE",
+      "value": "201-783-1150 x425",
+      "isPrimary": true,
+      "validFrom": "2024-10-14"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(617) 460-3814 x50243",
+      "isPrimary": false,
+      "validFrom": "2024-12-08"
+    },
+    {
+      "type": "FAX",
+      "value": "946.706.1877 x2392",
+      "isPrimary": false,
+      "validFrom": "2024-12-02"
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Camille Ford",
+      "houseNumber": "743",
+      "postalCode": "60118-8717",
+      "city": "Estefaniaton",
+      "country": "FR",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2022-10-09"
+    },
+    {
+      "street": "Muller Isle",
+      "houseNumber": "534",
+      "postalCode": "47168-1111",
+      "city": "Fort Harmonmouth",
+      "country": "SL",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2023-03-17"
+    },
+    {
+      "street": "Roosevelt Center",
+      "houseNumber": "964",
+      "postalCode": "58528-1966",
+      "city": "West Brice",
+      "country": "SD",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2022-05-31"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "CRBZ3LWJ",
+      "accountNumber": "78746985",
+      "accountHolder": "Jacquelyn Ruecker Sr.",
+      "iban": "LB41005696446787R89060M5U23Z",
+      "bic": "NASVZMNY",
+      "validFrom": "2023-01-17",
+      "isDefault": true
+    },
+    {
+      "bankId": "UBJZKY5L",
+      "accountNumber": "80589089",
+      "accountHolder": "Gordon Heller",
+      "iban": "MT21NZHU125856B697Z36A7224Z4876",
+      "bic": "PMIQCUBW",
+      "validFrom": "2020-09-26",
+      "isDefault": false
+    }
+  ]
+]

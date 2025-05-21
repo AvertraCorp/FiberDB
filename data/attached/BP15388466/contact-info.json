@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Myrtis_Pacocha21@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-03-17"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-671-329-5335",
+      "isPrimary": true,
+      "validFrom": "2024-07-16"
+    }
+  ]
+]

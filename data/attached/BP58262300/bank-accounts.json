@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "LJJF5WZG",
+      "accountNumber": "11740240",
+      "accountHolder": "Chad Hayes",
+      "iban": "ME66001884931240306727",
+      "bic": "YLUFPWEI",
+      "validFrom": "2020-06-16",
+      "isDefault": true
+    }
+  ]
+]

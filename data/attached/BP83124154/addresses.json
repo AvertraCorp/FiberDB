@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "S Main Street",
+      "houseNumber": "477",
+      "postalCode": "14768",
+      "city": "Council Bluffs",
+      "country": "WF",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2022-12-29"
+    }
+  ]
+]

@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Brandy16@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-25"
+    },
+    {
+      "type": "PHONE",
+      "value": "(490) 302-9550 x23867",
+      "isPrimary": true,
+      "validFrom": "2024-05-25"
+    }
+  ]
+]

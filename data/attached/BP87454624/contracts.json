@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT07558235",
+      "utilityType": "SEWER",
+      "startDate": "2024-02-18",
+      "status": "PENDING",
+      "tariffType": "SEWER_TWU",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

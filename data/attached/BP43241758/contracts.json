@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT61203773",
+      "utilityType": "GAS",
+      "startDate": "2023-11-23",
+      "status": "ACTIVE",
+      "tariffType": "GAS_YUD",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT50297391",
+      "utilityType": "SEWER",
+      "startDate": "2023-02-05",
+      "status": "ACTIVE",
+      "tariffType": "SEWER_MIR",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

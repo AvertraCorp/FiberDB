@@ -1,0 +1,25 @@
+{
+  "id": "BP23851989",
+  "businessPartnerNumber": "BP23851989",
+  "category": "2",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "C",
+  "createdAt": "2024-09-15",
+  "lastModified": "2024-12-09",
+  "organizationName": "Gottlieb - Ullrich",
+  "organizationType": "GOVT",
+  "industryKey": "MANU",
+  "foundationDate": "2011-04-08",
+  "legalForm": "AG",
+  "vatNumber": "6BLM5ZXT6I",
+  "taxNumber": "932709559",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

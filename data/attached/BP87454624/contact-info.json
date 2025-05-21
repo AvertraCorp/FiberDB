@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Ronaldo.Mosciski@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-16"
+    },
+    {
+      "type": "PHONE",
+      "value": "885-465-8403 x56326",
+      "isPrimary": true,
+      "validFrom": "2024-07-10"
+    }
+  ]
+]

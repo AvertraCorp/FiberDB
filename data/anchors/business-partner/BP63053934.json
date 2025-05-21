@@ -1,0 +1,25 @@
+{
+  "id": "BP63053934",
+  "businessPartnerNumber": "BP63053934",
+  "category": "2",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2023-03-14",
+  "lastModified": "2025-03-03",
+  "organizationName": "Kessler LLC",
+  "organizationType": "CORP",
+  "industryKey": "FIN",
+  "foundationDate": "2021-10-28",
+  "legalForm": "LTD",
+  "vatNumber": "ZAZGVPLYUS",
+  "taxNumber": "769427702",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

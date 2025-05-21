@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Carson_Moen44@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-01-28"
+    },
+    {
+      "type": "PHONE",
+      "value": "281.436.0528 x84872",
+      "isPrimary": true,
+      "validFrom": "2024-09-20"
+    },
+    {
+      "type": "MOBILE",
+      "value": "783-629-2600 x0760",
+      "isPrimary": false,
+      "validFrom": "2024-10-27"
+    },
+    {
+      "type": "FAX",
+      "value": "(871) 485-2331",
+      "isPrimary": false,
+      "validFrom": "2024-09-23"
+    }
+  ]
+]

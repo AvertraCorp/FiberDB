@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Marcus_Howe13@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-01-25"
+    },
+    {
+      "type": "PHONE",
+      "value": "(854) 636-5679",
+      "isPrimary": true,
+      "validFrom": "2025-02-19"
+    }
+  ]
+]

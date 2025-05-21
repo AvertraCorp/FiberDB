@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "EUKBD3QQ",
+      "accountNumber": "09005853",
+      "accountHolder": "George Buckridge",
+      "iban": "FR636223002056968B130944E30",
+      "bic": "ERBNTLSX",
+      "validFrom": "2021-10-23",
+      "isDefault": true
+    },
+    {
+      "bankId": "ONGOG6GQ",
+      "accountNumber": "13806590",
+      "accountHolder": "Inez Beatty",
+      "iban": "CY6906003276381J2465082N321O",
+      "bic": "HPULHNQ0",
+      "validFrom": "2023-04-21",
+      "isDefault": false
+    }
+  ]
+]

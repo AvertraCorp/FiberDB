@@ -1,0 +1,24 @@
+{
+  "id": "BP64250895",
+  "businessPartnerNumber": "BP64250895",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "A",
+  "createdAt": "2022-01-04",
+  "lastModified": "2025-04-21",
+  "firstName": "a94bf8d056d15aa74e28dd9f94752a8d",
+  "lastName": "e5de18b47fca371afbf232a737f6b09d",
+  "gender": "Trans female",
+  "birthDate": "dad32a7af87893a9165283b43aed4869",
+  "nationality": "VN",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

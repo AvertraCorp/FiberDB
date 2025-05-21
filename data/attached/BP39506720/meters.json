@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT45738997",
+      "serialNumber": "MYWD9XJERO",
+      "meterType": "W2",
+      "installationDate": "2023-04-08",
+      "status": "ACTIVE",
+      "registerCount": 3,
+      "isSmartMeter": true,
+      "readingCycle": "02",
+      "lastReadingDate": "2024-12-07",
+      "lastReadingValue": 8289
+    }
+  ]
+]

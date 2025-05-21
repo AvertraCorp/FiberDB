@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Lea.Runte61@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-11-17"
+    },
+    {
+      "type": "PHONE",
+      "value": "(821) 916-0823 x95503",
+      "isPrimary": true,
+      "validFrom": "2024-10-24"
+    },
+    {
+      "type": "MOBILE",
+      "value": "584.209.4614",
+      "isPrimary": false,
+      "validFrom": "2025-01-06"
+    },
+    {
+      "type": "FAX",
+      "value": "(399) 534-1536 x818",
+      "isPrimary": false,
+      "validFrom": "2024-09-21"
+    }
+  ]
+]

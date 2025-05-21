@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Dwight Mill",
+      "houseNumber": "565",
+      "postalCode": "65871",
+      "city": "South Isaac",
+      "country": "SS",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2024-04-21"
+    },
+    {
+      "street": "Deon Walks",
+      "houseNumber": "800",
+      "postalCode": "39618-0671",
+      "city": "Geraldworth",
+      "country": "DO",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2023-06-01"
+    }
+  ]
+]

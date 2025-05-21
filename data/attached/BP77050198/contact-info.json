@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Leonora55@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-11-26"
+    },
+    {
+      "type": "PHONE",
+      "value": "585.265.8049 x85571",
+      "isPrimary": true,
+      "validFrom": "2025-01-11"
+    }
+  ]
+]

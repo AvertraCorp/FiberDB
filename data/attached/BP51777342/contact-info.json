@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Joannie_Ferry@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-08-22"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-233-417-4065",
+      "isPrimary": true,
+      "validFrom": "2024-12-10"
+    }
+  ]
+]

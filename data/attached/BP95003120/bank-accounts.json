@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "CMCTL2YQ",
+      "accountNumber": "10669771",
+      "accountHolder": "Darrin Lynch",
+      "iban": "GL8300543202542115",
+      "bic": "YDAPMCQL",
+      "validFrom": "2022-11-12",
+      "isDefault": true
+    },
+    {
+      "bankId": "4OXFC9HM",
+      "accountNumber": "09242472",
+      "accountHolder": "Lucille Mueller",
+      "iban": "GL8335183700501038",
+      "bic": "TSEQPFYVXXX",
+      "validFrom": "2024-08-26",
+      "isDefault": false
+    }
+  ]
+]

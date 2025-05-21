@@ -1,0 +1,25 @@
+{
+  "id": "BP00565873",
+  "businessPartnerNumber": "BP00565873",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "A",
+  "createdAt": "2021-09-03",
+  "lastModified": "2024-11-24",
+  "firstName": "3703064f1485114a4bcb635676b34037",
+  "lastName": "b052abefcc5995d3ab1cb7ec8603d883",
+  "middleName": "Rowan",
+  "gender": "Genderflux",
+  "birthDate": "658774b4e11b29050771776781512438",
+  "nationality": "MO",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

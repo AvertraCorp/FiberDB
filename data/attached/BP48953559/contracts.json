@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT41041006",
+      "utilityType": "STRM",
+      "startDate": "2023-07-23",
+      "status": "PENDING",
+      "tariffType": "STRM_RPX",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT51550634",
+      "utilityType": "STRM",
+      "startDate": "2022-06-02",
+      "status": "PENDING",
+      "tariffType": "STRM_GDL",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

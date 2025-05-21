@@ -1,0 +1,26 @@
+{
+  "id": "BP18563653",
+  "businessPartnerNumber": "BP18563653",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2022-10-31",
+  "lastModified": "2025-05-15",
+  "firstName": "671eb3e2ac3cfe3552d5de47a1b8dd40",
+  "lastName": "9d3493b59f2e16e737cd39bccc5ff939",
+  "middleName": "Noah",
+  "title": "Mr.",
+  "gender": "Cisgender",
+  "birthDate": "ef24ec1c9d0fec89f74abb0d34a1858e",
+  "nationality": "GA",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "BP36622837",
+  "businessPartnerNumber": "BP36622837",
+  "category": "2",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "A",
+  "createdAt": "2023-09-27",
+  "lastModified": "2025-03-20",
+  "organizationName": "Cruickshank Inc",
+  "organizationType": "LLC",
+  "industryKey": "UTIL",
+  "foundationDate": "2015-07-08",
+  "legalForm": "LTD",
+  "vatNumber": "BANQNPGOLJ",
+  "taxNumber": "763209724",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

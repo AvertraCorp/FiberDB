@@ -1,0 +1,25 @@
+{
+  "id": "BP06051994",
+  "businessPartnerNumber": "BP06051994",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "C",
+  "createdAt": "2020-06-22",
+  "lastModified": "2025-04-11",
+  "firstName": "307a6406240fee83929f1abda9381641",
+  "lastName": "12a23ace27546f0c289bf630af33e5a6",
+  "title": "Ms.",
+  "gender": "Transsexual woman",
+  "birthDate": "21eab86e6fddf773116264d181e72e8d",
+  "nationality": "YE",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

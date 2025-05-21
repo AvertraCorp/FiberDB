@@ -1,0 +1,25 @@
+{
+  "id": "BP66213567",
+  "businessPartnerNumber": "BP66213567",
+  "category": "2",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "A",
+  "createdAt": "2021-03-27",
+  "lastModified": "2025-02-02",
+  "organizationName": "Moore, Senger and Stokes",
+  "organizationType": "GOVT",
+  "industryKey": "RETAIL",
+  "foundationDate": "2008-03-24",
+  "legalForm": "AG",
+  "vatNumber": "TJDLNFGQIN",
+  "taxNumber": "811950958",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

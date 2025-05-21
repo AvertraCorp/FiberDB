@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT11918172",
+      "utilityType": "STRM",
+      "startDate": "2025-04-06",
+      "status": "PENDING",
+      "tariffType": "STRM_UUP",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "FG2EPK5E",
+      "accountNumber": "62864959",
+      "accountHolder": "Erick Quigley",
+      "iban": "SK3316600990591600120829",
+      "bic": "UAYLNL54",
+      "validFrom": "2021-05-16",
+      "isDefault": true
+    },
+    {
+      "bankId": "59KTPXMJ",
+      "accountNumber": "37599999",
+      "accountHolder": "Gustavo Adams",
+      "iban": "IL653272215565200876676",
+      "bic": "IRYSKIBELCG",
+      "validFrom": "2023-09-04",
+      "isDefault": false
+    }
+  ]
+]

@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Cale.Berge-Wilderman81@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-29"
+    },
+    {
+      "type": "PHONE",
+      "value": "(333) 897-1028 x29618",
+      "isPrimary": true,
+      "validFrom": "2025-04-29"
+    }
+  ]
+]

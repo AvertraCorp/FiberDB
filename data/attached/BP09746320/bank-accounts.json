@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "3MY7QKVF",
+      "accountNumber": "07615742",
+      "accountHolder": "Elena Green",
+      "iban": "XK375490250903079074",
+      "bic": "ESGYOMTGXXX",
+      "validFrom": "2021-05-25",
+      "isDefault": true
+    },
+    {
+      "bankId": "Y4DY3VGY",
+      "accountNumber": "55228266",
+      "accountHolder": "Ms. Loretta Rutherford",
+      "iban": "IL316103400295600206590",
+      "bic": "WMGLDE8NXXX",
+      "validFrom": "2021-07-07",
+      "isDefault": false
+    }
+  ]
+]

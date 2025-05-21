@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Jayda Junction",
+      "houseNumber": "506",
+      "postalCode": "59323-9274",
+      "city": "Lebsacktown",
+      "country": "GG",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2021-10-28"
+    },
+    {
+      "street": "Kozey Drive",
+      "houseNumber": "78",
+      "postalCode": "40739-6198",
+      "city": "North Saul",
+      "country": "PT",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2020-09-25"
+    },
+    {
+      "street": "Hessel Valley",
+      "houseNumber": "843",
+      "postalCode": "10981",
+      "city": "Catalina Foothills",
+      "country": "TK",
+      "region": "WEST",
+      "addressType": "MAIL",
+      "validFrom": "2022-11-21"
+    }
+  ]
+]

@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Mary Village",
+      "houseNumber": "370",
+      "postalCode": "81521-1881",
+      "city": "Port Camron",
+      "country": "QA",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2023-02-14"
+    }
+  ]
+]

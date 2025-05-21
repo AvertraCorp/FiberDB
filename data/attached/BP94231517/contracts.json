@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT97593391",
+      "utilityType": "STRM",
+      "startDate": "2023-05-27",
+      "status": "PENDING",
+      "tariffType": "STRM_CTY",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

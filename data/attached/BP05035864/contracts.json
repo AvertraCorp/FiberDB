@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT80888370",
+      "utilityType": "SEWER",
+      "startDate": "2023-12-21",
+      "status": "ACTIVE",
+      "tariffType": "SEWER_CYQ",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

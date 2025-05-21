@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "S Washington Avenue",
+      "houseNumber": "912",
+      "postalCode": "82253-0349",
+      "city": "Chanellestead",
+      "country": "NP",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2024-03-19"
+    },
+    {
+      "street": "Ruthie Flat",
+      "houseNumber": "726",
+      "postalCode": "74897",
+      "city": "Bernhardside",
+      "country": "SV",
+      "region": "WEST",
+      "addressType": "INST",
+      "validFrom": "2022-08-20"
+    },
+    {
+      "street": "Howe Light",
+      "houseNumber": "400",
+      "postalCode": "80402-1225",
+      "city": "Jeffreychester",
+      "country": "KM",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2025-01-04"
+    }
+  ]
+]

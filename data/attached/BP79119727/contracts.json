@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT48102613",
+      "utilityType": "ELEC",
+      "startDate": "2024-01-01",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_FSK",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

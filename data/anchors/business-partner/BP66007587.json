@@ -1,0 +1,25 @@
+{
+  "id": "BP66007587",
+  "businessPartnerNumber": "BP66007587",
+  "category": "2",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "A",
+  "createdAt": "2024-10-09",
+  "lastModified": "2025-02-17",
+  "organizationName": "Herman LLC",
+  "organizationType": "GOVT",
+  "industryKey": "TECH",
+  "foundationDate": "2022-06-26",
+  "legalForm": "LLC",
+  "vatNumber": "ION6TOYKCU",
+  "taxNumber": "456042983",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

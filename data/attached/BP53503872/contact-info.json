@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Cameron8@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-05-14"
+    },
+    {
+      "type": "PHONE",
+      "value": "(346) 200-6321",
+      "isPrimary": true,
+      "validFrom": "2025-02-21"
+    },
+    {
+      "type": "MOBILE",
+      "value": "940.504.8775 x623",
+      "isPrimary": false,
+      "validFrom": "2024-07-18"
+    },
+    {
+      "type": "FAX",
+      "value": "(601) 500-0466 x6693",
+      "isPrimary": false,
+      "validFrom": "2025-03-09"
+    }
+  ]
+]

@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "E Main Street",
+      "houseNumber": "911",
+      "postalCode": "75520",
+      "city": "North Isabell",
+      "country": "RU",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2024-05-01"
+    }
+  ]
+]

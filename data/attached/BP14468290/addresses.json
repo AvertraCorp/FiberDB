@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "The Mount",
+      "houseNumber": "707",
+      "postalCode": "47628-1658",
+      "city": "Lake Sydneeberg",
+      "country": "ET",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2021-10-14"
+    },
+    {
+      "street": "Eloy Passage",
+      "houseNumber": "511",
+      "postalCode": "03435",
+      "city": "South Antone",
+      "country": "SK",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2022-04-13"
+    },
+    {
+      "street": "Rae Wall",
+      "houseNumber": "708",
+      "postalCode": "14571-3582",
+      "city": "Logan",
+      "country": "PT",
+      "region": "WEST",
+      "addressType": "MAIL",
+      "validFrom": "2023-12-24"
+    }
+  ]
+]

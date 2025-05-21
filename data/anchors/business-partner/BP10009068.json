@@ -1,0 +1,25 @@
+{
+  "id": "BP10009068",
+  "businessPartnerNumber": "BP10009068",
+  "category": "2",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "A",
+  "createdAt": "2024-08-31",
+  "lastModified": "2024-12-13",
+  "organizationName": "Altenwerth Inc",
+  "organizationType": "LLC",
+  "industryKey": "UTIL",
+  "foundationDate": "2022-10-20",
+  "legalForm": "LLC",
+  "vatNumber": "CIPWJZJCSV",
+  "taxNumber": "578681704",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

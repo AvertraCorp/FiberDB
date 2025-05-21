@@ -1,0 +1,24 @@
+{
+  "id": "BP72369420",
+  "businessPartnerNumber": "BP72369420",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2023-03-31",
+  "lastModified": "2025-01-25",
+  "firstName": "a985303f5035d54b85c86b5acd926e6c",
+  "lastName": "e2572881cdd2f4b3222518894e9816ae",
+  "gender": "Demi-boy",
+  "birthDate": "742ae94cd9a64534c20864e4f84b8fc0",
+  "nationality": "BB",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

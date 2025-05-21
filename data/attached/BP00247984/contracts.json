@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT63957023",
+      "utilityType": "SEWER",
+      "startDate": "2023-05-11",
+      "status": "INACTIVE",
+      "tariffType": "SEWER_TVM",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

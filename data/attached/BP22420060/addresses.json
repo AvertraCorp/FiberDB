@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "15th Street",
+      "houseNumber": "888",
+      "postalCode": "02654",
+      "city": "Elodyfort",
+      "country": "DM",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2025-03-18"
+    }
+  ]
+]

@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Drake Tunnel",
+      "houseNumber": "960",
+      "postalCode": "06222",
+      "city": "Orloton",
+      "country": "EC",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2022-02-20"
+    },
+    {
+      "street": "Frami Squares",
+      "houseNumber": "229",
+      "postalCode": "13778-9995",
+      "city": "Mertzfurt",
+      "country": "ET",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2023-01-16"
+    }
+  ]
+]

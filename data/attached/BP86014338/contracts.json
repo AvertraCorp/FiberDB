@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT73021047",
+      "utilityType": "WATER",
+      "startDate": "2024-08-22",
+      "status": "INACTIVE",
+      "tariffType": "WATER_XGZ",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT99303642",
+      "utilityType": "ELEC",
+      "startDate": "2023-06-01",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_YOK",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

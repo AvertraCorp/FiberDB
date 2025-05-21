@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT63999550",
+      "utilityType": "GAS",
+      "startDate": "2024-01-10",
+      "status": "ACTIVE",
+      "tariffType": "GAS_IZY",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

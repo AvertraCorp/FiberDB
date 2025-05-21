@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Rosella9@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-06-17"
+    },
+    {
+      "type": "PHONE",
+      "value": "488-968-3889 x515",
+      "isPrimary": true,
+      "validFrom": "2024-09-07"
+    }
+  ]
+]

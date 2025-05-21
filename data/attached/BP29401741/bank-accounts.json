@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "XCJWVH7W",
+      "accountNumber": "42635795",
+      "accountHolder": "Charlotte Toy-Mayert V",
+      "iban": "QA70BIHB275D1K60858T063G663W6",
+      "bic": "MQIUBEAMXXX",
+      "validFrom": "2021-02-26",
+      "isDefault": true
+    },
+    {
+      "bankId": "YNCD2OF0",
+      "accountNumber": "69048052",
+      "accountHolder": "Jenny Weimann",
+      "iban": "PL74870099710269600802287039",
+      "bic": "PLRKTOKZ",
+      "validFrom": "2023-09-18",
+      "isDefault": false
+    }
+  ]
+]

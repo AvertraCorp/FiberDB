@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Abbigail7@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-12-18"
+    },
+    {
+      "type": "PHONE",
+      "value": "(290) 327-1223",
+      "isPrimary": true,
+      "validFrom": "2024-10-26"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(742) 275-5996",
+      "isPrimary": false,
+      "validFrom": "2024-07-02"
+    },
+    {
+      "type": "FAX",
+      "value": "297.407.4415 x9030",
+      "isPrimary": false,
+      "validFrom": "2024-05-22"
+    }
+  ]
+]

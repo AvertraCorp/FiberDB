@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Brisa Loop",
+      "houseNumber": "454",
+      "postalCode": "36417-7889",
+      "city": "Sporerbury",
+      "country": "MF",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2023-05-27"
+    },
+    {
+      "street": "Windermere Road",
+      "houseNumber": "174",
+      "postalCode": "34591-2678",
+      "city": "South Zander",
+      "country": "KP",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2022-10-20"
+    }
+  ]
+]

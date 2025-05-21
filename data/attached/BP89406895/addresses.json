@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Laisha Shore",
+      "houseNumber": "875",
+      "postalCode": "90235",
+      "city": "South Ezekiel",
+      "country": "IM",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2023-12-26"
+    },
+    {
+      "street": "Abby Light",
+      "houseNumber": "903",
+      "postalCode": "00868",
+      "city": "Corkeryport",
+      "country": "EC",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2024-01-29"
+    },
+    {
+      "street": "Dana Mall",
+      "houseNumber": "658",
+      "postalCode": "94348-2506",
+      "city": "Marvinside",
+      "country": "AR",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2023-07-07"
+    }
+  ]
+]

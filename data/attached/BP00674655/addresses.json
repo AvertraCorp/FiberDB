@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Division Street",
+      "houseNumber": "681",
+      "postalCode": "18888",
+      "city": "Mariellechester",
+      "country": "GM",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2024-03-04"
+    },
+    {
+      "street": "Lance Garden",
+      "houseNumber": "719",
+      "postalCode": "31194-0682",
+      "city": "Lake Elsinore",
+      "country": "BF",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2020-05-28"
+    }
+  ]
+]

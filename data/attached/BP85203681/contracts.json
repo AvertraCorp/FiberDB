@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT74947916",
+      "utilityType": "WASTE",
+      "startDate": "2024-08-30",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_MRT",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

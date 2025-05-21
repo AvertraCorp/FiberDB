@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "3VWQQTT2",
+      "accountNumber": "40451595",
+      "accountHolder": "Mr. Erick Tremblay-Goldner",
+      "iban": "CR66903116009600650481",
+      "bic": "APUWTKMH",
+      "validFrom": "2021-11-23",
+      "isDefault": true
+    },
+    {
+      "bankId": "OPI7B5QS",
+      "accountNumber": "81419743",
+      "accountHolder": "Florence Batz",
+      "iban": "FI6690045100908004",
+      "bic": "FEYEQAPNPK7",
+      "validFrom": "2022-12-10",
+      "isDefault": false
+    }
+  ]
+]

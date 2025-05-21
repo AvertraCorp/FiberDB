@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT26236886",
+      "utilityType": "GAS",
+      "startDate": "2025-04-25",
+      "status": "ACTIVE",
+      "tariffType": "GAS_PUK",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT27151713",
+      "utilityType": "ELEC",
+      "startDate": "2024-09-23",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_IYX",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT27165204",
+      "utilityType": "ELEC",
+      "startDate": "2022-08-03",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_TGK",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

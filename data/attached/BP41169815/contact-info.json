@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Lester66@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-20"
+    },
+    {
+      "type": "PHONE",
+      "value": "(925) 421-4245",
+      "isPrimary": true,
+      "validFrom": "2025-02-23"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(289) 988-8374",
+      "isPrimary": false,
+      "validFrom": "2024-10-05"
+    }
+  ]
+]

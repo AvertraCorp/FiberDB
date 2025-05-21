@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Jeanie_Spinka90@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-01-01"
+    },
+    {
+      "type": "PHONE",
+      "value": "(378) 388-9462 x428",
+      "isPrimary": true,
+      "validFrom": "2025-02-15"
+    },
+    {
+      "type": "MOBILE",
+      "value": "369.552.1616 x019",
+      "isPrimary": false,
+      "validFrom": "2024-07-01"
+    }
+  ]
+]

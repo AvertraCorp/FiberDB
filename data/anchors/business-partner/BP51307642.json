@@ -1,0 +1,25 @@
+{
+  "id": "BP51307642",
+  "businessPartnerNumber": "BP51307642",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2022-08-08",
+  "lastModified": "2025-01-23",
+  "firstName": "68fb0adb9cd57c280bdcfc13538f3d1d",
+  "lastName": "6259bfe05ef503d4377f484f320f20d0",
+  "title": "Dr.",
+  "gender": "Man",
+  "birthDate": "635daeb714a9a0f601f842e573c91ef3",
+  "nationality": "LS",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

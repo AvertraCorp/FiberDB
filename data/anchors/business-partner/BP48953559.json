@@ -1,0 +1,25 @@
+{
+  "id": "BP48953559",
+  "businessPartnerNumber": "BP48953559",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2024-05-26",
+  "lastModified": "2025-03-07",
+  "firstName": "8db8fc6bb15c235c367f4fab7af7b994",
+  "lastName": "5aa33245682bb34cb9e7775e134821b5d42192b24c6eb705de9eec89dd273038",
+  "title": "Mrs.",
+  "gender": "Transgender person",
+  "birthDate": "67b90bbf86da06d315e7036ebec77bf7",
+  "nationality": "IO",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

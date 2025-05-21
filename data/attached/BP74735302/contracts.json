@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT43668795",
+      "utilityType": "ELEC",
+      "startDate": "2024-06-12",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_FWZ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

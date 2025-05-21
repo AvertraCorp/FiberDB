@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "N Broadway",
+      "houseNumber": "125",
+      "postalCode": "71501",
+      "city": "Fort Pedromouth",
+      "country": "CD",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2021-02-04"
+    },
+    {
+      "street": "Windsor Drive",
+      "houseNumber": "24",
+      "postalCode": "06091-0217",
+      "city": "Orange",
+      "country": "BZ",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2023-03-11"
+    },
+    {
+      "street": "Medhurst River",
+      "houseNumber": "9",
+      "postalCode": "20572-6282",
+      "city": "Peabody",
+      "country": "AR",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2024-01-05"
+    }
+  ]
+]

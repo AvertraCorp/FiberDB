@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT92774393",
+      "utilityType": "ELEC",
+      "startDate": "2025-01-01",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_XHD",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT77948836",
+      "utilityType": "WATER",
+      "startDate": "2025-02-25",
+      "status": "ACTIVE",
+      "tariffType": "WATER_BOC",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT74772562",
+      "utilityType": "SEWER",
+      "startDate": "2024-03-11",
+      "status": "ACTIVE",
+      "tariffType": "SEWER_PHB",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

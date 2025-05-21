@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT43923506",
+      "utilityType": "STRM",
+      "startDate": "2023-04-07",
+      "status": "PENDING",
+      "tariffType": "STRM_YRW",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT79876574",
+      "utilityType": "SEWER",
+      "startDate": "2024-10-02",
+      "status": "PENDING",
+      "tariffType": "SEWER_TRH",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

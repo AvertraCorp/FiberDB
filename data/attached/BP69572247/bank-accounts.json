@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "L0OREA43",
+      "accountNumber": "30690487",
+      "accountHolder": "Marco Herzog",
+      "iban": "MK6437523409W234722",
+      "bic": "IRDGPKL6",
+      "validFrom": "2020-09-13",
+      "isDefault": true
+    }
+  ]
+]

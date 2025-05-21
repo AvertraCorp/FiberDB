@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT70530332",
+      "utilityType": "WASTE",
+      "startDate": "2025-03-15",
+      "status": "ACTIVE",
+      "tariffType": "WASTE_OYQ",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

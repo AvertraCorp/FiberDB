@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT13835632",
+      "serialNumber": "JUDALIZFJF",
+      "meterType": "ETF",
+      "installationDate": "2024-11-25",
+      "status": "ACTIVE",
+      "registerCount": 3,
+      "isSmartMeter": true,
+      "readingCycle": "02",
+      "lastReadingDate": "2025-03-08",
+      "lastReadingValue": 7264
+    }
+  ]
+]

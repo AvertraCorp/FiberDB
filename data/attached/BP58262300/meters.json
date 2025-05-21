@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT48244204",
+      "serialNumber": "6O3ZOF773N",
+      "meterType": "ESM",
+      "installationDate": "2025-02-13",
+      "status": "ACTIVE",
+      "registerCount": 4,
+      "isSmartMeter": false,
+      "readingCycle": "04",
+      "lastReadingDate": "2025-04-28",
+      "lastReadingValue": 5479
+    }
+  ]
+]

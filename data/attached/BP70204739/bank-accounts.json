@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "7EZ7HBWC",
+      "accountNumber": "30804784",
+      "accountHolder": "Wesley Goldner",
+      "iban": "DO63DYCP70399004090921170019",
+      "bic": "EFZDHK8D",
+      "validFrom": "2025-02-05",
+      "isDefault": true
+    },
+    {
+      "bankId": "UURPMY2B",
+      "accountNumber": "28645461",
+      "accountHolder": "Miss Marie Funk",
+      "iban": "XK459028838038600689",
+      "bic": "TIRNRSFPMTW",
+      "validFrom": "2022-04-13",
+      "isDefault": false
+    }
+  ]
+]

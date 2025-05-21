@@ -1,0 +1,24 @@
+{
+  "id": "BP21104400",
+  "businessPartnerNumber": "BP21104400",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2024-05-16",
+  "lastModified": "2025-02-02",
+  "firstName": "d7cd9d38b9646161f4399f7890260921",
+  "lastName": "3217751301261694c2ea4e9402a2736bb7bf43493db4c9c4248f30b059fb66ee",
+  "gender": "Demiflux",
+  "birthDate": "4764fee591d21a63d7b0b10c9af75253",
+  "nationality": "BL",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

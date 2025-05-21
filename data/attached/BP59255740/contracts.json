@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT89675566",
+      "utilityType": "GAS",
+      "startDate": "2025-03-01",
+      "status": "PENDING",
+      "tariffType": "GAS_LRN",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT29444514",
+      "utilityType": "STRM",
+      "startDate": "2023-08-27",
+      "status": "ACTIVE",
+      "tariffType": "STRM_IAG",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT08560277",
+      "utilityType": "WASTE",
+      "startDate": "2025-02-08",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_VLL",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

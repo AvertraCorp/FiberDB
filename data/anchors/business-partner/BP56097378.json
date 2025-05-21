@@ -1,0 +1,26 @@
+{
+  "id": "BP56097378",
+  "businessPartnerNumber": "BP56097378",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2024-03-18",
+  "lastModified": "2025-02-25",
+  "firstName": "ed6462079bd1e04dcf4ef30e8e0ab2cd",
+  "lastName": "a1fcd5950ea36fe72d4d15445d07e500",
+  "middleName": "Brooklyn",
+  "title": "Mrs.",
+  "gender": "Trans male",
+  "birthDate": "15e9b492b7b219d72304aeb14674605a",
+  "nationality": "NO",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

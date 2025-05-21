@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "M9D6G5V3",
+      "accountNumber": "79520194",
+      "accountHolder": "Mr. Homer Gulgowski",
+      "iban": "ME27003794613410735646",
+      "bic": "SDYZGRX0",
+      "validFrom": "2021-07-15",
+      "isDefault": true
+    },
+    {
+      "bankId": "WKBG8D9W",
+      "accountNumber": "37285389",
+      "accountHolder": "Marcella Franey Jr.",
+      "iban": "JO87ZVLY1847651500841967004474",
+      "bic": "OIAJBNMS",
+      "validFrom": "2024-08-23",
+      "isDefault": false
+    }
+  ]
+]

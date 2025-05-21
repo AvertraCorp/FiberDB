@@ -1,0 +1,26 @@
+{
+  "id": "BP39475049",
+  "businessPartnerNumber": "BP39475049",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "B",
+  "createdAt": "2021-02-09",
+  "lastModified": "2025-04-29",
+  "firstName": "3393830296a9f9dda44afeebdd38e4ce",
+  "lastName": "7176dc0ae6066e42e111cd95c74aa7aa",
+  "middleName": "Anderson",
+  "title": "Miss",
+  "gender": "Androgynous",
+  "birthDate": "859bacf34c703854909e7492f873d680",
+  "nationality": "MD",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

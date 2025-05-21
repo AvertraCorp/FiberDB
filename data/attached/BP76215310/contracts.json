@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT55262194",
+      "utilityType": "SEWER",
+      "startDate": "2022-07-14",
+      "status": "PENDING",
+      "tariffType": "SEWER_GPV",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Rachel35@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-08-10"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-241-252-9665 x46309",
+      "isPrimary": true,
+      "validFrom": "2025-02-05"
+    },
+    {
+      "type": "MOBILE",
+      "value": "633-602-5954",
+      "isPrimary": false,
+      "validFrom": "2024-11-21"
+    },
+    {
+      "type": "FAX",
+      "value": "390-439-9348 x63654",
+      "isPrimary": false,
+      "validFrom": "2024-12-24"
+    }
+  ]
+]

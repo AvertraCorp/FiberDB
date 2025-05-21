@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT61799796",
+      "utilityType": "STRM",
+      "startDate": "2024-11-14",
+      "status": "PENDING",
+      "tariffType": "STRM_XAT",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "BIMONTHLY"
+    },
+    {
+      "contractId": "CT14933018",
+      "utilityType": "SEWER",
+      "startDate": "2024-11-18",
+      "status": "INACTIVE",
+      "tariffType": "SEWER_VAE",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "BIMONTHLY"
+    },
+    {
+      "contractId": "CT62138353",
+      "utilityType": "WASTE",
+      "startDate": "2024-05-19",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_YKN",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

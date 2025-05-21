@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Orie_Runolfsdottir@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-01-05"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-744-879-1785 x7153",
+      "isPrimary": true,
+      "validFrom": "2024-05-24"
+    }
+  ]
+]

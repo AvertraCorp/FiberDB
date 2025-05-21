@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "NAHJNN2O",
+      "accountNumber": "42436272",
+      "accountHolder": "Lindsey VonRueden",
+      "iban": "GT9736023177G4C23D680QI701B6",
+      "bic": "BUZDTR9M",
+      "validFrom": "2023-07-02",
+      "isDefault": true
+    }
+  ]
+]

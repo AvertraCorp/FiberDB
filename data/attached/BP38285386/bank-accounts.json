@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "X18CJP3L",
+      "accountNumber": "95639785",
+      "accountHolder": "Brandy Bogisich II",
+      "iban": "AT231300902381109877",
+      "bic": "XMMCSOBZZEW",
+      "validFrom": "2021-02-18",
+      "isDefault": true
+    },
+    {
+      "bankId": "I4S9OAM4",
+      "accountNumber": "41016191",
+      "accountHolder": "Karl Tromp",
+      "iban": "LV13EFZB2801A335PZC6X",
+      "bic": "HWNXUGWDXXX",
+      "validFrom": "2022-04-17",
+      "isDefault": false
+    }
+  ]
+]

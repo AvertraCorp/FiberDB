@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "K0DJNK0X",
+      "accountNumber": "30538209",
+      "accountHolder": "Kevin Champlin-Wintheiser",
+      "iban": "HR8950009661300800465",
+      "bic": "HEOCKP2S",
+      "validFrom": "2024-10-09",
+      "isDefault": true
+    }
+  ]
+]

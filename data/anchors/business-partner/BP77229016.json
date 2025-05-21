@@ -1,0 +1,24 @@
+{
+  "id": "BP77229016",
+  "businessPartnerNumber": "BP77229016",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2021-12-11",
+  "lastModified": "2024-12-23",
+  "firstName": "304726102b9af92ed4681b8a0097cc73",
+  "lastName": "81a6c18ab6de475b7a5e972773b92b77",
+  "gender": "Trans female",
+  "birthDate": "7d8db8c34b80344f472c9446831cfd30",
+  "nationality": "DE",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "BP18908524",
+  "businessPartnerNumber": "BP18908524",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "A",
+  "createdAt": "2024-03-22",
+  "lastModified": "2025-04-24",
+  "firstName": "1d4a1ffc18f13a042d47a370b851c71f",
+  "lastName": "b052abefcc5995d3ab1cb7ec8603d883",
+  "middleName": "Cameron",
+  "gender": "Trans",
+  "birthDate": "91ccc38c37ada657583bb8bb0e142895",
+  "nationality": "AF",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

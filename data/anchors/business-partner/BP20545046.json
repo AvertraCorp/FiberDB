@@ -1,0 +1,26 @@
+{
+  "id": "BP20545046",
+  "businessPartnerNumber": "BP20545046",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2022-03-11",
+  "lastModified": "2025-02-23",
+  "firstName": "73a668f15b40929276f025b1a8ff6755",
+  "lastName": "490d434035e5aa33c143b8612b799bc9",
+  "middleName": "London",
+  "title": "Ms.",
+  "gender": "Xenogender",
+  "birthDate": "509716de650f16d9aeb34f263831284a",
+  "nationality": "TV",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

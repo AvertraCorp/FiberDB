@@ -1,0 +1,26 @@
+{
+  "id": "BP74735302",
+  "businessPartnerNumber": "BP74735302",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "C",
+  "createdAt": "2023-12-29",
+  "lastModified": "2025-01-18",
+  "firstName": "63b8d24cd27501bc5d8d1b7c3a829cfc",
+  "lastName": "1a630877af8ff662b639954f0b647ab6",
+  "middleName": "Avery",
+  "title": "Dr.",
+  "gender": "Cis",
+  "birthDate": "8f215b820774a974ec7dc0a534173db7",
+  "nationality": "AR",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

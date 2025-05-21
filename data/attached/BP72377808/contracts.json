@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT09983735",
+      "utilityType": "SEWER",
+      "startDate": "2023-10-08",
+      "status": "INACTIVE",
+      "tariffType": "SEWER_BQD",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT05450613",
+      "utilityType": "WATER",
+      "startDate": "2022-09-23",
+      "status": "INACTIVE",
+      "tariffType": "WATER_ZKT",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

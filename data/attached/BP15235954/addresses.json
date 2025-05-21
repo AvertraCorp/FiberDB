@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Torp Freeway",
+      "houseNumber": "152",
+      "postalCode": "19377-4118",
+      "city": "Bruenland",
+      "country": "SE",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2020-12-12"
+    }
+  ]
+]

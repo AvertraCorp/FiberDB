@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Jolie.Mills99@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-10"
+    },
+    {
+      "type": "PHONE",
+      "value": "276-607-5794 x850",
+      "isPrimary": true,
+      "validFrom": "2024-06-09"
+    },
+    {
+      "type": "MOBILE",
+      "value": "948.432.4663 x62615",
+      "isPrimary": false,
+      "validFrom": "2025-03-10"
+    }
+  ]
+]

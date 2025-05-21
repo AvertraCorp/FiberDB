@@ -1,0 +1,26 @@
+{
+  "id": "BP09746320",
+  "businessPartnerNumber": "BP09746320",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "A",
+  "createdAt": "2024-06-17",
+  "lastModified": "2025-05-04",
+  "firstName": "944a302cd3eca374839a4a75f337f958",
+  "lastName": "23d6f812274b32e59d284dab3323fbe7",
+  "middleName": "Taylor",
+  "title": "Dr.",
+  "gender": "Woman",
+  "birthDate": "f2c46435fae56dc0e55aba9847874944",
+  "nationality": "KM",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

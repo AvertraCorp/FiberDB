@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Gregoria43@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-27"
+    },
+    {
+      "type": "PHONE",
+      "value": "979-340-9013 x6431",
+      "isPrimary": true,
+      "validFrom": "2024-08-30"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-687-288-7832 x81957",
+      "isPrimary": false,
+      "validFrom": "2024-05-22"
+    },
+    {
+      "type": "FAX",
+      "value": "1-421-280-8220 x81851",
+      "isPrimary": false,
+      "validFrom": "2025-03-26"
+    }
+  ]
+]

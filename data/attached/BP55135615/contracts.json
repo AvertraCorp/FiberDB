@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT04577041",
+      "utilityType": "WATER",
+      "startDate": "2022-11-07",
+      "status": "ACTIVE",
+      "tariffType": "WATER_JFW",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

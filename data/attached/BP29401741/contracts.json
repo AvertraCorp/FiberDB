@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT66614623",
+      "utilityType": "STRM",
+      "startDate": "2024-10-04",
+      "status": "PENDING",
+      "tariffType": "STRM_LUI",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

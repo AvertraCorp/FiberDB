@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Salma35@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-13"
+    },
+    {
+      "type": "PHONE",
+      "value": "556.559.5157 x160",
+      "isPrimary": true,
+      "validFrom": "2024-08-16"
+    },
+    {
+      "type": "MOBILE",
+      "value": "354-506-7253 x276",
+      "isPrimary": false,
+      "validFrom": "2025-03-18"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT93396341",
+      "utilityType": "ELEC",
+      "startDate": "2025-02-13",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_LCM",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT52326168",
+      "utilityType": "SEWER",
+      "startDate": "2024-01-30",
+      "status": "PENDING",
+      "tariffType": "SEWER_IVQ",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

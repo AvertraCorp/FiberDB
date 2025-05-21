@@ -1,0 +1,24 @@
+{
+  "id": "BP76163592",
+  "businessPartnerNumber": "BP76163592",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "C",
+  "createdAt": "2020-06-20",
+  "lastModified": "2025-04-03",
+  "firstName": "303915849cb313cc6def5aa1637bee8d",
+  "lastName": "e2572881cdd2f4b3222518894e9816ae",
+  "gender": "Multigender",
+  "birthDate": "be6c6b4ed1e0eb1bf6e0bc34ba488ce0",
+  "nationality": "DM",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

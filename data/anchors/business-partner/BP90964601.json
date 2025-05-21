@@ -1,0 +1,25 @@
+{
+  "id": "BP90964601",
+  "businessPartnerNumber": "BP90964601",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2023-04-12",
+  "lastModified": "2024-11-30",
+  "firstName": "d1e4865d2cc35832e30c26c0eccee15a",
+  "lastName": "7bde085479f44c5ab5c8318a9648c404",
+  "middleName": "Nico",
+  "gender": "Omnigender",
+  "birthDate": "b69c088a0f3bc35dfe6e9ff31fc86397",
+  "nationality": "AQ",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

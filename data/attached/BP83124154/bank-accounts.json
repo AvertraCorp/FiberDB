@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "6RIPADPV",
+      "accountNumber": "40966885",
+      "accountHolder": "Genevieve Little",
+      "iban": "AZ61VNCA64870084894472017557",
+      "bic": "CGBHDEPGXND",
+      "validFrom": "2020-08-30",
+      "isDefault": true
+    },
+    {
+      "bankId": "OXCYDHGP",
+      "accountNumber": "48497244",
+      "accountHolder": "Yolanda Borer",
+      "iban": "IL717070566281829034082",
+      "bic": "FNBTBAE1",
+      "validFrom": "2022-09-19",
+      "isDefault": false
+    }
+  ]
+]

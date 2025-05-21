@@ -1,0 +1,25 @@
+{
+  "id": "BP09479044",
+  "businessPartnerNumber": "BP09479044",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2021-12-21",
+  "lastModified": "2025-04-28",
+  "firstName": "bef8dc077de6208ac93372838f21623b",
+  "lastName": "f064b824f03effcd668726585116e45b",
+  "middleName": "Arden",
+  "gender": "Transsexual female",
+  "birthDate": "78c89902190b2e1b21a9eee1c21e1d97",
+  "nationality": "GQ",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

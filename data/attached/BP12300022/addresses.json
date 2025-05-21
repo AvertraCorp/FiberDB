@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "W 6th Avenue",
+      "houseNumber": "166",
+      "postalCode": "27227",
+      "city": "Anabelport",
+      "country": "FK",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2021-02-09"
+    },
+    {
+      "street": "Main Road",
+      "houseNumber": "237",
+      "postalCode": "02775",
+      "city": "Lake Velma",
+      "country": "HN",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2021-11-06"
+    }
+  ]
+]

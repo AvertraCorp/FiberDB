@@ -1,0 +1,24 @@
+{
+  "id": "BP46209690",
+  "businessPartnerNumber": "BP46209690",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2020-10-11",
+  "lastModified": "2025-04-09",
+  "firstName": "b65523b03264fae49292cc04b40c6951",
+  "lastName": "5d36676f7d876f86c2a3938e0d908bca",
+  "gender": "Transsexual person",
+  "birthDate": "822f6136c6f700657a562b6d566724d6",
+  "nationality": "PH",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

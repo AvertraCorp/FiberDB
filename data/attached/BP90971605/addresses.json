@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Towne Street",
+      "houseNumber": "331",
+      "postalCode": "34280-4536",
+      "city": "Modesto",
+      "country": "LA",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2021-09-03"
+    }
+  ]
+]

@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Vicarage Lane",
+      "houseNumber": "632",
+      "postalCode": "21130",
+      "city": "Eltaland",
+      "country": "TW",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2022-12-13"
+    }
+  ]
+]

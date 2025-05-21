@@ -1,0 +1,25 @@
+{
+  "id": "BP46785508",
+  "businessPartnerNumber": "BP46785508",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2021-06-29",
+  "lastModified": "2025-05-03",
+  "firstName": "2f7aa42e53beec338bc212466ec5b055",
+  "lastName": "53b93c7e6c5911a5afe0d949a002ef05",
+  "title": "Mrs.",
+  "gender": "Cisgender woman",
+  "birthDate": "dc2af6f2218bb1f8ce4dea6ea7adfec5",
+  "nationality": "GF",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

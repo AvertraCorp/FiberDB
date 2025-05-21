@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Yadira_Maggio46@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-05-26"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-522-932-7908 x035",
+      "isPrimary": true,
+      "validFrom": "2024-10-01"
+    }
+  ]
+]

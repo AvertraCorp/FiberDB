@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Eden.Bednar@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-11-02"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-293-215-0449",
+      "isPrimary": true,
+      "validFrom": "2025-05-09"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-705-930-7704",
+      "isPrimary": false,
+      "validFrom": "2024-09-10"
+    }
+  ]
+]

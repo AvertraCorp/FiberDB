@@ -1,0 +1,25 @@
+{
+  "id": "BP26439550",
+  "businessPartnerNumber": "BP26439550",
+  "category": "2",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2025-03-13",
+  "lastModified": "2025-04-09",
+  "organizationName": "Crooks - Kunde",
+  "organizationType": "LLC",
+  "industryKey": "RETAIL",
+  "foundationDate": "2022-08-02",
+  "legalForm": "LTD",
+  "vatNumber": "8PFSZCGWE5",
+  "taxNumber": "792543671",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

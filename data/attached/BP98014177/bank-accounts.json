@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "A3N7XSDU",
+      "accountNumber": "26914539",
+      "accountHolder": "Darryl Rau",
+      "iban": "SA844910G6967NV0O508325L",
+      "bic": "YTWNLCIM",
+      "validFrom": "2024-05-11",
+      "isDefault": true
+    },
+    {
+      "bankId": "9DXV0FYW",
+      "accountNumber": "89679164",
+      "accountHolder": "Raul Turcotte",
+      "iban": "MU19RJKM5139510023338009094YRX",
+      "bic": "NOKXPG6R",
+      "validFrom": "2023-11-27",
+      "isDefault": false
+    }
+  ]
+]

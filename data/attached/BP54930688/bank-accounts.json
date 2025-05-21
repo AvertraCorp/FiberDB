@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "OAWKSGQ0",
+      "accountNumber": "65284778",
+      "accountHolder": "Roderick Boyer",
+      "iban": "CY5910046005855189Y6ZA7745C0",
+      "bic": "HKONLBNIXXX",
+      "validFrom": "2021-01-13",
+      "isDefault": true
+    },
+    {
+      "bankId": "M9UPAHBN",
+      "accountNumber": "75571472",
+      "accountHolder": "Kathy Hermann",
+      "iban": "RO91JDJDK23738886M860N92",
+      "bic": "NAKKRO25",
+      "validFrom": "2025-01-16",
+      "isDefault": false
+    }
+  ]
+]

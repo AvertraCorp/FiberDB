@@ -1,0 +1,24 @@
+{
+  "id": "BP18128449",
+  "businessPartnerNumber": "BP18128449",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "C",
+  "createdAt": "2022-05-18",
+  "lastModified": "2024-11-22",
+  "firstName": "2006915b51bf38a5e3ea242acc8cf980",
+  "lastName": "83b2db7b722e99d7d0f0f5323218f790",
+  "gender": "Demi-man",
+  "birthDate": "d6271d434297f8f7d4e684aed0910f9a",
+  "nationality": "TM",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

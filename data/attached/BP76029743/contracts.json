@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT72746476",
+      "utilityType": "WASTE",
+      "startDate": "2025-04-07",
+      "status": "PENDING",
+      "tariffType": "WASTE_HYT",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT29856619",
+      "utilityType": "SEWER",
+      "startDate": "2023-05-13",
+      "status": "PENDING",
+      "tariffType": "SEWER_BCV",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT71793848",
+      "utilityType": "WATER",
+      "startDate": "2022-06-19",
+      "status": "PENDING",
+      "tariffType": "WATER_WJD",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

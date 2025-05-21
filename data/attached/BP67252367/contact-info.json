@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Bethel.Monahan55@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-08"
+    },
+    {
+      "type": "PHONE",
+      "value": "410.672.9929 x89156",
+      "isPrimary": true,
+      "validFrom": "2024-06-14"
+    }
+  ]
+]

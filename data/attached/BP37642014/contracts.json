@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT32175884",
+      "utilityType": "WATER",
+      "startDate": "2024-04-04",
+      "status": "PENDING",
+      "tariffType": "WATER_HVF",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Willy.Schuppe@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-27"
+    },
+    {
+      "type": "PHONE",
+      "value": "698-369-8631 x8224",
+      "isPrimary": true,
+      "validFrom": "2024-10-06"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(567) 209-2974 x296",
+      "isPrimary": false,
+      "validFrom": "2024-08-03"
+    }
+  ]
+]

@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT31260083",
+      "utilityType": "STRM",
+      "startDate": "2024-10-31",
+      "status": "ACTIVE",
+      "tariffType": "STRM_HYJ",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

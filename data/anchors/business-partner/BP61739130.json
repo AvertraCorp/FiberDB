@@ -1,0 +1,26 @@
+{
+  "id": "BP61739130",
+  "businessPartnerNumber": "BP61739130",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "A",
+  "createdAt": "2021-02-22",
+  "lastModified": "2025-04-28",
+  "firstName": "c580e8f61a39ea028b870319805399e5",
+  "lastName": "323965534094d07aea23092b321a4f37",
+  "middleName": "Marlowe",
+  "title": "Mrs.",
+  "gender": "Cisgender",
+  "birthDate": "69b73e6815cb32039cc0074069cb1b20",
+  "nationality": "TR",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

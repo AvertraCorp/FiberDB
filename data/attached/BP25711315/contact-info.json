@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Jaycee_Dickinson10@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-03-19"
+    },
+    {
+      "type": "PHONE",
+      "value": "(725) 834-1603 x096",
+      "isPrimary": true,
+      "validFrom": "2024-08-15"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(570) 353-2893 x6775",
+      "isPrimary": false,
+      "validFrom": "2025-04-09"
+    },
+    {
+      "type": "FAX",
+      "value": "(329) 707-5664 x87320",
+      "isPrimary": false,
+      "validFrom": "2024-09-09"
+    }
+  ]
+]

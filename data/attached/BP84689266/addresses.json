@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Gerlach Creek",
+      "houseNumber": "440",
+      "postalCode": "36025-9884",
+      "city": "Fort Bo",
+      "country": "BD",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2022-08-29"
+    },
+    {
+      "street": "N Water Street",
+      "houseNumber": "593",
+      "postalCode": "01598-7750",
+      "city": "Jillianboro",
+      "country": "AE",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2022-03-01"
+    }
+  ]
+]

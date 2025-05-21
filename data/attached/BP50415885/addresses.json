@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Felipe Turnpike",
+      "houseNumber": "524",
+      "postalCode": "01520",
+      "city": "Tremblaymouth",
+      "country": "BQ",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2022-07-05"
+    }
+  ]
+]

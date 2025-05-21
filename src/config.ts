@@ -1,6 +1,10 @@
 /**
  * FiberDB Configuration
  */
+import path from 'path';
+
+// Use absolute path for storage
+const cwd = process.cwd();
 
 export default {
   // Server configuration
@@ -11,7 +15,7 @@ export default {
   
   // Storage configuration
   storage: {
-    baseDir: process.env.STORAGE_DIR || 'data',
+    baseDir: process.env.STORAGE_DIR ? path.resolve(process.env.STORAGE_DIR) : path.join(cwd, 'data'),
     ttlDays: parseInt(process.env.TTL_DAYS || '180', 10),
   },
   

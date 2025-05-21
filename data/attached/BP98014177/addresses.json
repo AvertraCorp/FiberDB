@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Emie Lane",
+      "houseNumber": "963",
+      "postalCode": "08246",
+      "city": "Lake Archibaldfurt",
+      "country": "NO",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2023-10-13"
+    },
+    {
+      "street": "Oak Street",
+      "houseNumber": "997",
+      "postalCode": "35963",
+      "city": "Janniebury",
+      "country": "NE",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2024-03-23"
+    }
+  ]
+]

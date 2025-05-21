@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Lew.Strosin@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-11-18"
+    },
+    {
+      "type": "PHONE",
+      "value": "335.254.4904 x783",
+      "isPrimary": true,
+      "validFrom": "2024-08-07"
+    }
+  ]
+]

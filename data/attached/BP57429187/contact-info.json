@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Domenico69@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-06-21"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-638-498-1474 x833",
+      "isPrimary": true,
+      "validFrom": "2025-04-29"
+    }
+  ]
+]

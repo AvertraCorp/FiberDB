@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT32918770",
+      "utilityType": "WASTE",
+      "startDate": "2023-07-26",
+      "status": "PENDING",
+      "tariffType": "WASTE_JHI",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

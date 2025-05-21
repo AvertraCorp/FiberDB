@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Alexie.Cole23@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-03-04"
+    },
+    {
+      "type": "PHONE",
+      "value": "589.843.7562 x43967",
+      "isPrimary": true,
+      "validFrom": "2024-09-27"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(900) 587-1222 x9706",
+      "isPrimary": false,
+      "validFrom": "2024-10-20"
+    },
+    {
+      "type": "FAX",
+      "value": "470.684.7761 x4106",
+      "isPrimary": false,
+      "validFrom": "2024-12-05"
+    }
+  ]
+]

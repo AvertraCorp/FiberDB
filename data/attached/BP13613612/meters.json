@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT27587730",
+      "serialNumber": "RSRPLMS0BP",
+      "meterType": "ETF",
+      "installationDate": "2022-10-13",
+      "status": "ACTIVE",
+      "registerCount": 2,
+      "isSmartMeter": true,
+      "readingCycle": "01",
+      "lastReadingDate": "2025-05-11",
+      "lastReadingValue": 649
+    }
+  ]
+]

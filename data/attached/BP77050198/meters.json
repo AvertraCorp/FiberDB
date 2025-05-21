@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT44648297",
+      "serialNumber": "HIBBQ9LPLI",
+      "meterType": "W2",
+      "installationDate": "2024-11-23",
+      "status": "ACTIVE",
+      "registerCount": 4,
+      "isSmartMeter": true,
+      "readingCycle": "02",
+      "lastReadingDate": "2025-04-15",
+      "lastReadingValue": 9502
+    }
+  ]
+]

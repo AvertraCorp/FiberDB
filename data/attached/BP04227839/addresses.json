@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Jacobson Shores",
+      "houseNumber": "564",
+      "postalCode": "43133",
+      "city": "Jasencester",
+      "country": "BD",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2021-04-27"
+    },
+    {
+      "street": "Trinity Green",
+      "houseNumber": "860",
+      "postalCode": "08319",
+      "city": "Raynormouth",
+      "country": "GU",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2021-02-24"
+    }
+  ]
+]

@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "U5KKK8WI",
+      "accountNumber": "82602851",
+      "accountHolder": "Curtis Beer",
+      "iban": "IS640000890505050700104090",
+      "bic": "OPBRAFVV",
+      "validFrom": "2023-10-11",
+      "isDefault": true
+    }
+  ]
+]

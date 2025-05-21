@@ -1,0 +1,26 @@
+{
+  "id": "BP69572247",
+  "businessPartnerNumber": "BP69572247",
+  "category": "1",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "C",
+  "createdAt": "2022-05-03",
+  "lastModified": "2025-01-03",
+  "firstName": "c996da43aa2cb1de3b9d7e94069d5ee0",
+  "lastName": "705e5bd4d023f219caeab9b6b3f20984",
+  "middleName": "River",
+  "title": "Miss",
+  "gender": "Intersex person",
+  "birthDate": "967cc3ef6c28e08accaaddbe236538d7",
+  "nationality": "AS",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

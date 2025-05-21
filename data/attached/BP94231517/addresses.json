@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Mafalda Place",
+      "houseNumber": "6",
+      "postalCode": "13354",
+      "city": "Uptonview",
+      "country": "FM",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2021-06-26"
+    },
+    {
+      "street": "Aufderhar Mountains",
+      "houseNumber": "864",
+      "postalCode": "93775",
+      "city": "Austin",
+      "country": "NE",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2022-12-31"
+    },
+    {
+      "street": "Orin Parks",
+      "houseNumber": "824",
+      "postalCode": "93513-9008",
+      "city": "Racine",
+      "country": "AL",
+      "region": "SOUTH",
+      "addressType": "MAIL",
+      "validFrom": "2023-05-04"
+    }
+  ]
+]

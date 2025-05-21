@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "B77U2DZY",
+      "accountNumber": "95623012",
+      "accountHolder": "Mr. Van Lang",
+      "iban": "RS38008152696503343033",
+      "bic": "LCSITVI3",
+      "validFrom": "2022-03-17",
+      "isDefault": true
+    }
+  ]
+]

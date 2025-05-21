@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Norris.Raynor45@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-11-23"
+    },
+    {
+      "type": "PHONE",
+      "value": "664.775.9797",
+      "isPrimary": true,
+      "validFrom": "2024-12-06"
+    }
+  ]
+]

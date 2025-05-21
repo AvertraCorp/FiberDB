@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Viva19@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-13"
+    },
+    {
+      "type": "PHONE",
+      "value": "271-290-6525 x563",
+      "isPrimary": true,
+      "validFrom": "2024-07-18"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-507-392-6857",
+      "isPrimary": false,
+      "validFrom": "2024-06-23"
+    },
+    {
+      "type": "FAX",
+      "value": "291.303.6601",
+      "isPrimary": false,
+      "validFrom": "2024-06-30"
+    }
+  ]
+]

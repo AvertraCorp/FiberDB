@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT06392556",
+      "utilityType": "WASTE",
+      "startDate": "2023-02-15",
+      "status": "PENDING",
+      "tariffType": "WASTE_BUN",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT84942410",
+      "utilityType": "STRM",
+      "startDate": "2023-07-20",
+      "status": "PENDING",
+      "tariffType": "STRM_FUQ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

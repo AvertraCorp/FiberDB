@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Uriah.Mann@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-22"
+    },
+    {
+      "type": "PHONE",
+      "value": "242-301-4216 x135",
+      "isPrimary": true,
+      "validFrom": "2025-03-22"
+    },
+    {
+      "type": "MOBILE",
+      "value": "902-285-7807",
+      "isPrimary": false,
+      "validFrom": "2025-01-09"
+    }
+  ]
+]

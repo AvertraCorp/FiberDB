@@ -1,0 +1,25 @@
+{
+  "id": "BP89406895",
+  "businessPartnerNumber": "BP89406895",
+  "category": "2",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "A",
+  "createdAt": "2022-11-03",
+  "lastModified": "2025-02-07",
+  "organizationName": "Keebler - Hilpert",
+  "organizationType": "SOLE",
+  "industryKey": "RETAIL",
+  "foundationDate": "2008-05-18",
+  "legalForm": "LTD",
+  "vatNumber": "HSSXBOCE5V",
+  "taxNumber": "182871445",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

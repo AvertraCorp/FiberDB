@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Tristin9@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-03"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-387-610-7805 x1453",
+      "isPrimary": true,
+      "validFrom": "2024-05-29"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-824-875-3102",
+      "isPrimary": false,
+      "validFrom": "2025-01-24"
+    },
+    {
+      "type": "FAX",
+      "value": "1-650-996-1253 x1930",
+      "isPrimary": false,
+      "validFrom": "2024-09-02"
+    }
+  ]
+]

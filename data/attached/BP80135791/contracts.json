@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT14325119",
+      "utilityType": "ELEC",
+      "startDate": "2024-04-15",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_SUJ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

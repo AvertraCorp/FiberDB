@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT03292718",
+      "utilityType": "GAS",
+      "startDate": "2024-12-19",
+      "status": "INACTIVE",
+      "tariffType": "GAS_WJP",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

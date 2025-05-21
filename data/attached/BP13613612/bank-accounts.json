@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "KZFYJDMG",
+      "accountNumber": "98252497",
+      "accountHolder": "Muriel Koepp",
+      "iban": "MR2477005003236170092092504",
+      "bic": "OKGIBOJSSY4",
+      "validFrom": "2021-10-26",
+      "isDefault": true
+    },
+    {
+      "bankId": "J1XB4E6O",
+      "accountNumber": "42879482",
+      "accountHolder": "Juan Schowalter",
+      "iban": "IL400800780988002500515",
+      "bic": "DJRQCNF7",
+      "validFrom": "2021-04-28",
+      "isDefault": false
+    }
+  ]
+]

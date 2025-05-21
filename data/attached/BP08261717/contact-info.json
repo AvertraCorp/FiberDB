@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Manley5@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-24"
+    },
+    {
+      "type": "PHONE",
+      "value": "926-516-0550 x2021",
+      "isPrimary": true,
+      "validFrom": "2024-11-26"
+    },
+    {
+      "type": "MOBILE",
+      "value": "680-285-7760 x560",
+      "isPrimary": false,
+      "validFrom": "2024-09-07"
+    },
+    {
+      "type": "FAX",
+      "value": "(892) 742-5322 x9284",
+      "isPrimary": false,
+      "validFrom": "2024-10-30"
+    }
+  ]
+]

@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Travon_Dooley87@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-08-11"
+    },
+    {
+      "type": "PHONE",
+      "value": "333-985-7735 x9462",
+      "isPrimary": true,
+      "validFrom": "2024-10-27"
+    },
+    {
+      "type": "MOBILE",
+      "value": "946-516-8885",
+      "isPrimary": false,
+      "validFrom": "2025-04-03"
+    },
+    {
+      "type": "FAX",
+      "value": "700-426-6780",
+      "isPrimary": false,
+      "validFrom": "2025-02-26"
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "E Jackson Street",
+      "houseNumber": "60",
+      "postalCode": "24265",
+      "city": "Grantboro",
+      "country": "IE",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2022-10-30"
+    },
+    {
+      "street": "N Main Street",
+      "houseNumber": "804",
+      "postalCode": "70856-7843",
+      "city": "South Freidaberg",
+      "country": "BM",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2024-09-12"
+    },
+    {
+      "street": "George Glen",
+      "houseNumber": "236",
+      "postalCode": "34140-1042",
+      "city": "Savannah",
+      "country": "ST",
+      "region": "WEST",
+      "addressType": "MAIL",
+      "validFrom": "2022-01-10"
+    }
+  ]
+]

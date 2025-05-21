@@ -1,0 +1,25 @@
+{
+  "id": "BP09452694",
+  "businessPartnerNumber": "BP09452694",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2020-08-09",
+  "lastModified": "2024-12-25",
+  "firstName": "9122a07bd63b9e10886f9bc651e85dc4",
+  "lastName": "af4dabee3f4a29cb43381c829af53d2267186104235e40edc42b847b6ffcf91e",
+  "middleName": "Nico",
+  "gender": "T* woman",
+  "birthDate": "90ceb19caeb3d11321fa5acae30f9973",
+  "nationality": "SA",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

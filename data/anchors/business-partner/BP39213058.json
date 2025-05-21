@@ -1,0 +1,25 @@
+{
+  "id": "BP39213058",
+  "businessPartnerNumber": "BP39213058",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2022-11-29",
+  "lastModified": "2025-04-15",
+  "firstName": "ce774dc8608e44eae5e9b59250c2e04d",
+  "lastName": "a9be9a8320f658a41d44ed6cedc76dd8",
+  "middleName": "Drew",
+  "gender": "Gender fluid",
+  "birthDate": "d6c4ef4bba8a9e119c291a7d959e6a4a",
+  "nationality": "BI",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "BP76435793",
+  "businessPartnerNumber": "BP76435793",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2021-08-26",
+  "lastModified": "2024-11-21",
+  "firstName": "42457deb76313e7b49cd1c7884a46b35",
+  "lastName": "f46d5273661095a08db893dd53e30f90",
+  "middleName": "Finley",
+  "gender": "Transsexual",
+  "birthDate": "aacf4fae5d9fe594d136a34b7c3d154b",
+  "nationality": "FO",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

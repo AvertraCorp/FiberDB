@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT35730146",
+      "utilityType": "WATER",
+      "startDate": "2023-11-20",
+      "status": "PENDING",
+      "tariffType": "WATER_SWA",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

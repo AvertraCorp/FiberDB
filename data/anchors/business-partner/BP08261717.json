@@ -1,0 +1,25 @@
+{
+  "id": "BP08261717",
+  "businessPartnerNumber": "BP08261717",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "A",
+  "createdAt": "2022-11-24",
+  "lastModified": "2025-04-16",
+  "firstName": "a985303f5035d54b85c86b5acd926e6c",
+  "lastName": "d3c7dca48d436dc93f3cba7c0d199ede",
+  "title": "Mrs.",
+  "gender": "Trans woman",
+  "birthDate": "5b4e2034c38e0afdc490d6da1930d872",
+  "nationality": "AQ",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

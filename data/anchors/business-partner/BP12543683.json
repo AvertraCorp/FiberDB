@@ -1,0 +1,25 @@
+{
+  "id": "BP12543683",
+  "businessPartnerNumber": "BP12543683",
+  "category": "2",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "A",
+  "createdAt": "2024-11-07",
+  "lastModified": "2025-05-19",
+  "organizationName": "Heathcote LLC",
+  "organizationType": "SOLE",
+  "industryKey": "RETAIL",
+  "foundationDate": "2011-09-02",
+  "legalForm": "GMBH",
+  "vatNumber": "1D5GO6KARJ",
+  "taxNumber": "457375701",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

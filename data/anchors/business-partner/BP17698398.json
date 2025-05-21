@@ -1,0 +1,25 @@
+{
+  "id": "BP17698398",
+  "businessPartnerNumber": "BP17698398",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "A",
+  "createdAt": "2021-02-06",
+  "lastModified": "2025-03-08",
+  "firstName": "106140b5c654dbd75a68a89c1403966b",
+  "lastName": "968cfb3e8d883024c3e28069efd92421",
+  "middleName": "Nico",
+  "gender": "Transgender female",
+  "birthDate": "3519d05e911dfcec53749c4b5ac51049",
+  "nationality": "AX",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

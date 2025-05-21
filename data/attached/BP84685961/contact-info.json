@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Joan.Nitzsche64@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-12-20"
+    },
+    {
+      "type": "PHONE",
+      "value": "986-851-1784 x84737",
+      "isPrimary": true,
+      "validFrom": "2024-05-22"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(295) 278-6510 x0359",
+      "isPrimary": false,
+      "validFrom": "2025-04-23"
+    },
+    {
+      "type": "FAX",
+      "value": "713-802-5197 x4297",
+      "isPrimary": false,
+      "validFrom": "2024-06-14"
+    }
+  ]
+]

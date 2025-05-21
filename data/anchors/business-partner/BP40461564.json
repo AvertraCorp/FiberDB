@@ -1,0 +1,25 @@
+{
+  "id": "BP40461564",
+  "businessPartnerNumber": "BP40461564",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2022-02-24",
+  "lastModified": "2024-11-29",
+  "firstName": "8d4902e840ec317086a9a23b8ba3e6bc",
+  "lastName": "4cebdf0b2fbec6432f7ef55087aab8f3",
+  "title": "Ms.",
+  "gender": "Male to female transgender woman",
+  "birthDate": "a72ce98336d5528bc64c6abb1063a3ff",
+  "nationality": "CI",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

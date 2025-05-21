@@ -1,0 +1,25 @@
+{
+  "id": "BP05035864",
+  "businessPartnerNumber": "BP05035864",
+  "category": "2",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2022-08-26",
+  "lastModified": "2025-04-30",
+  "organizationName": "Johns, Rolfson and Stamm",
+  "organizationType": "SOLE",
+  "industryKey": "FIN",
+  "foundationDate": "2019-10-19",
+  "legalForm": "LLC",
+  "vatNumber": "GTYTS0UCRK",
+  "taxNumber": "577048123",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

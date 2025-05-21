@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Duane14@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-03-01"
+    },
+    {
+      "type": "PHONE",
+      "value": "(782) 898-4990 x1058",
+      "isPrimary": true,
+      "validFrom": "2024-11-08"
+    }
+  ]
+]

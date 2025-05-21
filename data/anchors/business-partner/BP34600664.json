@@ -1,0 +1,25 @@
+{
+  "id": "BP34600664",
+  "businessPartnerNumber": "BP34600664",
+  "category": "1",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2023-04-26",
+  "lastModified": "2024-12-01",
+  "firstName": "471cb08349922b444e51235793c13d36",
+  "lastName": "d510f720af53398485e06c52880f21c0",
+  "middleName": "Skyler",
+  "gender": "Two-spirit",
+  "birthDate": "5fd4263ed60b46d7bb393b6ec226d5eb",
+  "nationality": "AM",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

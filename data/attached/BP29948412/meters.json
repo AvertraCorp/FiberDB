@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT16593382",
+      "serialNumber": "RCZ2O5WE1J",
+      "meterType": "G1",
+      "installationDate": "2024-03-05",
+      "status": "ACTIVE",
+      "registerCount": 2,
+      "isSmartMeter": true,
+      "readingCycle": "01",
+      "lastReadingDate": "2025-04-26",
+      "lastReadingValue": 4548
+    }
+  ]
+]

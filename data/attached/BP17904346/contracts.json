@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT18539436",
+      "utilityType": "GAS",
+      "startDate": "2025-05-10",
+      "status": "PENDING",
+      "tariffType": "GAS_HLZ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT07660938",
+      "utilityType": "GAS",
+      "startDate": "2023-02-19",
+      "status": "ACTIVE",
+      "tariffType": "GAS_WYJ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT73978345",
+      "utilityType": "ELEC",
+      "startDate": "2024-05-29",
+      "status": "PENDING",
+      "tariffType": "ELEC_TNO",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT55902123",
+      "utilityType": "WATER",
+      "startDate": "2023-04-14",
+      "status": "INACTIVE",
+      "tariffType": "WATER_DAF",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

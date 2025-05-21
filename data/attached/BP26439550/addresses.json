@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Emerson Landing",
+      "houseNumber": "784",
+      "postalCode": "75643-9561",
+      "city": "San Antonio",
+      "country": "DZ",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2024-06-22"
+    },
+    {
+      "street": "Lyla Isle",
+      "houseNumber": "213",
+      "postalCode": "80308-8215",
+      "city": "Missouri City",
+      "country": "BH",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2022-05-02"
+    },
+    {
+      "street": "Mann Roads",
+      "houseNumber": "619",
+      "postalCode": "28024",
+      "city": "Kilbackland",
+      "country": "BM",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2024-12-17"
+    }
+  ]
+]

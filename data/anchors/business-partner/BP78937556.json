@@ -1,0 +1,25 @@
+{
+  "id": "BP78937556",
+  "businessPartnerNumber": "BP78937556",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2023-07-23",
+  "lastModified": "2025-02-28",
+  "firstName": "2203ef5c66b6b216ca156eed6dc6a369",
+  "lastName": "1f4fb31b91ab7503642834b7ecbb204a",
+  "title": "Ms.",
+  "gender": "Male to female trans woman",
+  "birthDate": "7a576a1d1f61bcc76a27e777723b8215",
+  "nationality": "CX",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

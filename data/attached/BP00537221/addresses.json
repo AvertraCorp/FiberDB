@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "E Main",
+      "houseNumber": "718",
+      "postalCode": "35917",
+      "city": "Jonathanchester",
+      "country": "PA",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2022-07-25"
+    }
+  ]
+]

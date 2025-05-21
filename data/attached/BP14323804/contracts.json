@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT95806563",
+      "utilityType": "STRM",
+      "startDate": "2023-01-15",
+      "status": "ACTIVE",
+      "tariffType": "STRM_XFB",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT99515553",
+      "utilityType": "SEWER",
+      "startDate": "2024-04-02",
+      "status": "ACTIVE",
+      "tariffType": "SEWER_NXB",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

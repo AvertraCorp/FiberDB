@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Haley River",
+      "houseNumber": "997",
+      "postalCode": "27299",
+      "city": "West Daltonstead",
+      "country": "EH",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2023-08-07"
+    },
+    {
+      "street": "S Railroad Street",
+      "houseNumber": "18",
+      "postalCode": "88521-6675",
+      "city": "New Mossiechester",
+      "country": "CF",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2021-06-04"
+    }
+  ]
+]

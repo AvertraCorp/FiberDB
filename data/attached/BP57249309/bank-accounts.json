@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "QZPXG2FF",
+      "accountNumber": "50849249",
+      "accountHolder": "Evan Kerluke-Bashirian",
+      "iban": "GI97XWHQ06D6V8J22200260",
+      "bic": "GYPVLAA1",
+      "validFrom": "2021-06-25",
+      "isDefault": true
+    }
+  ]
+]

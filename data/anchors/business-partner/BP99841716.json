@@ -1,0 +1,24 @@
+{
+  "id": "BP99841716",
+  "businessPartnerNumber": "BP99841716",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "C",
+  "createdAt": "2022-05-24",
+  "lastModified": "2025-05-20",
+  "firstName": "145b6307c4fe30c13267abdad6136101",
+  "lastName": "20c44af66493aa222cc7398117582db3",
+  "gender": "Transgender female",
+  "birthDate": "37c4e69d07bee2544fcf0086b3e45906",
+  "nationality": "LC",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

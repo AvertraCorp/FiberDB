@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "CJCCR7VP",
+      "accountNumber": "48352254",
+      "accountHolder": "Dr. Dennis O'Connell",
+      "iban": "GE58FO0856553512781453",
+      "bic": "MXRBZWQ6XXX",
+      "validFrom": "2020-12-11",
+      "isDefault": true
+    },
+    {
+      "bankId": "QTAYBLM0",
+      "accountNumber": "12834685",
+      "accountHolder": "Delia Hills I",
+      "iban": "PT36009667608004308788841",
+      "bic": "DFIRKH66",
+      "validFrom": "2022-01-27",
+      "isDefault": false
+    }
+  ]
+]

@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Gus Passage",
+      "houseNumber": "134",
+      "postalCode": "66134",
+      "city": "Amelychester",
+      "country": "NE",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2025-03-28"
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Itzel Pine",
+      "houseNumber": "68",
+      "postalCode": "66576",
+      "city": "Fort Troyfurt",
+      "country": "BZ",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2021-03-08"
+    },
+    {
+      "street": "Manley Knolls",
+      "houseNumber": "764",
+      "postalCode": "62913",
+      "city": "Doral",
+      "country": "MA",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2021-06-22"
+    },
+    {
+      "street": "Yew Tree Close",
+      "houseNumber": "864",
+      "postalCode": "45694-3505",
+      "city": "New Baronburgh",
+      "country": "MS",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2023-02-16"
+    }
+  ]
+]

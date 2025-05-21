@@ -1,0 +1,25 @@
+{
+  "id": "BP54930688",
+  "businessPartnerNumber": "BP54930688",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2022-04-18",
+  "lastModified": "2025-03-08",
+  "firstName": "4e5fb36d9af2a82e3a60659175b5f6ea",
+  "lastName": "209e5a2b6c89e27da5f3e17c97b49a01",
+  "middleName": "Phoenix",
+  "gender": "MTF",
+  "birthDate": "eb658cffce7546e43d942b24a41feee2",
+  "nationality": "PL",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

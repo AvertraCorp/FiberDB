@@ -1,0 +1,25 @@
+{
+  "id": "BP79785931",
+  "businessPartnerNumber": "BP79785931",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "C",
+  "createdAt": "2022-07-27",
+  "lastModified": "2025-01-27",
+  "firstName": "851c8cd4db8ed6b1ac2e880617dc9b25",
+  "lastName": "151ab79c7e2b0afbd3f45713d897cd9c",
+  "title": "Mrs.",
+  "gender": "Gender fluid",
+  "birthDate": "c66a9bf12fb4d7a5c188075df593b145",
+  "nationality": "SG",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

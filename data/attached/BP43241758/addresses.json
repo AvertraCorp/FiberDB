@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Zemlak Village",
+      "houseNumber": "792",
+      "postalCode": "09703-9845",
+      "city": "Francisbury",
+      "country": "ZA",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2025-03-28"
+    },
+    {
+      "street": "Talbot Road",
+      "houseNumber": "201",
+      "postalCode": "35006-4796",
+      "city": "North Dewitt",
+      "country": "VN",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2024-11-16"
+    }
+  ]
+]

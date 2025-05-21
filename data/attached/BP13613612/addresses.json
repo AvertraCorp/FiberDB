@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Reina Dam",
+      "houseNumber": "673",
+      "postalCode": "79253-8255",
+      "city": "North Nevacester",
+      "country": "AE",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2020-12-06"
+    },
+    {
+      "street": "Schaefer Station",
+      "houseNumber": "981",
+      "postalCode": "89859",
+      "city": "McAllen",
+      "country": "TK",
+      "region": "WEST",
+      "addressType": "INST",
+      "validFrom": "2025-03-12"
+    }
+  ]
+]

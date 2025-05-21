@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT87783461",
+      "serialNumber": "QQVFGOMHH9",
+      "meterType": "E1",
+      "installationDate": "2024-07-05",
+      "status": "ACTIVE",
+      "registerCount": 1,
+      "isSmartMeter": true,
+      "readingCycle": "01",
+      "lastReadingDate": "2024-12-17",
+      "lastReadingValue": 1109
+    }
+  ]
+]

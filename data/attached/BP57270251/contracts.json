@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "contractId": "CT75704626",
+      "utilityType": "ELEC",
+      "startDate": "2024-07-17",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_GMI",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT83910636",
+      "utilityType": "ELEC",
+      "startDate": "2023-05-26",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_HLA",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT01153890",
+      "utilityType": "ELEC",
+      "startDate": "2023-06-14",
+      "status": "INACTIVE",
+      "tariffType": "ELEC_WVH",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

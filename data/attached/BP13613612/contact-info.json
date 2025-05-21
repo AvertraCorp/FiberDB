@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Clement.Wuckert@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-07-09"
+    },
+    {
+      "type": "PHONE",
+      "value": "667-266-7705 x8281",
+      "isPrimary": true,
+      "validFrom": "2024-10-07"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-457-796-2216 x95354",
+      "isPrimary": false,
+      "validFrom": "2024-10-28"
+    },
+    {
+      "type": "FAX",
+      "value": "(758) 629-6146 x11456",
+      "isPrimary": false,
+      "validFrom": "2025-05-19"
+    }
+  ]
+]

@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT78054622",
+      "serialNumber": "83AYBLTOPU",
+      "meterType": "WSM",
+      "installationDate": "2022-11-07",
+      "status": "ACTIVE",
+      "registerCount": 4,
+      "isSmartMeter": true,
+      "readingCycle": "04",
+      "lastReadingDate": "2025-04-18",
+      "lastReadingValue": 4829
+    }
+  ]
+]

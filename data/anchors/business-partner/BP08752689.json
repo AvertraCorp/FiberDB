@@ -1,0 +1,24 @@
+{
+  "id": "BP08752689",
+  "businessPartnerNumber": "BP08752689",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "A",
+  "createdAt": "2020-08-19",
+  "lastModified": "2025-03-07",
+  "firstName": "3365a91ee45a96315a8a5fbd120bc372",
+  "lastName": "5550fc7c040968fa2706509f093a2137",
+  "gender": "Demiflux",
+  "birthDate": "850012cb8951b1538ca561598191ae40",
+  "nationality": "MO",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

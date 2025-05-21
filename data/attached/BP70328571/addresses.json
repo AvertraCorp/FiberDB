@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Upton Oval",
+      "houseNumber": "224",
+      "postalCode": "19925-9686",
+      "city": "Carrollborough",
+      "country": "CI",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2021-09-15"
+    },
+    {
+      "street": "Wehner Circles",
+      "houseNumber": "484",
+      "postalCode": "76213",
+      "city": "Fort Torrey",
+      "country": "PG",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2022-03-07"
+    },
+    {
+      "street": "Harris Way",
+      "houseNumber": "787",
+      "postalCode": "23256",
+      "city": "Leschside",
+      "country": "BV",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2024-09-15"
+    }
+  ]
+]

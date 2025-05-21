@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Reanna Ford",
+      "houseNumber": "168",
+      "postalCode": "31880",
+      "city": "Lake Myrl",
+      "country": "TH",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2021-08-06"
+    },
+    {
+      "street": "E Washington Street",
+      "houseNumber": "975",
+      "postalCode": "46763-7701",
+      "city": "Port Deefurt",
+      "country": "SY",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2023-04-10"
+    }
+  ]
+]

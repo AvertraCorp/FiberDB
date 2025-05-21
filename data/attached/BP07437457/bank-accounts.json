@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "UUS6C5XQ",
+      "accountNumber": "36399296",
+      "accountHolder": "Luke Olson",
+      "iban": "MR7600090070577007004001578",
+      "bic": "VWKXCIMX",
+      "validFrom": "2022-01-18",
+      "isDefault": true
+    },
+    {
+      "bankId": "ROX8VQJD",
+      "accountNumber": "62425324",
+      "accountHolder": "Manuel Littel",
+      "iban": "PL02047300048180801066008557",
+      "bic": "CRGTBSGRXXX",
+      "validFrom": "2022-12-22",
+      "isDefault": false
+    }
+  ]
+]

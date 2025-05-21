@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "3UKNKKF3",
+      "accountNumber": "88389087",
+      "accountHolder": "Francis Parker",
+      "iban": "FO7370065880050771",
+      "bic": "FYAJINNB",
+      "validFrom": "2022-08-19",
+      "isDefault": true
+    },
+    {
+      "bankId": "2GH7NUM9",
+      "accountNumber": "18034312",
+      "accountHolder": "Stuart Bartell Sr.",
+      "iban": "TL033542605500286414150",
+      "bic": "EAPJROCN",
+      "validFrom": "2023-04-05",
+      "isDefault": false
+    }
+  ]
+]

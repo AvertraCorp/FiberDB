@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT54955776",
+      "utilityType": "SEWER",
+      "startDate": "2022-09-28",
+      "status": "INACTIVE",
+      "tariffType": "SEWER_ADI",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

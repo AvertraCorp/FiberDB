@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "PITDG8KC",
+      "accountNumber": "31893246",
+      "accountHolder": "Maxine Schumm",
+      "iban": "FR050050049089298MJ62775592",
+      "bic": "DEKMKWOB",
+      "validFrom": "2022-08-10",
+      "isDefault": true
+    }
+  ]
+]

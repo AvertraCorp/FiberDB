@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Amie Forks",
+      "houseNumber": "397",
+      "postalCode": "80146-2714",
+      "city": "Lelandtown",
+      "country": "TH",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2024-06-03"
+    },
+    {
+      "street": "Adelia Hill",
+      "houseNumber": "333",
+      "postalCode": "53174",
+      "city": "New Thaddeus",
+      "country": "TV",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2022-03-13"
+    }
+  ]
+]

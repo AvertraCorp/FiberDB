@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT20999912",
+      "utilityType": "WATER",
+      "startDate": "2022-08-26",
+      "status": "PENDING",
+      "tariffType": "WATER_RAN",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT92868320",
+      "utilityType": "WATER",
+      "startDate": "2024-02-24",
+      "status": "ACTIVE",
+      "tariffType": "WATER_FEC",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

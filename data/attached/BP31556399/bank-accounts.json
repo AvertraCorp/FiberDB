@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "ROBBZUQW",
+      "accountNumber": "11708153",
+      "accountHolder": "Allison Moen",
+      "iban": "MT73CYBP0047630300189103I44V601",
+      "bic": "MJCNDK0D",
+      "validFrom": "2023-06-11",
+      "isDefault": true
+    },
+    {
+      "bankId": "4FEVNZ8S",
+      "accountNumber": "95403340",
+      "accountHolder": "John Rempel I",
+      "iban": "QA14GOGV40J4059X795733919Y016",
+      "bic": "AKFPHT57XXX",
+      "validFrom": "2023-02-28",
+      "isDefault": false
+    }
+  ]
+]

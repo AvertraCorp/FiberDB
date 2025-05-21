@@ -1,0 +1,26 @@
+{
+  "id": "BP15388466",
+  "businessPartnerNumber": "BP15388466",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "A",
+  "createdAt": "2024-01-04",
+  "lastModified": "2024-12-18",
+  "firstName": "8f7d7192cee66149b29bc6394b64162c",
+  "lastName": "d712ad18c5e9bd542c406cd9fa7e9a44",
+  "middleName": "Finley",
+  "title": "Miss",
+  "gender": "Hermaphrodite",
+  "birthDate": "237ae43c25a36f486b9fd819e250aca7",
+  "nationality": "VE",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

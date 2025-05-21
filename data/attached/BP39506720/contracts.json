@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT27470399",
+      "utilityType": "WASTE",
+      "startDate": "2024-06-10",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_SNG",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "QUARTERLY"
+    },
+    {
+      "contractId": "CT37890355",
+      "utilityType": "WATER",
+      "startDate": "2023-04-08",
+      "status": "ACTIVE",
+      "tariffType": "WATER_EXV",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

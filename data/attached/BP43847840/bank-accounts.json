@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "OWNRSIDV",
+      "accountNumber": "35931338",
+      "accountHolder": "Ernesto Bogisich",
+      "iban": "DK6723637607474215",
+      "bic": "CPMIPLGGXXX",
+      "validFrom": "2021-08-27",
+      "isDefault": true
+    }
+  ]
+]

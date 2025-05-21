@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "PQ6ZEPVQ",
+      "accountNumber": "17958062",
+      "accountHolder": "Casey Medhurst",
+      "iban": "GB70HEQE51196777128445",
+      "bic": "ZHVOSMSY",
+      "validFrom": "2020-08-04",
+      "isDefault": true
+    }
+  ]
+]

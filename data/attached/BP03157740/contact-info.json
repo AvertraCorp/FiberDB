@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Melyna_Robel@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-03-22"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-589-911-2132 x0607",
+      "isPrimary": true,
+      "validFrom": "2024-12-14"
+    },
+    {
+      "type": "MOBILE",
+      "value": "768-527-1551 x64972",
+      "isPrimary": false,
+      "validFrom": "2024-10-30"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT86107195",
+      "utilityType": "STRM",
+      "startDate": "2025-03-12",
+      "status": "INACTIVE",
+      "tariffType": "STRM_CSP",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    },
+    {
+      "contractId": "CT62524361",
+      "utilityType": "WATER",
+      "startDate": "2025-05-18",
+      "status": "PENDING",
+      "tariffType": "WATER_LFG",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

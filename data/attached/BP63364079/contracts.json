@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT05061857",
+      "utilityType": "ELEC",
+      "startDate": "2023-11-15",
+      "status": "PENDING",
+      "tariffType": "ELEC_JCK",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

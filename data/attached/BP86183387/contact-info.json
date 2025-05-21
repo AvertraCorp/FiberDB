@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Lindsay_Marks48@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-09-13"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-369-209-6158",
+      "isPrimary": true,
+      "validFrom": "2024-10-30"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(215) 754-0908 x8617",
+      "isPrimary": false,
+      "validFrom": "2024-09-21"
+    },
+    {
+      "type": "FAX",
+      "value": "(685) 208-9808 x924",
+      "isPrimary": false,
+      "validFrom": "2025-01-24"
+    }
+  ]
+]

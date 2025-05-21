@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT16393065",
+      "utilityType": "STRM",
+      "startDate": "2024-03-04",
+      "status": "INACTIVE",
+      "tariffType": "STRM_YTQ",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT21715790",
+      "utilityType": "WASTE",
+      "startDate": "2024-12-15",
+      "status": "PENDING",
+      "tariffType": "WASTE_RIJ",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT74056636",
+      "utilityType": "ELEC",
+      "startDate": "2024-04-23",
+      "status": "ACTIVE",
+      "tariffType": "ELEC_BWY",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "QUARTERLY"
+    }
+  ]
+]

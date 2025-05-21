@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "The Meadows",
+      "houseNumber": "587",
+      "postalCode": "05280",
+      "city": "New Ulicesfield",
+      "country": "AS",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2021-01-17"
+    }
+  ]
+]

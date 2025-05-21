@@ -1,0 +1,25 @@
+{
+  "id": "BP69972647",
+  "businessPartnerNumber": "BP69972647",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2023-10-31",
+  "lastModified": "2025-04-18",
+  "firstName": "8c6263ef69d436b1b553c883d6cac13f",
+  "lastName": "64208c756fb7f7e8900bd623b9bd5e51",
+  "middleName": "Reagan",
+  "gender": "Cisgender man",
+  "birthDate": "ef999047861c7e86beca051176b0df22",
+  "nationality": "AR",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Frami Heights",
+      "houseNumber": "386",
+      "postalCode": "79349",
+      "city": "Simeoncester",
+      "country": "DO",
+      "region": "NORTH",
+      "addressType": "BILL",
+      "validFrom": "2023-10-29"
+    },
+    {
+      "street": "Emerald Union",
+      "houseNumber": "794",
+      "postalCode": "64009",
+      "city": "South D'angelo",
+      "country": "TK",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2021-01-15"
+    },
+    {
+      "street": "N Broadway Street",
+      "houseNumber": "396",
+      "postalCode": "42231",
+      "city": "New Garrison",
+      "country": "CY",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2021-09-10"
+    }
+  ]
+]

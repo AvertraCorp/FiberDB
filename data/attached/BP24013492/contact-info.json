@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Jesse.Monahan@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-10"
+    },
+    {
+      "type": "PHONE",
+      "value": "(373) 360-6218 x953",
+      "isPrimary": true,
+      "validFrom": "2024-12-02"
+    },
+    {
+      "type": "MOBILE",
+      "value": "306-717-1969",
+      "isPrimary": false,
+      "validFrom": "2025-03-30"
+    },
+    {
+      "type": "FAX",
+      "value": "(220) 271-2403 x11126",
+      "isPrimary": false,
+      "validFrom": "2025-01-24"
+    }
+  ]
+]

@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "VCT1K13J",
+      "accountNumber": "82450451",
+      "accountHolder": "Genevieve Senger",
+      "iban": "HR7300393450095060088",
+      "bic": "MQXIGNQG5FX",
+      "validFrom": "2020-07-26",
+      "isDefault": true
+    }
+  ]
+]

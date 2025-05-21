@@ -1,0 +1,26 @@
+{
+  "id": "BP00247984",
+  "businessPartnerNumber": "BP00247984",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2022-12-04",
+  "lastModified": "2025-02-05",
+  "firstName": "9b40dd323e4f8f5fcefd821a716f6477",
+  "lastName": "3694cb7d877a5b56891eed7e3bd8541a",
+  "middleName": "Sawyer",
+  "title": "Mrs.",
+  "gender": "Trans person",
+  "birthDate": "bb88c8eae95ba68761c8e6ac414f748b",
+  "nationality": "RS",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

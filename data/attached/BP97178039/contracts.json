@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT74506332",
+      "utilityType": "STRM",
+      "startDate": "2022-12-18",
+      "status": "ACTIVE",
+      "tariffType": "STRM_YNN",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

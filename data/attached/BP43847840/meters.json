@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT15348030",
+      "serialNumber": "LJWD6ZX2QZ",
+      "meterType": "WSM",
+      "installationDate": "2024-12-05",
+      "status": "ACTIVE",
+      "registerCount": 4,
+      "isSmartMeter": true,
+      "readingCycle": "01",
+      "lastReadingDate": "2025-02-27",
+      "lastReadingValue": 5631
+    }
+  ]
+]

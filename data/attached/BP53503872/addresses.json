@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Brown Trafficway",
+      "houseNumber": "83",
+      "postalCode": "73359-3869",
+      "city": "North Pattiefort",
+      "country": "DM",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2021-08-19"
+    },
+    {
+      "street": "Winona Creek",
+      "houseNumber": "849",
+      "postalCode": "53457",
+      "city": "Lake Evelyn",
+      "country": "TK",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2024-02-29"
+    },
+    {
+      "street": "The Orchard",
+      "houseNumber": "82",
+      "postalCode": "03232",
+      "city": "Maximillianworth",
+      "country": "NF",
+      "region": "NORTH",
+      "addressType": "MAIL",
+      "validFrom": "2024-08-17"
+    }
+  ]
+]

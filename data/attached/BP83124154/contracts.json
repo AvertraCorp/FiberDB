@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT82131190",
+      "utilityType": "SEWER",
+      "startDate": "2023-10-29",
+      "status": "ACTIVE",
+      "tariffType": "SEWER_RAE",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

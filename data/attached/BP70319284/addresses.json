@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Marianne Cape",
+      "houseNumber": "922",
+      "postalCode": "96182-3491",
+      "city": "Isabelside",
+      "country": "PR",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2022-11-01"
+    },
+    {
+      "street": "Sporer Grove",
+      "houseNumber": "961",
+      "postalCode": "28173-0908",
+      "city": "Jerdeboro",
+      "country": "DZ",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2022-01-04"
+    }
+  ]
+]

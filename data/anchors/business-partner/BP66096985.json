@@ -1,0 +1,24 @@
+{
+  "id": "BP66096985",
+  "businessPartnerNumber": "BP66096985",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "C",
+  "createdAt": "2025-02-07",
+  "lastModified": "2025-03-17",
+  "firstName": "ad26d4eff61f5de0cf36d453296eb2ed",
+  "lastName": "a3372b52cdaf344ee7d24e4f541a0190",
+  "gender": "Transmasculine",
+  "birthDate": "abcd25e8769d8c622adc130479ffd513",
+  "nationality": "CX",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

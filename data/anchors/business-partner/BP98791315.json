@@ -1,0 +1,25 @@
+{
+  "id": "BP98791315",
+  "businessPartnerNumber": "BP98791315",
+  "category": "2",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "A",
+  "createdAt": "2025-04-30",
+  "lastModified": "2025-04-10",
+  "organizationName": "Schmidt - Greenholt",
+  "organizationType": "CORP",
+  "industryKey": "FIN",
+  "foundationDate": "2023-02-12",
+  "legalForm": "LTD",
+  "vatNumber": "OD6BQKDURX",
+  "taxNumber": "354959685",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

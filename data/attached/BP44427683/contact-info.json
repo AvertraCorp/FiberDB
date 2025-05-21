@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Antwan9@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-01-20"
+    },
+    {
+      "type": "PHONE",
+      "value": "805-447-1046 x20679",
+      "isPrimary": true,
+      "validFrom": "2024-12-19"
+    }
+  ]
+]

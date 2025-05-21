@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT03725132",
+      "utilityType": "ELEC",
+      "startDate": "2022-09-28",
+      "status": "PENDING",
+      "tariffType": "ELEC_LBJ",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

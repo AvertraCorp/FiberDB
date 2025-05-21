@@ -1,0 +1,24 @@
+{
+  "id": "BP59255740",
+  "businessPartnerNumber": "BP59255740",
+  "category": "1",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "A",
+  "createdAt": "2023-07-19",
+  "lastModified": "2024-12-17",
+  "firstName": "1156b4aa9b0338b4edeccdcbb335bdb9",
+  "lastName": "d8f8966b33920b4468895dfbbd69985a",
+  "gender": "Woman",
+  "birthDate": "30b7f44297889f2849a25e678e6758a8",
+  "nationality": "MK",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

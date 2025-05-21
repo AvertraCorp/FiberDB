@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT01081614",
+      "utilityType": "STRM",
+      "startDate": "2022-12-16",
+      "status": "PENDING",
+      "tariffType": "STRM_CAT",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

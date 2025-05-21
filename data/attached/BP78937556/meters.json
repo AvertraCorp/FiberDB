@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "meterId": "MT87155993",
+      "serialNumber": "6EBCMYXL3T",
+      "meterType": "WSM",
+      "installationDate": "2022-06-08",
+      "status": "ACTIVE",
+      "registerCount": 1,
+      "isSmartMeter": false,
+      "readingCycle": "04",
+      "lastReadingDate": "2024-12-26",
+      "lastReadingValue": 6343
+    },
+    {
+      "meterId": "MT96145980",
+      "serialNumber": "WLKBBZ4GWG",
+      "meterType": "GSM",
+      "installationDate": "2024-08-04",
+      "status": "ACTIVE",
+      "registerCount": 3,
+      "isSmartMeter": false,
+      "readingCycle": "04",
+      "lastReadingDate": "2025-05-12",
+      "lastReadingValue": 9545
+    }
+  ]
+]

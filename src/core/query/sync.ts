@@ -9,12 +9,23 @@ import {
   documentCache, 
   queryCache, 
   fileExistsCache, 
-  getCacheKey 
+  getCacheKey,
+  getDocumentCacheKey,
+  getAttachedCacheKey
 } from "../../utils/cache";
 import { loadJSON } from "../storage";
 import { decryptFields, matchCondition } from "./utils";
 import { useIndexForQuery } from "../indexing";
 import type { QueryOptions } from "../../types";
+
+// Batch size for optimized processing
+// For small queries (< 10 items), this effectively processes all at once
+// For larger queries, it processes in manageable chunks
+const BATCH_SIZE = 50;
+
+// Small query optimization threshold
+// For very small queries, we'll use specialized optimizations
+const SMALL_QUERY_THRESHOLD = 10;
 
 const ttlDays = config.storage.ttlDays;
 const ttlCutoff = new Date(Date.now() - ttlDays * 24 * 60 * 60 * 1000);
@@ -128,8 +139,21 @@ export function runStructuredQuery(query: QueryOptions) {
   performanceTracker.startPhase("findFiles");
   let files;
   
+  // For ID queries, fast path - skip directory listing
+  if (query.id) {
+    // Make sure file exists before proceeding
+    const idFilePath = path.join(anchorPath, `${query.id}.json`);
+    if (fs.existsSync(idFilePath)) {
+      files = [`${query.id}.json`];
+      performanceTracker.addDetail("idQuery", true);
+    } else {
+      console.log(`ID query file does not exist: ${idFilePath}`);
+      files = [];
+      performanceTracker.addDetail("idQueryFileNotFound", true);
+    }
+  }
   // If we've already found matches using indexes, use those
-  if (indexMatchedIds && indexMatchedIds.length > 0) {
+  else if (indexMatchedIds && indexMatchedIds.length > 0) {
     performanceTracker.addDetail("usingIndexResults", true);
     
     files = indexMatchedIds.map(id => {
@@ -140,10 +164,36 @@ export function runStructuredQuery(query: QueryOptions) {
       return `${id}.json`;
     });
   }
-  // Otherwise use the standard path
+  // Otherwise use the standard path with directory listing
   else {
     try {
-      files = query.id ? [`${query.id}.json`] : fs.readdirSync(anchorPath);
+      // Get cached list if available
+      const dirCacheKey = `dir:${query.primary}`;
+      let cachedFiles = !query.skipCache ? documentCache.get(dirCacheKey) : undefined;
+      
+      if (cachedFiles) {
+        files = cachedFiles;
+        performanceTracker.addDetail("usedCachedDirListing", true);
+      } else {
+        // Reset the file exists cache for this path to ensure fresh check
+        fileExistsCache.delete(anchorPath);
+        
+        // Do a fresh directory check and listing
+        const dirExists = fs.existsSync(anchorPath);
+        
+        if (dirExists) {
+          // Only try to read directory if it exists
+          files = fs.readdirSync(anchorPath);
+          // Cache the directory listing for future queries
+          if (!query.skipCache) {
+            documentCache.set(dirCacheKey, files);
+          }
+        } else {
+          // Directory doesn't exist, so no files
+          files = [];
+          performanceTracker.addDetail("error", `Entity type '${query.primary}' not found`);
+        }
+      }
       performanceTracker.addDetail("filesCount", files.length);
     } catch (error) {
       console.error("Error reading directory:", error);
@@ -156,114 +206,322 @@ export function runStructuredQuery(query: QueryOptions) {
   performanceTracker.startPhase("processFiles");
   let processedCount = 0;
   let filteredCount = 0;
-  
-  for (const file of files) {
-    const filePath = path.join(anchorPath, file);
-    performanceTracker.startPhase(`loadFile:${file}`);
-    
-    const baseRaw = loadJSON(filePath);
-    performanceTracker.endPhase(`loadFile:${file}`);
-    
-    if (!baseRaw) continue;
-    processedCount++;
 
-    // TTL filtering
-    performanceTracker.startPhase("ttlFiltering");
-    const baseDate = new Date(baseRaw.created_at || baseRaw.createdAt || Date.now());
-    const skippedDueToTTL = baseDate < ttlCutoff;
-    performanceTracker.endPhase("ttlFiltering");
+  // Fast path for ID queries and other very small queries
+  // But be careful not to use it for problematic edge cases
+  if (files.length <= SMALL_QUERY_THRESHOLD && (query.id || indexMatchedIds)) {
+    performanceTracker.addDetail("smallQueryOptimization", true);
     
-    if (skippedDueToTTL) {
-      filteredCount++;
-      continue;
-    }
-
-    performanceTracker.startPhase("decryption");
-    const base = decryptFields(baseRaw, query.decryptionKey);
-    performanceTracker.endPhase("decryption");
-
-    // Primary filtering
-    performanceTracker.startPhase("primaryFiltering");
-    const skipDueToFilter = query.filter && !matchCondition(base, query.filter);
-    performanceTracker.endPhase("primaryFiltering");
-    
-    if (skipDueToFilter) {
-      filteredCount++;
-      continue;
-    }
-
-    performanceTracker.startPhase("prepareResult");
-    const entry: Record<string, any> = { id: base.id };
-    if (!query.include || query.include.includes("*")) Object.assign(entry, base);
-    else query.include.forEach(f => { if (!f.includes(".")) entry[f] = base[f]; });
-    performanceTracker.endPhase("prepareResult");
-
-    // Handle attached collections
-    const attachedPath = path.join(config.storage.baseDir, "attached", base.id);
-    
-    performanceTracker.startPhase("processAttachments");
-    let attachmentsProcessed = 0;
-    
-    if (fs.existsSync(attachedPath)) {
-      const attachmentFiles = fs.readdirSync(attachedPath);
+    // For tiny queries, use direct processing without batching overhead
+    for (const file of files) {
+      // Optimized fast path for id queries
+      const entityId = file.replace('.json', '');
+      const cacheKey = getDocumentCacheKey(query.primary, entityId);
       
-      for (const attachmentFile of attachmentFiles) {
-        performanceTracker.startPhase(`attachment:${attachmentFile}`);
-        const key = attachmentFile.replace(".json", "");
-        attachmentsProcessed++;
+      // Cache check is especially important for small queries
+      let baseRaw;
+      if (!query.skipCache) {
+        baseRaw = documentCache.get(cacheKey);
+        if (baseRaw) {
+          performanceTracker.addDetail("cacheHits", (performanceTracker.details?.cacheHits || 0) + 1);
+        }
+      }
+      
+      if (baseRaw === undefined) {
+        const filePath = path.join(anchorPath, file);
+        performanceTracker.startPhase(`loadFile:${file}`);
+        baseRaw = loadJSON(filePath);
+        performanceTracker.endPhase(`loadFile:${file}`);
         
-        if (query.include && !query.include.includes("*") && !query.include.includes(key)) {
-          performanceTracker.endPhase(`attachment:${attachmentFile}`);
+        // Cache aggressively for small queries
+        if (baseRaw && !query.skipCache) {
+          documentCache.set(cacheKey, baseRaw);
+        }
+        
+        // Debug
+        console.log(`FastPath: Loaded entity ${entityId}, found: ${baseRaw ? 'yes' : 'no'}`);
+      }
+      
+      if (!baseRaw) continue;
+      processedCount++;
+      
+      // Apply TTL filtering unless explicitly skipped
+      if (!query.skipTTL) {
+        const baseDate = new Date(baseRaw.created_at || baseRaw.createdAt || Date.now());
+        if (baseDate < ttlCutoff) {
+          filteredCount++;
           continue;
         }
+      }
 
-        const docs = loadJSON(path.join(attachedPath, attachmentFile)) || [];
-        const docsCount = docs.length;
-        
-        performanceTracker.startPhase("decryptAttachments");
-        const decryptedDocs = docs.map((d: any) => decryptFields(d, query.decryptionKey));
-        performanceTracker.endPhase("decryptAttachments");
+      // Fast path processing for the rest
+      let base = baseRaw;
+      if (query.decryptionKey && baseRaw.__secure) {
+        base = decryptFields(baseRaw, query.decryptionKey);
+      }
+      
+      // Apply filter if needed (unlikely in ID query, but possible)
+      if (query.filter && !matchCondition(base, query.filter)) {
+        filteredCount++;
+        continue;
+      }
 
-        // Apply filters to documents if needed
-        let filteredDocs = decryptedDocs;
+      const entry: Record<string, any> = { id: base.id };
+      if (!query.include || query.include.includes("*")) {
+        Object.assign(entry, base);
+      } else {
+        query.include.forEach(f => { if (!f.includes(".")) entry[f] = base[f]; });
+      }
+
+      // Process attachments if needed
+      if (!query.include || query.include.includes("*") || query.include.some(f => f.includes("."))) {
+        const attachedPath = path.join(config.storage.baseDir, "attached", base.id);
         
-        // Process where conditions for attached documents
-        if (query.where) {
-          performanceTracker.startPhase("filterAttachments");
+        if (fs.existsSync(attachedPath)) {
+          const attachmentFiles = fs.readdirSync(attachedPath);
           
-          const keyPrefix = key + '.';
-          const relevantConditions = {};
-          
-          // Extract conditions relevant to this attachment
-          for (const [path, condition] of Object.entries(query.where)) {
-            if (path.startsWith(keyPrefix)) {
-              const fieldName = path.substring(keyPrefix.length);
-              relevantConditions[fieldName] = condition;
+          // Fast filter attachments for specific fields
+          const neededFiles = query.include && !query.include.includes("*") ?
+            attachmentFiles.filter(file => {
+              const key = file.replace(".json", "");
+              return query.include!.some(f => f === key || f.startsWith(`${key}.`));
+            }) : attachmentFiles;
+            
+          for (const attachmentFile of neededFiles) {
+            const key = attachmentFile.replace(".json", "");
+            
+            // Try cache first
+            const attachmentCacheKey = getAttachedCacheKey(base.id, key);
+            let docs = !query.skipCache ? documentCache.get(attachmentCacheKey) : undefined;
+            
+            if (docs === undefined) {
+              docs = loadJSON(path.join(attachedPath, attachmentFile)) || [];
+              
+              if (docs && !query.skipCache) {
+                documentCache.set(attachmentCacheKey, docs);
+              }
             }
+            
+            // Handle nested array structure
+            const flattenedDocs = Array.isArray(docs[0]) ? docs.flat() : docs;
+            
+            // Process docs
+            let resultDocs = query.decryptionKey ? 
+              flattenedDocs.map((d: any) => decryptFields(d, query.decryptionKey)) : 
+              flattenedDocs;
+              
+            // Apply any where conditions
+            if (query.where) {
+              const keyPrefix = key + '.';
+              const relevantConditions: Record<string, any> = {};
+              
+              for (const [path, condition] of Object.entries(query.where)) {
+                if (path.startsWith(keyPrefix)) {
+                  const fieldName = path.substring(keyPrefix.length);
+                  relevantConditions[fieldName] = condition;
+                }
+              }
+              
+              if (Object.keys(relevantConditions).length > 0) {
+                resultDocs = resultDocs.filter(doc => matchCondition(doc, relevantConditions));
+              }
+            }
+            
+            entry[key] = resultDocs;
           }
-          
-          // Apply the conditions
-          if (Object.keys(relevantConditions).length > 0) {
-            // Filter documents based on the relevant conditions
-            filteredDocs = decryptedDocs.filter(doc => matchCondition(doc, relevantConditions));
-            performanceTracker.addDetail(`${key}Filtered`, {
-              before: decryptedDocs.length,
-              after: filteredDocs.length
-            });
-          }
-          
-          performanceTracker.endPhase("filterAttachments");
+        }
+      }
+      
+      results.push(entry);
+    }
+  }
+  // Standard batch processing for larger queries or full-table scans
+  else {
+    // Print debug info for now
+    console.log(`Using standard path for ${files.length} files, id: ${query.id}`);
+    // Process files in batches for better memory management
+    for (let i = 0; i < files.length; i += BATCH_SIZE) {
+    const batchFiles = files.slice(i, i + BATCH_SIZE);
+    
+    for (const file of batchFiles) {
+      // First check document cache for this entity
+      const entityId = file.replace('.json', '');
+      const cacheKey = getDocumentCacheKey(query.primary, entityId);
+      
+      let baseRaw;
+      if (!query.skipCache) {
+        baseRaw = documentCache.get(cacheKey);
+        if (baseRaw) {
+          // If found in cache, increment cache hits counter
+          const cacheHits = (performanceTracker.details?.cacheHits || 0) + 1;
+          performanceTracker.addDetail("cacheHits", cacheHits);
+        }
+      }
+      
+      // If not in cache or cache skipped, load from file
+      if (baseRaw === undefined) {
+        const filePath = path.join(anchorPath, file);
+        performanceTracker.startPhase(`loadFile:${file}`);
+        
+        baseRaw = loadJSON(filePath);
+        performanceTracker.endPhase(`loadFile:${file}`);
+        
+        // Cache the loaded document if valid
+        if (baseRaw && !query.skipCache) {
+          documentCache.set(cacheKey, baseRaw);
+        }
+      }
+      
+      if (!baseRaw) continue;
+      processedCount++;
+
+      // TTL filtering - unless override provided
+      let skippedDueToTTL = false;
+      
+      // Only apply TTL filtering if not explicitly skipped
+      if (!query.skipTTL) {
+        const baseDate = new Date(baseRaw.created_at || baseRaw.createdAt || Date.now());
+        skippedDueToTTL = baseDate < ttlCutoff;
+        
+        if (skippedDueToTTL) {
+          performanceTracker.addDetail("ttlFiltered", (performanceTracker.details?.ttlFiltered || 0) + 1);
+          filteredCount++;
+          continue;
+        }
+      }
+      
+      // Apply primary filtering early for fast rejection
+      let base = baseRaw;
+      if (query.filter) {
+        // Pre-decrypt if using secure fields in filter
+        if (query.decryptionKey && baseRaw.__secure) {
+          performanceTracker.startPhase("decryption");
+          base = decryptFields(baseRaw, query.decryptionKey);
+          performanceTracker.endPhase("decryption");
         }
         
-        entry[key] = filteredDocs;
-        performanceTracker.endPhase(`attachment:${attachmentFile}`);
+        performanceTracker.startPhase("primaryFiltering");
+        const filterMatches = matchCondition(base, query.filter);
+        performanceTracker.endPhase("primaryFiltering");
+        
+        if (!filterMatches) {
+          filteredCount++;
+          continue;
+        }
+      } else if (query.decryptionKey && baseRaw.__secure) {
+        // Need to decrypt but wasn't needed for filtering
+        performanceTracker.startPhase("decryption");
+        base = decryptFields(baseRaw, query.decryptionKey);
+        performanceTracker.endPhase("decryption");
       }
+
+      performanceTracker.startPhase("prepareResult");
+      const entry: Record<string, any> = { id: base.id };
+      if (!query.include || query.include.includes("*")) {
+        Object.assign(entry, base);
+      } else {
+        query.include.forEach(f => { if (!f.includes(".")) entry[f] = base[f]; });
+      }
+      performanceTracker.endPhase("prepareResult");
+
+      // Only process attachments if needed
+      const needsAttachments = !query.include || 
+        query.include.includes("*") || 
+        query.include.some(f => f.includes("."));
+        
+      if (needsAttachments) {
+        const attachedPath = path.join(config.storage.baseDir, "attached", base.id);
+        
+        performanceTracker.startPhase("processAttachments");
+        let attachmentsProcessed = 0;
+        
+        if (fs.existsSync(attachedPath)) {
+          // Get list of all attachment files
+          const attachmentFiles = fs.readdirSync(attachedPath);
+          
+          // Filter to only required attachments to reduce processing
+          const includedAttachments = query.include && !query.include.includes("*") ?
+            attachmentFiles.filter(file => {
+              const key = file.replace(".json", "");
+              return query.include!.some(field => field === key || field.startsWith(`${key}.`));
+            }) : 
+            attachmentFiles;
+          
+          for (const attachmentFile of includedAttachments) {
+            performanceTracker.startPhase(`attachment:${attachmentFile}`);
+            const key = attachmentFile.replace(".json", "");
+            attachmentsProcessed++;
+            
+            // Check for where conditions related to this attachment
+            const hasWhereConditions = query.where && 
+              Object.keys(query.where).some(k => k.startsWith(`${key}.`));
+            
+            // Try to get from cache first
+            const attachmentCacheKey = getAttachedCacheKey(base.id, key);
+            let docs = !query.skipCache ? documentCache.get(attachmentCacheKey) : undefined;
+            
+            // If not found in cache, load from disk
+            if (docs === undefined) {
+              docs = loadJSON(path.join(attachedPath, attachmentFile)) || [];
+              
+              // Cache the result if valid
+              if (docs && !query.skipCache) {
+                documentCache.set(attachmentCacheKey, docs);
+              }
+            }
+            
+            // Handle nested array structure in attached data
+            const flattenedDocs = Array.isArray(docs[0]) ? docs.flat() : docs;
+            
+            // Decrypt if needed
+            const processedDocs = query.decryptionKey ? 
+              flattenedDocs.map((d: any) => decryptFields(d, query.decryptionKey)) : 
+              flattenedDocs;
+            
+            // Apply where conditions if needed
+            let resultDocs = processedDocs;
+            
+            if (hasWhereConditions && query.where) {
+              performanceTracker.startPhase("filterAttachments");
+              
+              const keyPrefix = key + '.';
+              const relevantConditions: Record<string, any> = {};
+              
+              // Extract only conditions relevant to this attachment
+              for (const [path, condition] of Object.entries(query.where)) {
+                if (path.startsWith(keyPrefix)) {
+                  const fieldName = path.substring(keyPrefix.length);
+                  relevantConditions[fieldName] = condition;
+                }
+              }
+              
+              // Apply filtering if we have conditions
+              if (Object.keys(relevantConditions).length > 0) {
+                resultDocs = processedDocs.filter(doc => matchCondition(doc, relevantConditions));
+                performanceTracker.addDetail(`${key}Filtered`, {
+                  before: processedDocs.length,
+                  after: resultDocs.length
+                });
+              }
+              
+              performanceTracker.endPhase("filterAttachments");
+            }
+            
+            entry[key] = resultDocs;
+            performanceTracker.endPhase(`attachment:${attachmentFile}`);
+          }
+        }
+        
+        performanceTracker.addDetail("attachmentsProcessed", attachmentsProcessed);
+        performanceTracker.endPhase("processAttachments");
+      }
+      
+      results.push(entry);
     }
     
-    performanceTracker.addDetail("attachmentsProcessed", attachmentsProcessed);
-    performanceTracker.endPhase("processAttachments");
-    
-    results.push(entry);
+    // Update the processed so far counter after each batch
+    performanceTracker.addDetail("processedSoFar", i + Math.min(BATCH_SIZE, files.length - i));
+    }
   }
   
   performanceTracker.addDetail("recordsStats", {

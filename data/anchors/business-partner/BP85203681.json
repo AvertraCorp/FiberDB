@@ -1,0 +1,25 @@
+{
+  "id": "BP85203681",
+  "businessPartnerNumber": "BP85203681",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2020-12-15",
+  "lastModified": "2025-04-30",
+  "firstName": "6d88a64ffb66cb541154bef2ceb1d118",
+  "lastName": "b5e1187591d20467ad9fbfff3a8a6877",
+  "middleName": "Bowie",
+  "gender": "Genderflux",
+  "birthDate": "ab2e03742c703b9422a7a699a1b322e6",
+  "nationality": "CD",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "BFBHU412",
+      "accountNumber": "21581983",
+      "accountHolder": "Patti Collins",
+      "iban": "DK4200970015500556",
+      "bic": "CQLSSRCGXXX",
+      "validFrom": "2021-11-10",
+      "isDefault": true
+    },
+    {
+      "bankId": "XLYBTEIQ",
+      "accountNumber": "53536365",
+      "accountHolder": "Henry Ebert",
+      "iban": "GT821J87J46127L61WL4D2K96N88",
+      "bic": "BDIFROP7XXX",
+      "validFrom": "2020-08-07",
+      "isDefault": false
+    }
+  ]
+]

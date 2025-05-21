@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Brendon.Kuhlman75@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-05-02"
+    },
+    {
+      "type": "PHONE",
+      "value": "285-919-3306 x531",
+      "isPrimary": true,
+      "validFrom": "2025-01-30"
+    }
+  ]
+]

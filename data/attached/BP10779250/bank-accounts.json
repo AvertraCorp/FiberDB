@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "X0J1TONH",
+      "accountNumber": "44145431",
+      "accountHolder": "Jerry Schmitt",
+      "iban": "RS05123290900300600048",
+      "bic": "BUJIMQ8I",
+      "validFrom": "2020-08-13",
+      "isDefault": true
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Elliott75@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-03-07"
+    },
+    {
+      "type": "PHONE",
+      "value": "(845) 983-4734 x312",
+      "isPrimary": true,
+      "validFrom": "2025-05-02"
+    },
+    {
+      "type": "MOBILE",
+      "value": "917.936.4021",
+      "isPrimary": false,
+      "validFrom": "2024-10-24"
+    }
+  ]
+]

@@ -1,0 +1,25 @@
+{
+  "id": "BP25140230",
+  "businessPartnerNumber": "BP25140230",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2022-01-27",
+  "lastModified": "2024-12-14",
+  "firstName": "d566c026a1b7e20a2d190eaa40671116",
+  "lastName": "fbf41d58fe494289ef2699d45da7508c",
+  "middleName": "Anderson",
+  "gender": "M2F",
+  "birthDate": "75fddfbec3647aa0051cb57a65b934e6",
+  "nationality": "KY",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

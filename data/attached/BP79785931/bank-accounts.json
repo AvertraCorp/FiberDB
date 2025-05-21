@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "97KHR2Z1",
+      "accountNumber": "51897357",
+      "accountHolder": "Miss Delia Wolff",
+      "iban": "ES8031210342420060010602",
+      "bic": "KUVERS13",
+      "validFrom": "2021-11-03",
+      "isDefault": true
+    },
+    {
+      "bankId": "EIA21D7D",
+      "accountNumber": "53451220",
+      "accountHolder": "Mae Prohaska",
+      "iban": "IL892508407004098059746",
+      "bic": "DNQUDKG5",
+      "validFrom": "2023-06-05",
+      "isDefault": false
+    }
+  ]
+]

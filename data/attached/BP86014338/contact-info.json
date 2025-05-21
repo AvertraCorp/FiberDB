@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Samara_Upton@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-12-29"
+    },
+    {
+      "type": "PHONE",
+      "value": "(630) 899-1254 x71504",
+      "isPrimary": true,
+      "validFrom": "2024-07-21"
+    }
+  ]
+]

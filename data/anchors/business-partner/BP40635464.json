@@ -1,0 +1,25 @@
+{
+  "id": "BP40635464",
+  "businessPartnerNumber": "BP40635464",
+  "category": "1",
+  "roles": [
+    "FLCU00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "C",
+  "createdAt": "2022-09-03",
+  "lastModified": "2025-03-29",
+  "firstName": "545962d0f7f1ab776c3b0059f13a9658",
+  "lastName": "516c864d982869ba4363ee3dd206d0bc",
+  "title": "Mr.",
+  "gender": "Demigender",
+  "birthDate": "b4ce0ca635024450e4a079bf12abb08b",
+  "nationality": "KE",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

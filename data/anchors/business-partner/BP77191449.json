@@ -1,0 +1,24 @@
+{
+  "id": "BP77191449",
+  "businessPartnerNumber": "BP77191449",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "C",
+  "createdAt": "2023-07-11",
+  "lastModified": "2025-01-25",
+  "firstName": "2cf36539a37d8b4458b83b5a48de22dd",
+  "lastName": "93b59a3492e8c31e0decbd7da9bb6ddb",
+  "gender": "Demi-woman",
+  "birthDate": "c5d5da90d1dbd79974400b231f7bef1e",
+  "nationality": "DE",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

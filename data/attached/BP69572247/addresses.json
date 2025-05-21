@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Kole Motorway",
+      "houseNumber": "569",
+      "postalCode": "87918-3346",
+      "city": "Feilburgh",
+      "country": "GG",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2023-07-26"
+    },
+    {
+      "street": "Robin Stream",
+      "houseNumber": "953",
+      "postalCode": "72735",
+      "city": "New Karenview",
+      "country": "BD",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2020-10-07"
+    }
+  ]
+]

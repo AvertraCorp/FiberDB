@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Wilma Views",
+      "houseNumber": "939",
+      "postalCode": "72434",
+      "city": "Lake Richardworth",
+      "country": "SH",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2023-11-10"
+    },
+    {
+      "street": "Maribel Coves",
+      "houseNumber": "463",
+      "postalCode": "65608",
+      "city": "West Filibertostad",
+      "country": "MM",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2024-03-19"
+    }
+  ]
+]

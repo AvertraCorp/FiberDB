@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Hand Meadow",
+      "houseNumber": "990",
+      "postalCode": "98723",
+      "city": "Port Justusfurt",
+      "country": "HK",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2022-06-14"
+    },
+    {
+      "street": "Veterans Memorial Drive",
+      "houseNumber": "816",
+      "postalCode": "10715",
+      "city": "Lake Alexandra",
+      "country": "DZ",
+      "region": "EAST",
+      "addressType": "INST",
+      "validFrom": "2023-09-22"
+    }
+  ]
+]

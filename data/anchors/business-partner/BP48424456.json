@@ -1,0 +1,25 @@
+{
+  "id": "BP48424456",
+  "businessPartnerNumber": "BP48424456",
+  "category": "2",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "C",
+  "createdAt": "2021-01-23",
+  "lastModified": "2025-05-05",
+  "organizationName": "Prosacco Inc",
+  "organizationType": "CORP",
+  "industryKey": "FIN",
+  "foundationDate": "2009-02-04",
+  "legalForm": "GMBH",
+  "vatNumber": "I4M6LHSGLK",
+  "taxNumber": "356902500",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

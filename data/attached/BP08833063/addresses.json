@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Cambridge Street",
+      "houseNumber": "605",
+      "postalCode": "32414",
+      "city": "New Anastacio",
+      "country": "HM",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2020-10-14"
+    },
+    {
+      "street": "Lodge Lane",
+      "houseNumber": "175",
+      "postalCode": "79100",
+      "city": "North Little Rock",
+      "country": "SC",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2020-09-27"
+    }
+  ]
+]

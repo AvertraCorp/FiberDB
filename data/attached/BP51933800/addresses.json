@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Funk Divide",
+      "houseNumber": "166",
+      "postalCode": "51710-3922",
+      "city": "Torphyfield",
+      "country": "BI",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2020-11-14"
+    },
+    {
+      "street": "Arnoldo Cliffs",
+      "houseNumber": "349",
+      "postalCode": "50049",
+      "city": "Fort Hazel",
+      "country": "BN",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2025-05-14"
+    }
+  ]
+]

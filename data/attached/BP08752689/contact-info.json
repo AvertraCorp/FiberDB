@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Dylan.Tromp@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-11"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-314-945-6807 x667",
+      "isPrimary": true,
+      "validFrom": "2025-04-12"
+    }
+  ]
+]

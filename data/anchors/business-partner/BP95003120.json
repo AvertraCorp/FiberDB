@@ -1,0 +1,25 @@
+{
+  "id": "BP95003120",
+  "businessPartnerNumber": "BP95003120",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "C",
+  "createdAt": "2020-08-23",
+  "lastModified": "2025-03-21",
+  "firstName": "d2cce547a5e4c6997942917cb6a6cdb6",
+  "lastName": "40066561ad2ab1a6909dc7c498bad6bc",
+  "middleName": "Arden",
+  "gender": "Trigender",
+  "birthDate": "f33243388dd74bd74f78b0b62440b360",
+  "nationality": "EG",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

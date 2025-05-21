@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT68935091",
+      "utilityType": "WASTE",
+      "startDate": "2024-05-01",
+      "status": "INACTIVE",
+      "tariffType": "WASTE_SGT",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "BIMONTHLY"
+    }
+  ]
+]

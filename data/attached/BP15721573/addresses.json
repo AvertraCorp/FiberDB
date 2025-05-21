@@ -1,0 +1,14 @@
+[
+  [
+    {
+      "street": "Gibson Parkway",
+      "houseNumber": "528",
+      "postalCode": "41842",
+      "city": "Thomashaven",
+      "country": "PL",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2023-07-19"
+    }
+  ]
+]

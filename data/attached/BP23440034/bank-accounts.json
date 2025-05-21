@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "NZMLWTO8",
+      "accountNumber": "53075197",
+      "accountHolder": "Marlon Lynch",
+      "iban": "CR51400580033073797168",
+      "bic": "CVFFBS8UXXX",
+      "validFrom": "2023-12-01",
+      "isDefault": true
+    }
+  ]
+]

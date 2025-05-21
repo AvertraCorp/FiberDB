@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "County Line Road",
+      "houseNumber": "733",
+      "postalCode": "10511-0896",
+      "city": "Kuhlmanborough",
+      "country": "VN",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2021-04-10"
+    },
+    {
+      "street": "Lavinia Grove",
+      "houseNumber": "749",
+      "postalCode": "87517-1152",
+      "city": "San Tan Valley",
+      "country": "BA",
+      "region": "WEST",
+      "addressType": "INST",
+      "validFrom": "2024-04-30"
+    },
+    {
+      "street": "Tillman Plains",
+      "houseNumber": "121",
+      "postalCode": "03625",
+      "city": "Wolfville",
+      "country": "AX",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2024-07-10"
+    }
+  ]
+]

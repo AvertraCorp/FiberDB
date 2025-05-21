@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "The Orchard",
+      "houseNumber": "913",
+      "postalCode": "54039-1066",
+      "city": "Mesa",
+      "country": "OM",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2023-05-14"
+    },
+    {
+      "street": "DuBuque Mount",
+      "houseNumber": "783",
+      "postalCode": "16488",
+      "city": "Schneidermouth",
+      "country": "AE",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2021-12-19"
+    }
+  ]
+]

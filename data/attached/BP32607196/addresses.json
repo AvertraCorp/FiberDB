@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Bahringer Bridge",
+      "houseNumber": "214",
+      "postalCode": "62844-2168",
+      "city": "Lake Jerry",
+      "country": "AO",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2024-10-05"
+    },
+    {
+      "street": "Stoney Lane",
+      "houseNumber": "329",
+      "postalCode": "17976-6644",
+      "city": "Audreyport",
+      "country": "BN",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2020-10-06"
+    },
+    {
+      "street": "Bosco Rest",
+      "houseNumber": "683",
+      "postalCode": "75831",
+      "city": "Lombard",
+      "country": "GP",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2024-02-05"
+    }
+  ]
+]

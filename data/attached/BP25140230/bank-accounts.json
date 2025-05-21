@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "CZAE1EBM",
+      "accountNumber": "30850412",
+      "accountHolder": "Mattie Hermann",
+      "iban": "JO84HLUG3844009008080045800477",
+      "bic": "XQLJMY81",
+      "validFrom": "2021-04-30",
+      "isDefault": true
+    }
+  ]
+]

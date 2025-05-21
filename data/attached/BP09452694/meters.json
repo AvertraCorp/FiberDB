@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "meterId": "MT28812765",
+      "serialNumber": "OZPBXXJFVF",
+      "meterType": "G2",
+      "installationDate": "2023-12-24",
+      "status": "ACTIVE",
+      "registerCount": 2,
+      "isSmartMeter": true,
+      "readingCycle": "03",
+      "lastReadingDate": "2025-02-16",
+      "lastReadingValue": 2091
+    }
+  ]
+]

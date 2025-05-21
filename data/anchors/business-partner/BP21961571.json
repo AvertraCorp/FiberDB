@@ -1,0 +1,25 @@
+{
+  "id": "BP21961571",
+  "businessPartnerNumber": "BP21961571",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "A",
+  "createdAt": "2025-02-07",
+  "lastModified": "2024-12-31",
+  "firstName": "5b0475757225686db652586b2bf185c3",
+  "lastName": "2f907897c4278c809448210c07fdb94e",
+  "title": "Ms.",
+  "gender": "Trigender",
+  "birthDate": "977b600320ef0748669eae4661c7f6f7",
+  "nationality": "MQ",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

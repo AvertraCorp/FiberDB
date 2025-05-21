@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "UC3INGOJ",
+      "accountNumber": "45639708",
+      "accountHolder": "Mr. Alfonso Breitenberg",
+      "iban": "FI8550032640155317",
+      "bic": "AXEKMQVWHG3",
+      "validFrom": "2024-02-24",
+      "isDefault": true
+    },
+    {
+      "bankId": "VYDROPU2",
+      "accountNumber": "47515423",
+      "accountHolder": "Jody Kris",
+      "iban": "AT968508477542404383",
+      "bic": "PBHDNZ1M",
+      "validFrom": "2022-06-25",
+      "isDefault": false
+    }
+  ]
+]

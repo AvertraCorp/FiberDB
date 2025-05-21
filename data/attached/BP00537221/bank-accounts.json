@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "RVEB0TKT",
+      "accountNumber": "88950299",
+      "accountHolder": "Mr. Victor Mayert-Haley",
+      "iban": "IS485463062730302060699038",
+      "bic": "ZNYKSX7BXXX",
+      "validFrom": "2022-10-10",
+      "isDefault": true
+    }
+  ]
+]

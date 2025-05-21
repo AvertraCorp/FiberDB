@@ -1,0 +1,25 @@
+{
+  "id": "BP53626099",
+  "businessPartnerNumber": "BP53626099",
+  "category": "2",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "C",
+  "createdAt": "2022-11-06",
+  "lastModified": "2025-03-10",
+  "organizationName": "Stamm - Reinger",
+  "organizationType": "LLC",
+  "industryKey": "FIN",
+  "foundationDate": "2006-01-15",
+  "legalForm": "AG",
+  "vatNumber": "AFH3YKNXRH",
+  "taxNumber": "944534841",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

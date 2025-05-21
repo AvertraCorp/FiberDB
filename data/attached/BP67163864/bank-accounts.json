@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "ZAFDCLEQ",
+      "accountNumber": "02510437",
+      "accountHolder": "Kathleen Connelly DDS",
+      "iban": "LT260041854100296028",
+      "bic": "TCRUHRUXL2M",
+      "validFrom": "2020-10-05",
+      "isDefault": true
+    },
+    {
+      "bankId": "3BON66EX",
+      "accountNumber": "72093152",
+      "accountHolder": "Mrs. Shannon Lang",
+      "iban": "MK770344224J135TE15",
+      "bic": "KAZJART066F",
+      "validFrom": "2024-09-10",
+      "isDefault": false
+    }
+  ]
+]

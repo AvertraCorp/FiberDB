@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "S17L0MLL",
+      "accountNumber": "92527564",
+      "accountHolder": "Lionel Hansen",
+      "iban": "MK19976184648629998",
+      "bic": "QRQDIEVGX76",
+      "validFrom": "2021-06-16",
+      "isDefault": true
+    },
+    {
+      "bankId": "BMTTMF3D",
+      "accountNumber": "28921083",
+      "accountHolder": "Lydia Krajcik Jr.",
+      "iban": "GT761481270411908P84S93PAS66",
+      "bic": "NFDJATOZXXX",
+      "validFrom": "2020-08-11",
+      "isDefault": false
+    }
+  ]
+]

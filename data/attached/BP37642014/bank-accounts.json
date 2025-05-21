@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "bankId": "6SI6JQET",
+      "accountNumber": "90895864",
+      "accountHolder": "Cedric Waters",
+      "iban": "NO8601300102005",
+      "bic": "SNSGSZXX",
+      "validFrom": "2024-07-25",
+      "isDefault": true
+    },
+    {
+      "bankId": "IVSFQISA",
+      "accountNumber": "35278187",
+      "accountHolder": "Lula Hudson",
+      "iban": "IE68GKZG90167206840596",
+      "bic": "SMXVVCR0BRK",
+      "validFrom": "2020-10-03",
+      "isDefault": false
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Euclid Avenue",
+      "houseNumber": "476",
+      "postalCode": "27663",
+      "city": "South Antoniastead",
+      "country": "SZ",
+      "region": "WEST",
+      "addressType": "BILL",
+      "validFrom": "2023-06-02"
+    },
+    {
+      "street": "Harry Islands",
+      "houseNumber": "525",
+      "postalCode": "97808",
+      "city": "Port Gabrielburgh",
+      "country": "GE",
+      "region": "CENTRAL",
+      "addressType": "INST",
+      "validFrom": "2025-03-29"
+    },
+    {
+      "street": "Cummings Rest",
+      "houseNumber": "210",
+      "postalCode": "09689",
+      "city": "Franeckiland",
+      "country": "BB",
+      "region": "NORTH",
+      "addressType": "MAIL",
+      "validFrom": "2023-03-01"
+    }
+  ]
+]

@@ -1,0 +1,25 @@
+{
+  "id": "BP03157740",
+  "businessPartnerNumber": "BP03157740",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2023-08-18",
+  "lastModified": "2025-05-19",
+  "firstName": "3ed44421b043e3ea662bcf57997fc069",
+  "lastName": "a2c32ee0626d3cccef0934f6ddc4d3c4",
+  "middleName": "Bowie",
+  "gender": "Genderqueer",
+  "birthDate": "452b5d2a4cc147a5a022cb183f9d399a",
+  "nationality": "CA",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

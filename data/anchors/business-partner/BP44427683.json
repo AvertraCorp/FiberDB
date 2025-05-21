@@ -1,0 +1,26 @@
+{
+  "id": "BP44427683",
+  "businessPartnerNumber": "BP44427683",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z001",
+  "customerClassification": "B",
+  "createdAt": "2021-12-14",
+  "lastModified": "2025-04-21",
+  "firstName": "1a0dad31fcfcea88e4ff420c3e1fcb55",
+  "lastName": "2d718e6f54db7766860f42fe5e9bfe20",
+  "middleName": "Reese",
+  "title": "Mr.",
+  "gender": "Intersex man",
+  "birthDate": "9e943c49391a0edc31cc1af479c07355",
+  "nationality": "PR",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

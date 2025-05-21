@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "street": "Nikolaus Circles",
+      "houseNumber": "198",
+      "postalCode": "04641-2427",
+      "city": "Tigard",
+      "country": "BW",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2022-04-11"
+    },
+    {
+      "street": "Maeve Street",
+      "houseNumber": "460",
+      "postalCode": "60985-0553",
+      "city": "Dayton",
+      "country": "ID",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2025-03-26"
+    }
+  ]
+]

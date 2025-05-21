@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Gorczany Mission",
+      "houseNumber": "937",
+      "postalCode": "00614-4544",
+      "city": "Violettecester",
+      "country": "PF",
+      "region": "EAST",
+      "addressType": "BILL",
+      "validFrom": "2023-10-10"
+    },
+    {
+      "street": "W 3rd Street",
+      "houseNumber": "242",
+      "postalCode": "81486",
+      "city": "West Zora",
+      "country": "WS",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2021-11-30"
+    },
+    {
+      "street": "Dana Gateway",
+      "houseNumber": "801",
+      "postalCode": "15562-1720",
+      "city": "Angelbury",
+      "country": "GR",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2022-09-02"
+    }
+  ]
+]

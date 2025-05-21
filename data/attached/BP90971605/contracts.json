@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT05584213",
+      "utilityType": "WATER",
+      "startDate": "2024-02-14",
+      "status": "PENDING",
+      "tariffType": "WATER_WCN",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "MONTHLY"
+    }
+  ]
+]

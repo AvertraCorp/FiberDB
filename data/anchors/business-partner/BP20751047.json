@@ -1,0 +1,25 @@
+{
+  "id": "BP20751047",
+  "businessPartnerNumber": "BP20751047",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2020-10-21",
+  "lastModified": "2025-05-11",
+  "firstName": "9d311de458726c10c485edeb4a595241",
+  "lastName": "176da5363ee2b40c12002c36fe16411f",
+  "title": "Mr.",
+  "gender": "MTF",
+  "birthDate": "33a5788ac03c9eec08f0e0a6d67ce133",
+  "nationality": "FJ",
+  "maritalStatus": "DIVORCED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

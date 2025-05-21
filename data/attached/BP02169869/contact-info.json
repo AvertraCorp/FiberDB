@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Tanner10@gmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-06-02"
+    },
+    {
+      "type": "PHONE",
+      "value": "(253) 618-6593",
+      "isPrimary": true,
+      "validFrom": "2024-05-30"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(914) 921-4188 x621",
+      "isPrimary": false,
+      "validFrom": "2024-10-22"
+    }
+  ]
+]

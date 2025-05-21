@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT12922516",
+      "utilityType": "GAS",
+      "startDate": "2024-03-18",
+      "status": "ACTIVE",
+      "tariffType": "GAS_BIP",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    },
+    {
+      "contractId": "CT45105475",
+      "utilityType": "STRM",
+      "startDate": "2022-10-05",
+      "status": "PENDING",
+      "tariffType": "STRM_JUK",
+      "meterReadingFrequency": "QUARTERLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

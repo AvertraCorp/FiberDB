@@ -8,6 +8,11 @@
     "server": "bun run src/api/run.ts",
     "dev": "bun --watch src/api/run.ts",
     "test": "bun test",
+    "test:watch": "bun test --watch",
+    "test:query": "bun test src/tests/core/query/",
+    "test:cache": "bun test src/tests/utils/cache.test.ts",
+    "test:api": "bun test src/tests/api/",
+    "test:perf": "bun test src/tests/core/query/performance.test.ts",
     "benchmark": "bun run benchmarks/index.ts",
     "benchmark:cache": "bun run benchmarks/cache/index.ts",
     "benchmark:parallel": "bun run benchmarks/parallel/index.ts",
@@ -16,7 +21,9 @@
     "seed:clear": "bun run src/seeders/run-seeder.ts --clear",
     "seed:sap": "bun run src/seeders/run-seeder.ts --sap-only",
     "seed:sap-large": "bun run src/seeders/run-seeder.ts --sap-only --sap-bp-count 200 --clear",
-    "clean": "bash scripts/cleanup.sh"
+    "clean": "bash scripts/cleanup.sh",
+    "clean:test-files": "bash cleanup-test-files.sh",
+    "examples": "bun run src/examples/query-examples.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"

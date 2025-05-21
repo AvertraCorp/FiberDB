@@ -1,0 +1,25 @@
+{
+  "id": "BP50887609",
+  "businessPartnerNumber": "BP50887609",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z004",
+  "customerClassification": "B",
+  "createdAt": "2022-06-04",
+  "lastModified": "2025-04-10",
+  "firstName": "6598b0d303c9223c8174070c90e6ecf6",
+  "lastName": "f9dcc7b1a95c0fa67074785e9faf9980",
+  "title": "Mrs.",
+  "gender": "Transsexual man",
+  "birthDate": "5629623ee7ea2daf8a4fc04353741fc4",
+  "nationality": "MR",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

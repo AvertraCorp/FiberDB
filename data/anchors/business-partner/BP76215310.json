@@ -1,0 +1,24 @@
+{
+  "id": "BP76215310",
+  "businessPartnerNumber": "BP76215310",
+  "category": "1",
+  "roles": [
+    "FLSP00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "B",
+  "createdAt": "2023-04-26",
+  "lastModified": "2024-12-22",
+  "firstName": "df8bd0591cdf0b9506ba5efbb558054c",
+  "lastName": "c8e418c0881e76cb7cc28daacb373714",
+  "gender": "Two* person",
+  "birthDate": "805634aecc4b3646d63fa81e01298ca0",
+  "nationality": "FI",
+  "maritalStatus": "SINGLE",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

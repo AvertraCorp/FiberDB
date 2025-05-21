@@ -1,0 +1,26 @@
+{
+  "id": "BP45745667",
+  "businessPartnerNumber": "BP45745667",
+  "category": "1",
+  "roles": [
+    "FLSU00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "A",
+  "createdAt": "2024-12-09",
+  "lastModified": "2024-11-26",
+  "firstName": "0b779210082b44f6841c58f3b17ce9b6",
+  "lastName": "2f907897c4278c809448210c07fdb94e",
+  "middleName": "Austin",
+  "title": "Mr.",
+  "gender": "Multigender",
+  "birthDate": "a33b54c167fdc0ccb41b73b18147f9b0",
+  "nationality": "TN",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

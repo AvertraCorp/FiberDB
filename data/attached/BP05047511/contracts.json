@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "contractId": "CT52829157",
+      "utilityType": "WATER",
+      "startDate": "2023-09-07",
+      "status": "INACTIVE",
+      "tariffType": "WATER_WPV",
+      "meterReadingFrequency": "MONTHLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

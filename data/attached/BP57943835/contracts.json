@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "contractId": "CT48884683",
+      "utilityType": "SEWER",
+      "startDate": "2024-12-06",
+      "status": "PENDING",
+      "tariffType": "SEWER_LQU",
+      "meterReadingFrequency": "BIMONTHLY",
+      "billingFrequency": "MONTHLY"
+    },
+    {
+      "contractId": "CT06736409",
+      "utilityType": "STRM",
+      "startDate": "2023-10-03",
+      "status": "ACTIVE",
+      "tariffType": "STRM_TUF",
+      "meterReadingFrequency": "ANNUALLY",
+      "billingFrequency": "ANNUALLY"
+    }
+  ]
+]

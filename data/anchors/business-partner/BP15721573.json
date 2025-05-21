@@ -1,0 +1,26 @@
+{
+  "id": "BP15721573",
+  "businessPartnerNumber": "BP15721573",
+  "category": "1",
+  "roles": [
+    "FLCN00"
+  ],
+  "industrySector": "Z002",
+  "customerClassification": "A",
+  "createdAt": "2020-08-19",
+  "lastModified": "2025-02-01",
+  "firstName": "61918ed705a8c61afe8f5794a15153d5",
+  "lastName": "b8d37b30c6c264848ac21fb5615a84d1",
+  "middleName": "Shawn",
+  "title": "Mrs.",
+  "gender": "Polygender",
+  "birthDate": "dab13c259d9d7edbe7b0b0db572dfe90",
+  "nationality": "FR",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Edwin Bypass",
+      "houseNumber": "542",
+      "postalCode": "09671",
+      "city": "New Myah",
+      "country": "AF",
+      "region": "CENTRAL",
+      "addressType": "BILL",
+      "validFrom": "2021-10-20"
+    },
+    {
+      "street": "Raymond Lodge",
+      "houseNumber": "599",
+      "postalCode": "41736-9952",
+      "city": "Dandrefort",
+      "country": "NZ",
+      "region": "NORTH",
+      "addressType": "INST",
+      "validFrom": "2024-10-17"
+    },
+    {
+      "street": "Tromp Estates",
+      "houseNumber": "925",
+      "postalCode": "07809-0089",
+      "city": "Wilson",
+      "country": "AW",
+      "region": "EAST",
+      "addressType": "MAIL",
+      "validFrom": "2021-03-04"
+    }
+  ]
+]

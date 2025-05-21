@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Alf27@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2024-10-24"
+    },
+    {
+      "type": "PHONE",
+      "value": "1-752-348-1615 x1736",
+      "isPrimary": true,
+      "validFrom": "2024-05-30"
+    }
+  ]
+]

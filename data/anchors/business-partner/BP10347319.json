@@ -1,0 +1,25 @@
+{
+  "id": "BP10347319",
+  "businessPartnerNumber": "BP10347319",
+  "category": "1",
+  "roles": [
+    "FLIV00"
+  ],
+  "industrySector": "Z003",
+  "customerClassification": "A",
+  "createdAt": "2023-01-22",
+  "lastModified": "2025-05-02",
+  "firstName": "742767f5dff7fb736eff02f108248523",
+  "lastName": "72045674320c399c6ac600ba68c297d6",
+  "title": "Mr.",
+  "gender": "Transsexual male",
+  "birthDate": "6a125ab3d328c650695a48baf22c5179",
+  "nationality": "ME",
+  "maritalStatus": "WIDOWED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}

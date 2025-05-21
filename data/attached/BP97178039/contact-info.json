@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Lupe35@hotmail.com",
+      "isPrimary": true,
+      "validFrom": "2024-08-11"
+    },
+    {
+      "type": "PHONE",
+      "value": "(697) 918-1020",
+      "isPrimary": true,
+      "validFrom": "2025-01-05"
+    },
+    {
+      "type": "MOBILE",
+      "value": "1-336-273-6720 x7159",
+      "isPrimary": false,
+      "validFrom": "2025-02-23"
+    },
+    {
+      "type": "FAX",
+      "value": "993.205.5980 x080",
+      "isPrimary": false,
+      "validFrom": "2025-01-01"
+    }
+  ]
+]

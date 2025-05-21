@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "street": "Avenue Road",
+      "houseNumber": "744",
+      "postalCode": "99281",
+      "city": "Mansfield",
+      "country": "ER",
+      "region": "SOUTH",
+      "addressType": "BILL",
+      "validFrom": "2022-07-14"
+    },
+    {
+      "street": "Gleichner Crossroad",
+      "houseNumber": "837",
+      "postalCode": "04075",
+      "city": "Saginaw",
+      "country": "IT",
+      "region": "SOUTH",
+      "addressType": "INST",
+      "validFrom": "2022-10-09"
+    },
+    {
+      "street": "Church Hill",
+      "houseNumber": "274",
+      "postalCode": "44375",
+      "city": "New Magdalenfield",
+      "country": "NZ",
+      "region": "CENTRAL",
+      "addressType": "MAIL",
+      "validFrom": "2023-03-01"
+    }
+  ]
+]

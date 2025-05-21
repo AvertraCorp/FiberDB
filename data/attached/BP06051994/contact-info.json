@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "EMAIL",
+      "value": "Kurtis.Treutel@yahoo.com",
+      "isPrimary": true,
+      "validFrom": "2025-04-16"
+    },
+    {
+      "type": "PHONE",
+      "value": "889-813-0156 x198",
+      "isPrimary": true,
+      "validFrom": "2024-07-18"
+    },
+    {
+      "type": "MOBILE",
+      "value": "(760) 474-1552 x673",
+      "isPrimary": false,
+      "validFrom": "2025-01-02"
+    },
+    {
+      "type": "FAX",
+      "value": "913-841-2334",
+      "isPrimary": false,
+      "validFrom": "2024-11-24"
+    }
+  ]
+]

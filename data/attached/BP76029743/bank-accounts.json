@@ -1,0 +1,13 @@
+[
+  [
+    {
+      "bankId": "8NVRGF5L",
+      "accountNumber": "95434716",
+      "accountHolder": "George Emmerich DDS",
+      "iban": "NL83NXTY8047061977",
+      "bic": "QPMMTN9OXXX",
+      "validFrom": "2023-02-12",
+      "isDefault": true
+    }
+  ]
+]

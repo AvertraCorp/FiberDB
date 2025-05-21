@@ -1,0 +1,25 @@
+{
+  "id": "BP72484969",
+  "businessPartnerNumber": "BP72484969",
+  "category": "1",
+  "roles": [
+    "FLBP00"
+  ],
+  "industrySector": "Z005",
+  "customerClassification": "B",
+  "createdAt": "2021-09-02",
+  "lastModified": "2025-03-07",
+  "firstName": "967268b5b09c48d5ef2b4d02e1bc2584",
+  "lastName": "d5dd5b6323a5c9ad7bac41424ca2e70d",
+  "title": "Dr.",
+  "gender": "Cisgender man",
+  "birthDate": "655dd31ab22b7f745be1420247062caf",
+  "nationality": "GT",
+  "maritalStatus": "MARRIED",
+  "__secure": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "nationalId"
+  ]
+}
