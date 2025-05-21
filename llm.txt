@@ -1,0 +1,122 @@
+# FiberDB for LLMs
+
+This document provides a guide for LLMs to understand and interact with FiberDB, a lightweight, anchor-based federated document database.
+
+## Database Overview
+
+FiberDB is a file-based document database with the following key features:
+- Anchor-based document storage model
+- Field-level AES-256 encryption
+- Powerful query system with nested filtering
+- Multi-level caching (LRU and TTL strategies)
+- Parallel processing capabilities
+- Indexing for faster queries
+- HTTP API for remote interactions
+- TTL/archival system for data lifecycle management
+
+## Data Model
+
+FiberDB uses an anchor-based federated document model:
+
+1. **Anchors**: Primary entities (e.g., business partners) stored as JSON files in `/data/anchors/[type]/[id].json`
+2. **Attached Documents**: Related data linked to anchors (e.g., addresses, contracts) stored in `/data/attached/[anchor-id]/[document-type].json`
+
+This model enables relationship-based data storage where anchors can have multiple attached documents, creating a flexible schema.
+
+## Query System
+
+Queries in FiberDB use a nested filtering syntax:
+
+```typescript
+const results = await query({
+  from: "business-partner",
+  where: {
+    field: "name",
+    operator: "contains",
+    value: "Tech"
+  },
+  include: ["addresses", "contracts"]
+});
+```
+
+Common operators:
+- equals, notEquals
+- contains, notContains
+- greaterThan, lessThan
+- in, notIn
+- between
+
+## Performance Features
+
+- **Caching**: Multi-level caching reduces disk I/O
+- **Parallel Processing**: Parallel queries for improved performance with large datasets
+- **Indexing**: Optimizes query performance for frequently accessed fields
+- **TTL**: Time-to-live capabilities for data expiration
+
+## Interaction Methods
+
+1. **Direct API** (JavaScript/TypeScript):
+```typescript
+import { query } from 'fiberdb';
+
+const results = await query({
+  from: "business-partner",
+  where: { field: "id", operator: "equals", value: "BP12345" }
+});
+```
+
+2. **HTTP API**:
+```
+GET /api/query?from=business-partner&where={"field":"id","operator":"equals","value":"BP12345"}
+```
+
+3. **Command-line Tools**:
+Scripts located in `/scripts` directory for common database operations.
+
+## Security
+
+- Field-level AES-256 encryption for sensitive data
+- Configurable encryption keys per field
+- Authentication required for HTTP API access
+
+## Common Patterns for LLMs
+
+When helping users with FiberDB:
+
+1. **Query Construction**: Help build query objects with proper syntax for filtering and inclusion
+2. **Performance Optimization**: Suggest using appropriate caching strategies, indexing, and parallel processing
+3. **Data Modeling**: Guide on structuring data using the anchor/attached document model
+4. **API Integration**: Provide examples of integrating with the HTTP API or direct library usage
+
+## Limitations
+
+- File-based storage may limit scalability for extremely large datasets
+- Some planned optimizations like data sharding aren't fully implemented
+- Concurrent write operations might cause performance issues
+
+## Example Workflows
+
+1. **Querying Related Data**:
+```typescript
+// Find business partners with a specific contract type and include their addresses
+const partners = await query({
+  from: "business-partner",
+  where: {
+    and: [
+      { field: "contracts.type", operator: "equals", value: "premium" },
+      { field: "rating", operator: "greaterThan", value: 4 }
+    ]
+  },
+  include: ["addresses"]
+});
+```
+
+2. **Using TTL for Temporary Data**:
+```typescript
+// Query with TTL cache
+const results = await query({
+  from: "business-partner",
+  where: { field: "status", operator: "equals", value: "active" },
+  cache: { ttl: 3600 } // Cache for 1 hour
+});
+```
