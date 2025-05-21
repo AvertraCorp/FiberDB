@@ -1,0 +1,31 @@
+{
+  "name": "fiberdb",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "server": "bun run src/api/run.ts",
+    "dev": "bun --watch src/api/run.ts",
+    "test": "bun test",
+    "benchmark": "bun run benchmarks/index.ts",
+    "benchmark:cache": "bun run benchmarks/cache/index.ts",
+    "benchmark:parallel": "bun run benchmarks/parallel/index.ts",
+    "benchmark:indexing": "bun run benchmarks/indexing/index.ts",
+    "seed": "bun run src/seeders/run-seeder.ts",
+    "seed:clear": "bun run src/seeders/run-seeder.ts --clear",
+    "seed:sap": "bun run src/seeders/run-seeder.ts --sap-only",
+    "seed:sap-large": "bun run src/seeders/run-seeder.ts --sap-only --sap-bp-count 200 --clear",
+    "clean": "bash scripts/cleanup.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "crypto": "^1.0.1"
+  }
+}

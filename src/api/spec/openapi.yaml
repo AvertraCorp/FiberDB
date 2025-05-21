@@ -1,0 +1,118 @@
+openapi: 3.1.0
+info:
+  title: Federated Query API
+  version: 1.0.0
+  description: Anchor-based data query API dynamically supporting entity types with performance metrics.
+
+paths:
+  /query:
+    post:
+      summary: Run a structured federated query
+      operationId: runQuery
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QueryRequest'
+      responses:
+        '200':
+          description: Successful query result
+          headers:
+            X-Performance-Included:
+              schema:
+                type: string
+              description: When present with value "true", indicates that performance metrics are included in the response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QueryResponse'
+
+components:
+  schemas:
+    QueryRequest:
+      type: object
+      required:
+        - primary
+      properties:
+        primary:
+          type: string
+          description: The main anchor entity type (e.g. customer, asset, etc.)
+        id:
+          type: string
+          description: Specific anchor ID to query (optional, for exact match)
+        filter:
+          type: object
+          description: Filter conditions on the anchor entity
+          additionalProperties:
+            $ref: '#/components/schemas/QueryCondition'
+        where:
+          type: object
+          description: Filter conditions on attached data
+          additionalProperties:
+            $ref: '#/components/schemas/QueryCondition'
+        include:
+          type: array
+          items:
+            type: string
+          description: Fields and attachments to include in the response
+        decryptionKey:
+          type: string
+          description: Optional key for decrypting secure fields
+        includePerformanceMetrics:
+          type: boolean
+          description: When true, performance metrics will be included in the response
+
+    QueryCondition:
+      oneOf:
+        - type: string
+        - type: object
+          additionalProperties:
+            type: string
+          description: Operators like eq, ne, gt, lt, contains, in
+
+    PerformanceMetrics:
+      type: object
+      properties:
+        operation:
+          type: string
+          description: The type of operation that was performed
+        duration: 
+          type: number
+          description: Total duration of the operation in milliseconds
+        startTime:
+          type: number
+          description: Start timestamp of the operation
+        endTime:
+          type: number
+          description: End timestamp of the operation
+        details:
+          type: object
+          description: Additional details about the operation
+          properties:
+            phases:
+              type: object
+              description: Timing breakdown by operation phase
+              additionalProperties:
+                type: object
+                properties:
+                  duration:
+                    type: number
+                    description: Duration of the phase in milliseconds
+            recordsStats:
+              type: object
+              description: Statistics about records processed
+            queryParams:
+              type: object
+              description: Parameters used in the query
+          additionalProperties: true
+
+    QueryResponse:
+      type: array
+      items:
+        type: object
+        description: Dynamically shaped response based on query structure
+        properties:
+          __metrics:
+            $ref: '#/components/schemas/PerformanceMetrics'
+            description: Performance metrics for the query (only present if requested)

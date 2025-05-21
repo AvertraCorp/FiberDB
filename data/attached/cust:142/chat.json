@@ -1,0 +1,17 @@
+[
+  {
+    "message": "Message 1 from customer 142",
+    "timestamp": "2025-05-21T03:30:10.126Z",
+    "agent": "human"
+  },
+  {
+    "message": "Message 2 from customer 142",
+    "timestamp": "2025-05-21T03:30:10.126Z",
+    "agent": "human"
+  },
+  {
+    "message": "Message 3 from customer 142",
+    "timestamp": "2025-05-21T03:30:10.126Z",
+    "agent": "system"
+  }
+]

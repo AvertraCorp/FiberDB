@@ -1,0 +1,51 @@
+[
+  {
+    "type": "Power Outage",
+    "created_at": "2025-05-21T03:30:10.084Z",
+    "status": "closed",
+    "priority": 2,
+    "description": "Service request 1 for customer 74"
+  },
+  {
+    "type": "Service Request",
+    "created_at": "2025-05-21T03:30:10.084Z",
+    "status": "pending",
+    "priority": 3,
+    "description": "Service request 2 for customer 74"
+  },
+  {
+    "type": "Power Outage",
+    "created_at": "2025-05-21T03:30:10.084Z",
+    "status": "pending",
+    "priority": 4,
+    "description": "Service request 3 for customer 74"
+  },
+  {
+    "type": "Billing Error",
+    "created_at": "2025-05-21T03:30:10.084Z",
+    "status": "open",
+    "priority": 1,
+    "description": "Service request 4 for customer 74"
+  },
+  {
+    "type": "Service Request",
+    "created_at": "2025-05-21T03:30:10.084Z",
+    "status": "in-progress",
+    "priority": 3,
+    "description": "Service request 5 for customer 74"
+  },
+  {
+    "type": "Service Request",
+    "created_at": "2025-05-21T03:30:10.084Z",
+    "status": "in-progress",
+    "priority": 5,
+    "description": "Service request 6 for customer 74"
+  },
+  {
+    "type": "Service Request",
+    "created_at": "2025-05-21T03:30:10.084Z",
+    "status": "pending",
+    "priority": 3,
+    "description": "Service request 7 for customer 74"
+  }
+]
