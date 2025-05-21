@@ -1,5 +1,7 @@
 # FiberDB
 
+![FiberDB Header](assets/header.png)
+
 **FiberDB** is a lightweight, anchor-based federated database engine built with [Bun](https://bun.sh). It enables flexible ingestion of structured and semi-structured data from multiple systems, relationship-based modeling, secure field-level encryption, and efficient querying via a powerful API layer.
 
 ---
