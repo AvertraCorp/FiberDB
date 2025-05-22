@@ -11,17 +11,20 @@ This guide will help you get started with FiberDB, from installation to running 
 5. [Running Your First Query](#running-your-first-query)
 6. [Exploring the API](#exploring-the-api)
 7. [Next Steps](#next-steps)
+8. [Docker Deployment](#docker-deployment)
 
 ## Prerequisites
 
 Before getting started with FiberDB, ensure you have the following:
 
-- [Bun](https://bun.sh) JavaScript runtime installed (required for FiberDB)
-- Node.js 16+ (for npm, if you're not using Bun's package manager)
+- [Bun](https://bun.sh) JavaScript runtime installed (required for native installation)
+- OR Docker and Docker Compose for containerized deployment
 - Basic familiarity with JavaScript/TypeScript
 - 200MB+ of free disk space for the database and sample data
 
 ## Installation
+
+### Option 1: Native Installation
 
 Clone the FiberDB repository to get started:
 
@@ -34,7 +37,22 @@ cd fiberdb
 bun install
 ```
 
+### Option 2: Docker Installation
+
+Clone the repository and use Docker Compose:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/fiberdb.git
+cd fiberdb
+
+# Build and start the Docker container
+docker-compose up -d
+```
+
 ## Starting the Server
+
+### Option 1: Using Bun
 
 FiberDB includes a built-in server that provides an HTTP API for querying the database:
 
@@ -49,6 +67,22 @@ By default, the server runs on port 4000. You should see output similar to:
 FiberDB server running at http://localhost:4000
 ```
 
+### Option 2: Using Docker
+
+If you're using Docker, the server should already be running. Check the logs with:
+
+```bash
+docker-compose logs -f
+```
+
+By default, the Docker container exposes the server on port 3000:
+
+```
+FiberDB server running at http://localhost:3000
+```
+
+For more details on Docker deployment, see [Docker Deployment Guide](./docker-deployment.md).
+
 The server provides several endpoints:
 - `POST /query` - Execute queries against the database
 - `GET /cache` - View cache statistics
@@ -59,6 +93,8 @@ The server provides several endpoints:
 
 FiberDB comes with data seeders to generate realistic sample data:
 
+### Option 1: Using Bun
+
 ```bash
 # Generate default sample data
 bun run seed
@@ -68,6 +104,19 @@ bun run seed:sap
 
 # Generate a larger SAP Utilities dataset (200 business partners)
 bun run seed:sap-large
+```
+
+### Option 2: Using Docker
+
+```bash
+# Generate default sample data
+docker exec fiberdb bun run seed
+
+# Generate SAP Utilities data (50 business partners)
+docker exec fiberdb bun run seed:sap
+
+# Generate a larger SAP Utilities dataset (200 business partners)
+docker exec fiberdb bun run seed:sap-large
 ```
 
 The seeded data includes:
@@ -208,6 +257,7 @@ curl -X POST http://localhost:4000/query \
 FiberDB includes performance benchmarks to evaluate different optimization techniques:
 
 ```bash
+# Using Bun
 # Run all benchmarks
 bun run benchmark
 
@@ -215,6 +265,15 @@ bun run benchmark
 bun run benchmark:cache
 bun run benchmark:parallel
 bun run benchmark:indexing
+
+# Using Docker
+# Run all benchmarks
+docker exec fiberdb bun run benchmark
+
+# Run specific benchmarks
+docker exec fiberdb bun run benchmark:cache
+docker exec fiberdb bun run benchmark:parallel
+docker exec fiberdb bun run benchmark:indexing
 ```
 
 ### Run Example Queries
@@ -222,7 +281,11 @@ bun run benchmark:indexing
 Explore the comprehensive query examples:
 
 ```bash
+# Using Bun
 bun run examples
+
+# Using Docker
+docker exec fiberdb bun run examples
 ```
 
 These examples demonstrate all available query types and optimization techniques.
@@ -233,3 +296,17 @@ Check out other guides and documentation:
 - [Query System Documentation](../query-system/README.md)
 - [API Documentation](../api/README.md)
 - [Architecture Documentation](../architecture/README.md)
+- [Docker Deployment Guide](./docker-deployment.md)
+
+## Docker Deployment
+
+For detailed information about deploying FiberDB using Docker, see the [Docker Deployment Guide](./docker-deployment.md).
+
+The Docker deployment provides several benefits:
+- Consistent environment across development, testing, and production
+- Simple installation process without needing to install Bun directly
+- Easy configuration through Docker Compose
+- Portable deployment across different operating systems
+- Simplified scaling and management
+
+Refer to the Docker Deployment Guide for advanced configuration options, troubleshooting, and performance optimization tips.

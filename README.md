@@ -43,6 +43,8 @@
 │   ├── anchors/              # Anchor document storage
 │   └── attached/             # Attached document storage
 ├── package.json              # Project configuration
+├── Dockerfile                # Docker container configuration
+├── docker-compose.yml        # Docker Compose configuration
 └── README.md                 # Project documentation
 ```
 
@@ -52,19 +54,45 @@ For more details about the project structure, see [PROJECT_STRUCTURE.md](./PROJE
 
 ## 🛠️ Getting Started
 
-### 1. Install Bun
+### Option 1: Running with Bun
+
+#### 1. Install Bun
 
 ```bash
 curl -fsSL https://bun.sh/install | bash
 ```
 
-### 2. Run FiberDB server (includes the optional query API)
+#### 2. Run FiberDB server (includes the optional query API)
 
 ```bash
 bun run start
 ```
 
 Server will start at: `http://localhost:4000`
+
+### Option 2: Running with Docker
+
+#### 1. Build and run with Docker Compose
+
+```bash
+# Build and start the FiberDB container
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+```
+
+Server will start at: `http://localhost:3000`
+
+#### 2. Build and run manually with Docker
+
+```bash
+# Build the Docker image
+docker build -t fiberdb .
+
+# Run the container
+docker run -p 3000:3000 -v ./data:/app/data fiberdb
+```
 
 ### 3. Seed Test Data (Optional)
 
@@ -688,6 +716,8 @@ For questions or discussions about contributions, please open an issue on GitHub
 ---
 
 ## 🧼 Cleanup Local Database
+
+### Option 1: Local Cleanup
 ```bash
 rm -rf data/
 ```
@@ -696,6 +726,15 @@ Or programmatically:
 ```ts
 import fs from "fs";
 fs.rmSync("data", { recursive: true, force: true });
+```
+
+### Option 2: Docker Cleanup
+```bash
+# Remove Docker volumes
+docker-compose down -v
+
+# Or if running manually
+docker volume rm <volume-name>
 ```
 
 ---
