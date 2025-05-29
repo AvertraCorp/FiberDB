@@ -3,10 +3,10 @@ declare global {
 }
 
 /**
- * FiberDB Query Examples
+ * FiberDB Query Examples - Legacy and Enhanced API
  * 
- * This file contains comprehensive examples of all query types and performance
- * optimizations available in FiberDB. Use these examples as a reference for
+ * This file contains comprehensive examples of both the legacy API (for backward compatibility)
+ * and the new enhanced API with graph capabilities. Use these examples as a reference for
  * building your own queries.
  * 
  * IMPORTANT: Before running these examples, you must seed the database with test data:
@@ -21,7 +21,14 @@ declare global {
  * 
  * Without seeding, all queries will return empty results as there is no data to query.
  */
+
+// Legacy API imports (backward compatible)
 import { query, runStructuredQuery, runStructuredQueryAsync } from "../core/query";
+import { saveAnchor, attachToAnchor } from "../core/storage";
+
+// Enhanced API imports (new capabilities)
+import { FiberDB, Entity, defaultFiberDB } from "../api/fiberdb";
+
 import config from "../config";
 import fs from "fs";
 import path from "path";
@@ -31,10 +38,14 @@ config.performance.defaultParallel = true;  // Enable parallel processing by def
 config.performance.logMetrics = true;       // Log performance metrics to console
 
 /**
- * Basic Query Examples
+ * LEGACY API EXAMPLES (Backward Compatible)
  */
-async function basicQueryExamples() {
-  console.log("=== Basic Query Examples ===");
+
+/**
+ * Basic Query Examples using Legacy API
+ */
+async function legacyBasicQueryExamples() {
+  console.log("=== Legacy API: Basic Query Examples ===");
 
   // Get a valid business partner ID from the global one passed from runAllExamples
   const validBpId = global.validBpId || (() => {
@@ -56,17 +67,9 @@ async function basicQueryExamples() {
       id: validBpId,
       skipTTL: true // Skip TTL filtering for historical data
     });
-    console.log("Single entity query result:", singleEntityResult);
-    
-    // Print data from file directly for debugging
-    console.log("\nDebug: Reading file directly: ");
-    const filePath = path.join("data", "anchors", "business-partner", `${validBpId}.json`);
-    if (fs.existsSync(filePath)) {
-      const fileContent = fs.readFileSync(filePath, "utf8");
-      console.log(fileContent);
-    }
+    console.log("Legacy: Single entity query result:", singleEntityResult);
   } catch (error) {
-    console.error("Error in ID query:", error);
+    console.error("Error in legacy ID query:", error);
   }
 
   // Query all entities of a type
@@ -74,70 +77,32 @@ async function basicQueryExamples() {
     primary: "business-partner",
     skipTTL: true // Skip TTL filtering for historical data
   });
-  console.log("All entities query result count:", allEntitiesResult.length);
+  console.log("Legacy: All entities query result count:", allEntitiesResult.length);
 
   // Select specific fields
   const selectedFieldsResult = await query({
     primary: "business-partner",
     id: global.validBpId || validBpId,
     include: ["id", "firstName", "lastName", "customerClassification", "industrySector"],
-    skipTTL: true, // Skip TTL filtering for historical data
-    useParallel: false // Use synchronous mode for ID queries
+    skipTTL: true,
+    useParallel: false
   });
-  console.log("Selected fields query result:", selectedFieldsResult);
-
-  // Include all fields with wildcard
-  const wildcardFieldsResult = await query({
-    primary: "business-partner",
-    id: global.validBpId || validBpId,
-    include: ["*"],
-    skipTTL: true, // Skip TTL filtering for historical data
-    useParallel: false // Use synchronous mode for ID queries
-  });
-  console.log("Wildcard fields query result:", wildcardFieldsResult);
-
-  // Include specific attachments
-  const specificAttachmentsResult = await query({
-    primary: "business-partner",
-    id: global.validBpId || validBpId,
-    include: ["id", "firstName", "lastName", "customerClassification", "addresses", "contracts"],
-    skipTTL: true, // Skip TTL filtering for historical data
-    useParallel: false // Use synchronous mode for ID queries
-  });
-  console.log("Specific attachments query result:", specificAttachmentsResult);
-  
-  // Demonstrate accessing attached data with proper structure handling
-  if (specificAttachmentsResult.length > 0 && specificAttachmentsResult[0].addresses) {
-    console.log("\nAddresses data example:");
-    console.log("Number of addresses:", specificAttachmentsResult[0].addresses.length);
-    console.log("First address details:", specificAttachmentsResult[0].addresses[0]);
-  }
+  console.log("Legacy: Selected fields query result:", selectedFieldsResult);
 }
 
 /**
- * Filtering Examples
+ * Legacy Filtering Examples
  */
-async function filteringExamples() {
-  console.log("\n=== Filtering Examples ===");
+async function legacyFilteringExamples() {
+  console.log("\n=== Legacy API: Filtering Examples ===");
 
   // Basic equality filter on primary entity
   const equalityFilterResult = await query({
     primary: "business-partner",
     filter: { customerClassification: "B" },
-    skipTTL: true // Skip TTL filtering for historical data
+    skipTTL: true
   });
-  console.log("Equality filter result count:", equalityFilterResult.length);
-
-  // Multiple equality filters (AND logic)
-  const multipleFilterResult = await query({
-    primary: "business-partner",
-    filter: { 
-      customerClassification: "B",
-      industryKey: "TECH"
-    },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Multiple filter result count:", multipleFilterResult.length);
+  console.log("Legacy: Equality filter result count:", equalityFilterResult.length);
 
   // Filter on attached documents
   const attachmentFilterResult = await query({
@@ -146,245 +111,354 @@ async function filteringExamples() {
     where: { 
       "addresses.country": "LB" 
     },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Attachment filter result count:", attachmentFilterResult.length);
-  
-  if (attachmentFilterResult.length > 0) {
-    console.log("First filtered result:", {
-      id: attachmentFilterResult[0].id,
-      organizationName: attachmentFilterResult[0].organizationName,
-      addressesCount: attachmentFilterResult[0].addresses?.length || 0
-    });
-  }
-
-  // Combined primary and attachment filters
-  const combinedFilterResult = await query({
-    primary: "business-partner",
-    filter: { 
-      customerClassification: "B" 
-    },
-    include: ["id", "organizationName", "customerClassification", "contracts"],
-    where: { 
-      "contracts.status": "ACTIVE",
-      "contracts.utilityType": "WATER"
-    },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Combined filter result count:", combinedFilterResult.length);
-}
-
-/**
- * Advanced Filtering with Operators
- */
-async function advancedFilteringExamples() {
-  console.log("\n=== Advanced Filtering Examples ===");
-
-  // Equality operator (eq)
-  const equalityOpResult = await query({
-    primary: "business-partner",
-    filter: { 
-      customerClassification: { eq: "B" } 
-    },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Equality operator result count:", equalityOpResult.length);
-
-  // Not Equal operator (ne)
-  const notEqualOpResult = await query({
-    primary: "business-partner",
-    filter: { 
-      customerClassification: { ne: "A" } 
-    },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Not Equal operator result count:", notEqualOpResult.length);
-
-  // Contains operator for text search in organization name
-  const containsOpResult = await query({
-    primary: "business-partner",
-    filter: {
-      organizationName: { contains: "Inc" }
-    },
-    include: ["id", "organizationName", "customerClassification"],
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Contains operator result count:", containsOpResult.length);
-
-  // In operator (value in array)
-  const inOpResult = await query({
-    primary: "business-partner",
-    filter: { 
-      customerClassification: { in: ["A", "B", "C"] } 
-    },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("In operator result count:", inOpResult.length);
-
-  // Combined operators
-  const combinedOpResult = await query({
-    primary: "business-partner",
-    filter: { 
-      customerClassification: { in: ["A", "B"] },
-      industryKey: { ne: "AUTO" }
-    },
-    include: ["id", "organizationName", "customerClassification", "contracts"],
-    where: { 
-      "contracts.status": { eq: "ACTIVE" }
-    },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Combined operators result count:", combinedOpResult.length);
-}
-
-/**
- * Security & Encryption Examples
- */
-async function securityExamples(validBpId: string) {
-  console.log("\n=== Security & Encryption Examples ===");
-
-  // Query without decryption key (secure fields are not returned)
-  const encryptedResult = await query({
-    primary: "business-partner",
-    id: validBpId,
-    include: ["id", "organizationName", "customerClassification", "__secure"],
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Query without decryption key:", encryptedResult);
-
-  // With decryption key, you would get secure fields (not populated in this demo)
-  const decryptedResult = await query({
-    primary: "business-partner",
-    id: validBpId,
-    include: ["id", "organizationName", "customerClassification", "__secure"],
-    decryptionKey: "encryption-key", // In a real system, this would decrypt secure fields
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Query with decryption key:", decryptedResult);
-}
-
-/**
- * Performance Optimization Examples
- */
-async function performanceExamples(validBpId: string) {
-  console.log("\n=== Performance Optimization Examples ===");
-
-  // Standard query (uses cache if available)
-  console.time("Standard Query");
-  const standardResult = await query({
-    primary: "business-partner",
-    filter: { customerClassification: "B" },
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.timeEnd("Standard Query");
-  console.log("Standard query result count:", standardResult.length);
-
-  // Force fresh data by skipping cache
-  console.time("Skip Cache Query");
-  const freshResult = await query({
-    primary: "business-partner",
-    filter: { customerClassification: "B" },
-    skipCache: true,
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.timeEnd("Skip Cache Query");
-  console.log("Fresh query result count:", freshResult.length);
-  
-  // Skip TTL filtering (show historical data)
-  console.time("Historical Data Query");
-  const historicalResult = await query({
-    primary: "business-partner",
-    id: validBpId,
-    include: ["id", "organizationName", "addresses"],
     skipTTL: true
   });
-  console.timeEnd("Historical Data Query");
-  console.log("Historical data query result count:", historicalResult.length);
-  
-  if (historicalResult.length > 0 && historicalResult[0].addresses) {
-    console.log("Historical address count:", historicalResult[0].addresses.length);
-  }
-
-  // Explicitly enable parallel processing for large datasets
-  console.time("Parallel Query");
-  const parallelResult = await query({
-    primary: "business-partner",
-    filter: { customerClassification: "B" },
-    useParallel: true,
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.timeEnd("Parallel Query");
-  console.log("Parallel query result count:", parallelResult.length);
-
-  // Disable parallel processing for small datasets
-  console.time("Synchronous Query");
-  const syncResult = await query({
-    primary: "business-partner",
-    id: validBpId,
-    include: ["id", "firstName", "lastName"],
-    useParallel: false,
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.timeEnd("Synchronous Query");
-  console.log("Synchronous query result count:", syncResult.length);
-
-  // Use indexing for faster lookups
-  console.time("Indexed Query");
-  const indexedResult = await query({
-    primary: "business-partner",
-    filter: { industryKey: "TECH" },
-    useIndexes: true,
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.timeEnd("Indexed Query");
-  console.log("Indexed query result count:", indexedResult.length);
-
-  // Disable indexing (fallback to direct file scanning)
-  console.time("Non-Indexed Query");
-  const nonIndexedResult = await query({
-    primary: "business-partner",
-    filter: { industryKey: "TECH" },
-    useIndexes: false,
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.timeEnd("Non-Indexed Query");
-  console.log("Non-indexed query result count:", nonIndexedResult.length);
+  console.log("Legacy: Attachment filter result count:", attachmentFilterResult.length);
 }
 
 /**
- * Performance Metrics Examples
+ * ENHANCED API EXAMPLES (New Capabilities)
  */
-async function metricsExamples() {
-  console.log("\n=== Performance Metrics Examples ===");
 
-  // Query with performance metrics
-  const resultWithMetrics = await query({
-    primary: "business-partner",
-    filter: { customerClassification: "B" },
-    include: ["id", "organizationName", "customerClassification", "contracts"],
-    where: { "contracts.status": "ACTIVE" },
-    includePerformanceMetrics: true,
-    skipTTL: true // Skip TTL filtering for historical data
+/**
+ * Enhanced API: Entity Management Examples
+ */
+async function enhancedEntityExamples() {
+  console.log("\n=== Enhanced API: Entity Management Examples ===");
+
+  const db = new FiberDB();
+  await db.initialize();
+
+  // Create a new entity using enhanced API
+  const customer: Entity = {
+    id: 'demo-cust-001',
+    type: 'customer',
+    attributes: {
+      name: 'Demo Corporation',
+      industry: 'Technology',
+      founded: new Date('2020-01-01'),
+      revenue: 2000000,
+      active: true
+    },
+    documents: {
+      contracts: [{
+        id: 'demo-contract-001',
+        value: 150000,
+        startDate: '2024-01-01',
+        status: 'active'
+      }],
+      communications: [{
+        date: new Date(),
+        type: 'email',
+        subject: 'Welcome to Enhanced FiberDB',
+        content: 'Thank you for trying our enhanced features'
+      }]
+    },
+    edges: [], // Relationships added separately
+    metadata: {
+      created: new Date(),
+      updated: new Date(),
+      version: 1,
+      schemaVersion: 1,
+      tags: ['demo', 'enhanced-api']
+    }
+  };
+
+  await db.saveEntity(customer);
+  console.log("Enhanced: Created new entity with ID:", customer.id);
+
+  // Retrieve the entity
+  const retrievedEntity = await db.getEntity('customer', 'demo-cust-001');
+  if (retrievedEntity) {
+    console.log("Enhanced: Retrieved entity:", {
+      id: retrievedEntity.id,
+      name: retrievedEntity.attributes.name,
+      contractsCount: retrievedEntity.documents.contracts?.length || 0
+    });
+  }
+}
+
+/**
+ * Enhanced API: Relationship Examples
+ */
+async function enhancedRelationshipExamples() {
+  console.log("\n=== Enhanced API: Relationship Examples ===");
+
+  const db = new FiberDB();
+  await db.initialize();
+
+  // Create additional entities for relationships
+  const user: Entity = {
+    id: 'demo-user-001',
+    type: 'user',
+    attributes: {
+      name: 'John Smith',
+      email: 'john@democorp.com',
+      role: 'Database Administrator',
+      active: true
+    },
+    documents: {
+      activity_logs: [{
+        timestamp: new Date(),
+        action: 'login',
+        details: 'Accessed enhanced FiberDB features'
+      }]
+    },
+    edges: [],
+    metadata: {
+      created: new Date(),
+      updated: new Date(),
+      version: 1,
+      schemaVersion: 1
+    }
+  };
+
+  const product: Entity = {
+    id: 'demo-prod-001',
+    type: 'product',
+    attributes: {
+      name: 'FiberDB Enterprise',
+      description: 'Enhanced hybrid database',
+      price: 999,
+      category: 'Database Software'
+    },
+    documents: {
+      specifications: [{
+        version: '2.0',
+        features: ['ACID compliance', 'Graph relationships', 'Real-time queries']
+      }]
+    },
+    edges: [],
+    metadata: {
+      created: new Date(),
+      updated: new Date(),
+      version: 1,
+      schemaVersion: 1
+    }
+  };
+
+  await db.saveEntity(user);
+  await db.saveEntity(product);
+
+  // Create relationships
+  await db.addRelationship('customer', 'demo-cust-001', 'user', 'demo-user-001', 'EMPLOYS', {
+    startDate: '2023-01-01',
+    department: 'IT',
+    role: 'Database Administrator'
   });
 
-  // Access metrics from the first result
-  if (resultWithMetrics.length > 0) {
-    const metrics = resultWithMetrics[0].__metrics;
-    console.log("Performance metrics:", metrics);
+  await db.addRelationship('customer', 'demo-cust-001', 'product', 'demo-prod-001', 'PURCHASED', {
+    purchaseDate: '2024-01-15',
+    licenseType: 'enterprise',
+    quantity: 1
+  });
+
+  await db.addRelationship('user', 'demo-user-001', 'product', 'demo-prod-001', 'USES', {
+    accessLevel: 'admin',
+    frequency: 'daily'
+  });
+
+  console.log("Enhanced: Created relationships between customer, user, and product");
+
+  // Verify relationships were created
+  const customerWithEdges = await db.getEntity('customer', 'demo-cust-001');
+  if (customerWithEdges) {
+    console.log("Enhanced: Customer now has", customerWithEdges.edges.length, "relationships");
+    customerWithEdges.edges.forEach(edge => {
+      console.log(`  - ${edge.type} relationship to ${edge.target}`);
+    });
+  }
+}
+
+/**
+ * Enhanced API: Graph Query Examples
+ */
+async function enhancedGraphQueryExamples() {
+  console.log("\n=== Enhanced API: Graph Query Examples ===");
+
+  const db = new FiberDB();
+  await db.initialize();
+
+  // Find all entities connected to our demo customer
+  try {
+    const customerNetwork = await db.queryGraph({
+      startNodes: ['customer:demo-cust-001'],
+      traversal: {
+        direction: 'BOTH',
+        maxDepth: 2,
+        edgeTypes: ['EMPLOYS', 'PURCHASED', 'USES']
+      },
+      returnType: 'NODES'
+    });
+
+    console.log("Enhanced: Customer network contains", customerNetwork.nodes?.length || 0, "connected entities");
+
+    // Find paths between customer and product
+    const paths = await db.findPath('customer:demo-cust-001', 'product:demo-prod-001', 3);
+    console.log("Enhanced: Found", paths.length, "paths from customer to product");
     
-    // Extract specific metrics
-    console.log("Query duration:", metrics.duration, "ms");
-    console.log("Cache hit:", metrics.details?.queryCacheHit);
-    console.log("Files processed:", metrics.details?.recordsStats?.processed);
-    console.log("Records returned:", metrics.details?.recordsStats?.returned);
-    
-    // Phase timings
-    console.log("Cache check time:", metrics.phases?.cacheCheck?.duration, "ms");
-    console.log("Find files time:", metrics.phases?.findFiles?.duration, "ms");
-    console.log("Process files time:", metrics.phases?.processFiles?.duration, "ms");
-    
-    // Index usage
-    console.log("Used indexes:", metrics.details?.usedPrimaryIndexes);
+    if (paths.length > 0) {
+      console.log("Enhanced: Shortest path:", paths[0].nodes.join(' → '));
+    }
+
+    // Advanced graph query with filters
+    const engineeringNetwork = await db.queryGraph({
+      startNodes: ['customer:demo-cust-001'],
+      traversal: {
+        direction: 'OUT',
+        edgeTypes: ['EMPLOYS'],
+        maxDepth: 1,
+        nodeFilter: { type: 'user' },
+        edgeFilter: { 
+          properties: { department: 'IT' } 
+        }
+      },
+      returnType: 'NODES'
+    });
+
+    console.log("Enhanced: IT department network contains", engineeringNetwork.nodes?.length || 0, "entities");
+  } catch (error) {
+    console.error("Enhanced: Graph query error:", error);
+  }
+}
+
+/**
+ * Enhanced API: Advanced Query Examples
+ */
+async function enhancedAdvancedQueryExamples() {
+  console.log("\n=== Enhanced API: Advanced Query Examples ===");
+
+  const db = new FiberDB();
+  await db.initialize();
+
+  // Complex query with multiple filters
+  const techCustomers = await db.enhancedQuery({
+    from: 'customer',
+    where: {
+      attributes: {
+        industry: 'Technology',
+        active: true,
+        revenue: { $gte: 1000000 }
+      },
+      documents: {
+        contracts: { $exists: true }
+      }
+    },
+    include: ['attributes.name', 'attributes.revenue', 'documents.contracts'],
+    limit: 10
+  });
+
+  console.log("Enhanced: Found", techCustomers.entities.length, "technology customers with revenue >= $1M");
+
+  // Query with relationship filters
+  const customersWithActiveUsers = await db.enhancedQuery({
+    from: 'customer',
+    where: {
+      edges: {
+        type: 'EMPLOYS',
+        target: { $regex: 'user:' }
+      }
+    },
+    include: ['attributes.name']
+  });
+
+  console.log("Enhanced: Found", customersWithActiveUsers.entities.length, "customers with employees");
+
+  // Pagination example
+  const paginatedResults = await db.enhancedQuery({
+    from: 'customer',
+    limit: 5,
+    offset: 0
+  });
+
+  console.log("Enhanced: Page 1 contains", paginatedResults.entities.length, "customers");
+  console.log("Enhanced: Total customers:", paginatedResults.metadata.total);
+}
+
+/**
+ * Enhanced API: Performance and Statistics
+ */
+async function enhancedPerformanceExamples() {
+  console.log("\n=== Enhanced API: Performance Examples ===");
+
+  const db = new FiberDB();
+  await db.initialize();
+
+  // Get storage statistics
+  const stats = await db.getStats();
+  console.log("Enhanced: Storage Statistics:");
+  console.log("  Total entities:", stats.totalEntities);
+  console.log("  Total relationships:", stats.totalEdges);
+  console.log("  Storage size:", Math.round(stats.storageSize / 1024), "KB");
+  console.log("  Cache hit rate:", Math.round(stats.cacheHitRate * 100), "%");
+  console.log("  Average query time:", stats.averageQueryTime.toFixed(2), "ms");
+
+  // Concurrent operations example
+  console.log("\nEnhanced: Testing concurrent operations...");
+  const startTime = Date.now();
+  
+  const concurrentQueries = await Promise.all([
+    db.enhancedQuery({ from: 'customer', limit: 10 }),
+    db.enhancedQuery({ from: 'user', limit: 10 }),
+    db.enhancedQuery({ from: 'product', limit: 10 })
+  ]);
+
+  const concurrentTime = Date.now() - startTime;
+  console.log("Enhanced: Concurrent queries completed in", concurrentTime, "ms");
+  console.log("Enhanced: Results:", concurrentQueries.map(r => r.entities.length), "entities each");
+}
+
+/**
+ * Backward Compatibility Examples
+ */
+async function backwardCompatibilityExamples() {
+  console.log("\n=== Backward Compatibility Examples ===");
+
+  // Show that legacy API still works with enhanced storage
+  console.log("Creating data with legacy API...");
+  
+  await saveAnchor('demo_legacy', 'legacy-001', {
+    name: 'Legacy Entity',
+    description: 'Created with legacy saveAnchor method',
+    type: 'demonstration'
+  });
+
+  await attachToAnchor('legacy-001', 'notes', {
+    note: 'This attachment was created using legacy attachToAnchor method',
+    timestamp: new Date(),
+    author: 'Legacy API'
+  });
+
+  // Query using legacy method
+  const legacyResults = await query({
+    primary: 'demo_legacy',
+    filter: { name: 'Legacy Entity' },
+    include: ['name', 'description', 'notes']
+  });
+
+  console.log("Legacy API query results:", legacyResults.length, "entities");
+  if (legacyResults.length > 0) {
+    console.log("Legacy entity has notes:", legacyResults[0].notes ? 'Yes' : 'No');
+  }
+
+  // Query the same data using enhanced API
+  const db = new FiberDB();
+  await db.initialize();
+  
+  const enhancedResults = await db.enhancedQuery({
+    from: 'demo_legacy',
+    where: {
+      attributes: { name: 'Legacy Entity' }
+    }
+  });
+
+  console.log("Enhanced API query of legacy data:", enhancedResults.entities.length, "entities");
+  if (enhancedResults.entities.length > 0) {
+    const entity = enhancedResults.entities[0];
+    console.log("Enhanced view of legacy entity:");
+    console.log("  Attributes:", Object.keys(entity.attributes));
+    console.log("  Documents:", Object.keys(entity.documents));
+    console.log("  Edges:", entity.edges.length);
   }
 }
 
@@ -392,10 +466,10 @@ async function metricsExamples() {
  * API Usage Examples (for reference when using HTTP API)
  */
 function apiExamples() {
-  console.log("\n=== API Request Examples ===");
+  console.log("\n=== HTTP API Request Examples ===");
 
-  // Standard query
-  console.log("Standard query API request:");
+  // Legacy API endpoint examples
+  console.log("Legacy API query:");
   console.log(`
   curl -X POST http://localhost:${config.server.port}/query \\
     -H "Content-Type: application/json" \\
@@ -406,105 +480,66 @@ function apiExamples() {
       "where": {
         "contracts.status": "ACTIVE"
       },
-      "decryptionKey": "encryption-key",
       "skipTTL": true
     }'
   `);
 
-  // With performance metrics header
-  console.log("\nQuery with performance metrics API request:");
+  // Enhanced API endpoints (when available)
+  console.log("\nEnhanced API entity query:");
   console.log(`
-  curl -X POST http://localhost:${config.server.port}/query \\
+  curl -X POST http://localhost:${config.server.port}/api/enhanced/query \\
     -H "Content-Type: application/json" \\
-    -H "X-Include-Performance-Metrics: true" \\
     -d '{
-      "primary": "business-partner",
-      "filter": { "customerClassification": "A" },
-      "skipTTL": true
+      "from": "customer",
+      "where": {
+        "attributes": { "industry": "Technology" },
+        "edges": { "type": "EMPLOYS" }
+      },
+      "limit": 10
     }'
   `);
 
-  // Skip cache header
-  console.log("\nSkip cache API request:");
+  console.log("\nEnhanced API graph query:");
   console.log(`
-  curl -X POST http://localhost:${config.server.port}/query \\
+  curl -X POST http://localhost:${config.server.port}/api/enhanced/graph \\
     -H "Content-Type: application/json" \\
-    -H "X-Skip-Cache: true" \\
     -d '{
-      "primary": "business-partner",
-      "id": "BP12345678",
-      "skipTTL": true
+      "startNodes": ["customer:cust-001"],
+      "traversal": {
+        "direction": "BOTH",
+        "maxDepth": 3,
+        "edgeTypes": ["EMPLOYS", "USES"]
+      },
+      "returnType": "NODES"
     }'
   `);
-
-  // Use parallel processing header
-  console.log("\nParallel processing API request:");
-  console.log(`
-  curl -X POST http://localhost:${config.server.port}/query \\
-    -H "Content-Type: application/json" \\
-    -H "X-Use-Parallel: true" \\
-    -d '{
-      "primary": "business-partner",
-      "skipTTL": true
-    }'
-  `);
-
-  // Skip TTL header
-  console.log("\nHistorical data API request:");
-  console.log(`
-  curl -X POST http://localhost:${config.server.port}/query \\
-    -H "Content-Type: application/json" \\
-    -H "X-Skip-TTL: true" \\
-    -d '{
-      "primary": "business-partner",
-      "id": "<A-VALID-BP-ID>",
-      "include": ["id", "organizationName", "addresses"]
-    }'
-  `);
-
-  // Cache management API
-  console.log("\nGet cache statistics:");
-  console.log(`curl -X GET http://localhost:${config.server.port}/cache`);
-
-  console.log("\nClear all caches:");
-  console.log(`curl -X DELETE http://localhost:${config.server.port}/cache`);
 }
 
 /**
- * Direct Query Engine Usage Examples
- * (For advanced use cases or internal application usage)
+ * Migration Examples
  */
-async function directEngineExamples(validBpId: string) {
-  console.log("\n=== Direct Query Engine Usage ===");
+async function migrationExamples() {
+  console.log("\n=== Migration Examples ===");
 
-  // Use synchronous query engine directly
-  console.log("Using synchronous query engine directly:");
-  const syncEngineResult = runStructuredQuery({
-    primary: "business-partner",
-    id: validBpId,
-    include: ["id", "firstName", "lastName"],
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Sync engine result:", syncEngineResult);
+  console.log("To migrate from file storage to enhanced storage:");
+  console.log("1. Create backup: cp -r ./data ./data_backup");
+  console.log("2. Run migration: bun run migrate --old-path ./data --new-path ./data_v2");
+  console.log("3. Validate: bun run migrate:validate --new-path ./data_v2");
+  console.log("4. Update config: export FIBERDB_ENGINE=custom");
+  console.log("5. Update data path: export FIBERDB_DATA_PATH=./data_v2");
 
-  // Use asynchronous query engine directly
-  console.log("Using asynchronous query engine directly:");
-  const asyncEngineResult = await runStructuredQueryAsync({
-    primary: "business-partner",
-    id: validBpId,
-    include: ["id", "firstName", "lastName"],
-    skipTTL: true // Skip TTL filtering for historical data
-  });
-  console.log("Async engine result:", asyncEngineResult);
+  console.log("\nMigration preserves all data and infers relationships:");
+  console.log("- Anchors → entity.attributes");
+  console.log("- Attachments → entity.documents");  
+  console.log("- ID references → entity.edges (inferred)");
+  console.log("- Legacy API continues to work unchanged");
 }
 
 /**
  * Run all examples
  */
 export async function runAllExamples() {
-  // Add debugging for directory paths
-  
-  console.log("Running FiberDB Query Examples\n");
+  console.log("Running FiberDB Query Examples - Legacy and Enhanced API\n");
   
   // Import modules
   const fs = await import("fs");
@@ -513,20 +548,6 @@ export async function runAllExamples() {
   // Check config
   console.log("Config baseDir:", config.storage.baseDir);
   
-  // Check business-partner directory
-  const anchorPath = path.join(config.storage.baseDir, 'anchors', 'business-partner');
-  console.log("Business partner directory path:", anchorPath);
-  console.log("Directory exists:", fs.existsSync(anchorPath));
-  
-  if (fs.existsSync(anchorPath)) {
-    try {
-      const files = fs.readdirSync(anchorPath);
-      console.log("Number of files in directory:", files.length);
-    } catch (error) {
-      console.error("Error reading directory:", error);
-    }
-  }
-  
   // Get a valid business partner ID for all examples
   const bpDir = path.join("data", "anchors", "business-partner");
   const validBusinessPartners = fs.existsSync(bpDir) ? fs.readdirSync(bpDir) : [];
@@ -534,20 +555,39 @@ export async function runAllExamples() {
     ? validBusinessPartners[0]!.replace(".json", "") 
     : "BP01400152"; // Fallback
 
-  // Make it available globally so each example function can use it
+  // Make it available globally
   global.validBpId = validBpId;
-  console.log("Using valid business partner ID for all examples:", validBpId);
+  console.log("Using valid business partner ID for examples:", validBpId);
 
-  await basicQueryExamples();
-  await filteringExamples();
-  await advancedFilteringExamples();
-  await securityExamples(validBpId);
-  await performanceExamples(validBpId);
-  await metricsExamples();
-  apiExamples();
-  await directEngineExamples(validBpId);
-  
-  console.log("\nAll examples completed!");
+  try {
+    // Legacy API examples (backward compatible)
+    await legacyBasicQueryExamples();
+    await legacyFilteringExamples();
+
+    // Enhanced API examples (new capabilities)
+    await enhancedEntityExamples();
+    await enhancedRelationshipExamples();
+    await enhancedGraphQueryExamples();
+    await enhancedAdvancedQueryExamples();
+    await enhancedPerformanceExamples();
+
+    // Compatibility demonstrations
+    await backwardCompatibilityExamples();
+
+    // Reference information
+    apiExamples();
+    await migrationExamples();
+
+    console.log("\n🎉 All examples completed successfully!");
+    console.log("\nKey takeaways:");
+    console.log("✅ Legacy API continues to work unchanged");
+    console.log("✅ Enhanced API adds graph relationships and advanced queries");
+    console.log("✅ Both APIs can be used together in the same application");
+    console.log("✅ Migration preserves all data while adding new capabilities");
+    
+  } catch (error) {
+    console.error("Error running examples:", error);
+  }
 }
 
 // Execute examples when run directly

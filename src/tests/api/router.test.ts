@@ -2,41 +2,63 @@
  * API Router Tests
  * Testing the API router functionality
  */
-import { describe, test, expect, beforeAll, mock, spyOn } from "bun:test";
+import { describe, test, expect, beforeAll, afterAll, mock, spyOn } from "bun:test";
 import { routeRequest } from "../../api/endpoints";
 import * as queryEndpoint from "../../api/endpoints/query";
 import * as cacheEndpoint from "../../api/endpoints/cache";
 
+// Track mocks for cleanup
+let consoleMock: any;
+let queryMock: any;
+let cacheGetMock: any;
+let cacheDeleteMock: any;
+
 // Setup mocks
 beforeAll(() => {
   // Mock console methods
-  mock.module("console", () => ({
+  consoleMock = mock.module("console", () => ({
     log: () => {},
     error: () => {},
     warn: () => {},
   }));
   
   // Mock endpoint handlers with simple implementations
-  spyOn(queryEndpoint, "handleQueryRequest").mockImplementation(async (req) => {
+  queryMock = spyOn(queryEndpoint, "handleQueryRequest").mockImplementation(async (req) => {
     return new Response(JSON.stringify({ success: true, endpoint: "query" }), {
       status: 200,
       headers: { "Content-Type": "application/json" }
     });
   });
   
-  spyOn(cacheEndpoint, "handleCacheGetRequest").mockImplementation(() => {
+  cacheGetMock = spyOn(cacheEndpoint, "handleCacheGetRequest").mockImplementation(() => {
     return new Response(JSON.stringify([{ name: "cache-stats" }]), {
       status: 200,
       headers: { "Content-Type": "application/json" }
     });
   });
   
-  spyOn(cacheEndpoint, "handleCacheDeleteRequest").mockImplementation(() => {
+  cacheDeleteMock = spyOn(cacheEndpoint, "handleCacheDeleteRequest").mockImplementation(() => {
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
       headers: { "Content-Type": "application/json" }
     });
   });
+});
+
+// Cleanup after all tests
+afterAll(() => {
+  if (consoleMock) {
+    consoleMock.mockRestore?.();
+  }
+  if (queryMock) {
+    queryMock.mockRestore?.();
+  }
+  if (cacheGetMock) {
+    cacheGetMock.mockRestore?.();
+  }
+  if (cacheDeleteMock) {
+    cacheDeleteMock.mockRestore?.();
+  }
 });
 
 describe("API Router", () => {

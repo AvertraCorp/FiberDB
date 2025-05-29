@@ -1,0 +1,61 @@
+FROM oven/bun:1.0-alpine
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apk add --no-cache \
+    curl \
+    dumb-init
+
+# Copy package files
+COPY package.json bun.lockb ./
+
+# Install dependencies
+RUN bun install --frozen-lockfile --production
+
+# Copy source code
+COPY . .
+
+# Build the application
+RUN bun run build
+
+# Create data directory with proper permissions
+RUN mkdir -p /app/data && \
+    chown -R bun:bun /app/data
+
+# Set environment variables for enhanced storage
+ENV FIBERDB_ENGINE=custom
+ENV FIBERDB_DATA_PATH=/app/data
+ENV FIBERDB_WAL_ENABLED=true
+ENV FIBERDB_INDEXING_ENABLED=true
+ENV FIBERDB_CACHE_SIZE=10000
+ENV FIBERDB_COMPACTION_THRESHOLD=1000
+ENV FIBERDB_BACKGROUND_PROCESSING=true
+ENV FIBERDB_ENABLE_METRICS=true
+ENV FIBERDB_QUERY_TIMEOUT=30000
+ENV FIBERDB_MAX_CONCURRENT_QUERIES=100
+
+# Create non-root user for security
+USER bun
+
+# Expose port
+EXPOSE 3000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:3000/health || exit 1
+
+# Use dumb-init to handle signals properly
+ENTRYPOINT ["dumb-init", "--"]
+
+# Start the application
+CMD ["bun", "run", "start"]
+
+# Volume for persistent data
+VOLUME ["/app/data"]
+
+# Labels for metadata
+LABEL org.opencontainers.image.title="FiberDB Enhanced"
+LABEL org.opencontainers.image.description="Production-ready hybrid database with ACID compliance"
+LABEL org.opencontainers.image.version="2.0"
+LABEL org.opencontainers.image.source="https://github.com/yourusername/fiberdb"

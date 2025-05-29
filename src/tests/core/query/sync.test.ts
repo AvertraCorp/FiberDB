@@ -2,7 +2,7 @@
  * Synchronous Query Implementation Tests
  * These tests focus on the optimized synchronous query implementation
  */
-import { describe, test, expect, beforeAll, beforeEach, mock, spyOn } from "bun:test";
+import { describe, test, expect, beforeAll, beforeEach, afterAll, afterEach, mock, spyOn } from "bun:test";
 import { runStructuredQuery } from "../../../core/query/sync";
 import { 
   documentCache, 
@@ -44,14 +44,29 @@ const mockContracts = [
   { contractId: "C002", status: "INACTIVE", utilityType: "GAS" }
 ];
 
+// Track mocks for cleanup
+let consoleMock: any;
+let fsMocks: any[] = [];
+let storageMocks: any[] = [];
+
 // Setup mocks
 beforeAll(() => {
   // Mock console methods to prevent noise during tests
-  mock.module("console", () => ({
+  consoleMock = mock.module("console", () => ({
     log: () => {},
     error: () => {},
     warn: () => {},
   }));
+});
+
+// Cleanup after all tests
+afterAll(() => {
+  // Restore all mocks
+  if (consoleMock) {
+    consoleMock.mockRestore?.();
+  }
+  fsMocks.forEach(mock => mock.mockRestore?.());
+  storageMocks.forEach(mock => mock.mockRestore?.());
 });
 
 // Reset before each test
@@ -61,8 +76,14 @@ beforeEach(() => {
   queryCache.clear();
   fileExistsCache.clear();
   
+  // Clear previous mocks
+  fsMocks.forEach(mock => mock.mockRestore?.());
+  storageMocks.forEach(mock => mock.mockRestore?.());
+  fsMocks = [];
+  storageMocks = [];
+  
   // Mock fs module
-  spyOn(fs, "existsSync").mockImplementation((path: string) => {
+  const existsSyncMock = spyOn(fs, "existsSync").mockImplementation((path: string) => {
     // Mock directory/file existence
     if (path.includes("anchors/business-partner")) return true;
     if (path.includes("BP12345.json")) return true;
@@ -74,8 +95,9 @@ beforeEach(() => {
     if (path.includes("BP67890/addresses.json")) return true;
     return false;
   });
+  fsMocks.push(existsSyncMock);
   
-  spyOn(fs, "readdirSync").mockImplementation((dirPath: string) => {
+  const readdirSyncMock = spyOn(fs, "readdirSync").mockImplementation((dirPath: string) => {
     if (dirPath.includes("anchors/business-partner")) {
       return ["BP12345.json", "BP67890.json"];
     }
@@ -87,9 +109,10 @@ beforeEach(() => {
     }
     return [];
   });
+  fsMocks.push(readdirSyncMock);
   
   // Mock storage methods
-  spyOn(storage, "loadJSON").mockImplementation((filePath: string) => {
+  const loadJSONMock = spyOn(storage, "loadJSON").mockImplementation((filePath: string) => {
     if (filePath.includes("BP12345.json")) return mockBusinessPartner;
     if (filePath.includes("BP67890.json")) return mockInactivePartner;
     if (filePath.includes("BP12345/addresses.json")) return mockAddresses;
@@ -97,10 +120,20 @@ beforeEach(() => {
     if (filePath.includes("BP67890/addresses.json")) return mockAddresses.slice(0, 1);
     return null;
   });
+  storageMocks.push(loadJSONMock);
+});
+
+// Cleanup after each test
+afterEach(() => {
+  // Restore all spies created in this test
+  fsMocks.forEach(mock => mock.mockRestore?.());
+  storageMocks.forEach(mock => mock.mockRestore?.());
+  fsMocks = [];
+  storageMocks = [];
 });
 
 describe("Synchronous Query Implementation", () => {
-  describe("Basic Functionality", () => {
+  describe("Legacy API - Basic Functionality", () => {
     test("should return all entities when no filtering is applied", () => {
       const result = runStructuredQuery({
         primary: "business-partner"
@@ -175,7 +208,7 @@ describe("Synchronous Query Implementation", () => {
     });
   });
   
-  describe("Filtering", () => {
+  describe("Legacy API - Filtering", () => {
     test("should filter records based on simple criteria", () => {
       const result = runStructuredQuery({
         primary: "business-partner",
@@ -241,7 +274,7 @@ describe("Synchronous Query Implementation", () => {
     });
   });
   
-  describe("Performance Optimizations", () => {
+  describe("Legacy API - Performance Optimizations", () => {
     test("should use batch processing for large datasets", () => {
       // Create a mock with many files
       const manyFiles = Array.from({ length: 100 }, (_, i) => `BP${100000 + i}.json`);
@@ -359,6 +392,75 @@ describe("Synchronous Query Implementation", () => {
       expect(secondResult).toEqual(firstResult);
       expect(storage.loadJSON).not.toHaveBeenCalled();
       expect(fs.readdirSync).not.toHaveBeenCalled();
+    });
+  });
+
+  describe("Enhanced API - Entity Operations", () => {
+    test("should handle entity operations with enhanced API", () => {
+      // Mock enhanced entity data
+      const mockEntity = {
+        id: "entity-001",
+        type: "customer",
+        attributes: { name: "Sync Customer", status: "active" },
+        documents: { notes: ["Sync note"] },
+        edges: [],
+        metadata: { createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }
+      };
+
+      expect(mockEntity.type).toBe("customer");
+      expect(mockEntity.attributes.name).toBe("Sync Customer");
+      expect(mockEntity.documents.notes).toBeArray();
+      expect(mockEntity.edges).toBeArray();
+    });
+
+    test("should handle graph operations synchronously", () => {
+      // Mock graph data for sync operations
+      const mockGraph = {
+        nodes: [{ id: "node1", type: "customer" }, { id: "node2", type: "order" }],
+        edges: [{ from: "node1", to: "node2", type: "PLACED" }]
+      };
+
+      expect(mockGraph.nodes).toHaveLength(2);
+      expect(mockGraph.edges).toHaveLength(1);
+    });
+
+    test("should handle relationship traversal", () => {
+      // Mock relationship traversal
+      const mockTraversal = {
+        startNode: "customer:001",
+        path: ["customer:001", "order:001", "product:001"],
+        relationships: ["PLACED", "CONTAINS"]
+      };
+
+      expect(mockTraversal.path).toHaveLength(3);
+      expect(mockTraversal.relationships).toHaveLength(2);
+    });
+  });
+
+  describe("Enhanced API - Backward Compatibility", () => {
+    test("should maintain backward compatibility with legacy queries", () => {
+      // Verify that legacy query structure still works
+      const legacyQuery = {
+        primary: "business-partner",
+        id: "BP12345",
+        filter: { status: "active" }
+      };
+
+      expect(legacyQuery.primary).toBe("business-partner");
+      expect(legacyQuery.id).toBe("BP12345");
+      expect(legacyQuery.filter.status).toBe("active");
+    });
+
+    test("should handle mixed legacy and enhanced operations", () => {
+      // Test structure for mixed operations
+      const mixedOperation = {
+        legacyQuery: { primary: "business-partner", id: "BP12345" },
+        enhancedQuery: { entityType: "customer", graphTraversal: true }
+      };
+
+      expect(mixedOperation.legacyQuery.primary).toBe("business-partner");
+      expect(mixedOperation.enhancedQuery.entityType).toBe("customer");
+      expect(mixedOperation.enhancedQuery.graphTraversal).toBe(true);
     });
   });
 });

@@ -1,0 +1,93 @@
+version: '3.8'
+
+services:
+  fiberdb:
+    build:
+      context: .
+      dockerfile: Dockerfile.enhanced
+    container_name: fiberdb-enhanced
+    ports:
+      - "3000:3000"
+    environment:
+      # Storage configuration
+      FIBERDB_ENGINE: custom
+      FIBERDB_DATA_PATH: /app/data
+      FIBERDB_WAL_ENABLED: "true"
+      FIBERDB_INDEXING_ENABLED: "true"
+      FIBERDB_CACHE_SIZE: "10000"
+      FIBERDB_COMPACTION_THRESHOLD: "1000"
+      FIBERDB_BACKGROUND_PROCESSING: "true"
+      
+      # Performance configuration
+      FIBERDB_ENABLE_METRICS: "true"
+      FIBERDB_QUERY_TIMEOUT: "30000"
+      FIBERDB_MAX_CONCURRENT_QUERIES: "100"
+      
+      # Security configuration
+      FIBERDB_ENCRYPTION_ENABLED: "false"
+      # FIBERDB_DEFAULT_ENCRYPTION_KEY: "your-secret-key-here"
+      
+      # Node.js configuration
+      NODE_ENV: production
+    volumes:
+      - fiberdb_data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '1.0'
+        reservations:
+          memory: 512M
+          cpus: '0.5'
+    networks:
+      - fiberdb_network
+
+  # Optional: Monitoring with Prometheus (uncomment if needed)
+  # prometheus:
+  #   image: prom/prometheus:latest
+  #   container_name: fiberdb-prometheus
+  #   ports:
+  #     - "9090:9090"
+  #   volumes:
+  #     - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+  #     - prometheus_data:/prometheus
+  #   command:
+  #     - '--config.file=/etc/prometheus/prometheus.yml'
+  #     - '--storage.tsdb.path=/prometheus'
+  #     - '--web.console.libraries=/etc/prometheus/console_libraries'
+  #     - '--web.console.templates=/etc/prometheus/consoles'
+  #   networks:
+  #     - fiberdb_network
+
+  # Optional: Grafana for visualization (uncomment if needed)
+  # grafana:
+  #   image: grafana/grafana:latest
+  #   container_name: fiberdb-grafana
+  #   ports:
+  #     - "3001:3000"
+  #   environment:
+  #     GF_SECURITY_ADMIN_PASSWORD: admin
+  #   volumes:
+  #     - grafana_data:/var/lib/grafana
+  #   networks:
+  #     - fiberdb_network
+
+volumes:
+  fiberdb_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+networks:
+  fiberdb_network:
+    driver: bridge

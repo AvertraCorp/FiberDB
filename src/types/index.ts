@@ -15,6 +15,50 @@ export interface QueryOptions {
   skipTTL?: boolean;  // added to skip TTL filtering
   useIndexes?: boolean;
   useParallel?: boolean;
+  // Enhanced query capabilities
+  aggregate?: Record<string, 'SUM' | 'AVG' | 'COUNT' | 'MIN' | 'MAX'>;
+  groupBy?: string | string[];
+  orderBy?: string | string[] | Array<{ column: string; direction: 'ASC' | 'DESC' }>;
+  limit?: number;
+  offset?: number;
+}
+
+// Enhanced query parameters for dual-storage system
+export interface QueryParams {
+  primary: string;
+  id?: string;
+  where?: Record<string, any>;
+  include?: string[];
+  aggregate?: Record<string, 'SUM' | 'AVG' | 'COUNT' | 'MIN' | 'MAX'>;
+  groupBy?: string | string[];
+  orderBy?: string | string[] | Array<{ column: string; direction: 'ASC' | 'DESC' }>;
+  limit?: number;
+  offset?: number;
+}
+
+// Basic entity structure for dual-storage compatibility
+export interface Entity {
+  id: string;
+  type: string;
+  attributes: Record<string, any>;
+  documents: Record<string, any[]>;
+  edges: any[];
+  metadata: {
+    created: Date;
+    updated: Date;
+    version: number;
+    schemaVersion: number;
+  };
+}
+
+// Query result structure
+export interface QueryResult {
+  entities: Entity[];
+  metadata?: {
+    total: number;
+    executionTime: number;
+    cached: boolean;
+  };
 }
 
 // Storage options
@@ -105,3 +149,8 @@ export interface IndexCondition {
   value: any;
   operator: 'eq' | 'ne' | 'gt' | 'lt' | 'contains' | 'in';
 }
+
+// Export enhanced types for dual-storage system
+export * from './enhanced/entity';
+export * from './enhanced/query';
+export * from './enhanced/columnar';

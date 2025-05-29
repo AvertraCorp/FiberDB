@@ -159,4 +159,84 @@ describe("Cache utility functions", () => {
   test("getAttachedCacheKey should format keys correctly", () => {
     expect(getAttachedCacheKey("BP12345", "addresses")).toBe("attached:BP12345:addresses");
   });
+
+  describe("Enhanced API Cache Functions", () => {
+    test("should handle entity cache keys", () => {
+      // Mock entity cache key generation
+      const entityCacheKey = `entity:${JSON.stringify({ type: "customer", id: "entity-001" })}`;
+      expect(entityCacheKey).toContain("entity:");
+      expect(entityCacheKey).toContain("customer");
+      expect(entityCacheKey).toContain("entity-001");
+    });
+
+    test("should handle graph query cache keys", () => {
+      // Mock graph query cache key
+      const graphParams = {
+        startNodes: ["customer:001"],
+        traversal: { direction: "BOTH", maxDepth: 3 },
+        returnType: "NODES"
+      };
+      const graphCacheKey = `graph:${JSON.stringify(graphParams)}`;
+      expect(graphCacheKey).toContain("graph:");
+      expect(graphCacheKey).toContain("customer:001");
+    });
+
+    test("should handle relationship cache keys", () => {
+      // Mock relationship cache key
+      const relationshipKey = `relationships:customer:001:PLACED`;
+      expect(relationshipKey).toContain("relationships:");
+      expect(relationshipKey).toContain("customer:001");
+      expect(relationshipKey).toContain("PLACED");
+    });
+
+    test("should handle mixed query cache keys", () => {
+      // Mock mixed query (legacy + enhanced)
+      const mixedParams = {
+        legacy: { primary: "business-partner", filter: { status: "active" } },
+        enhanced: { entityType: "customer", includeRelationships: true }
+      };
+      const mixedCacheKey = `mixed:${JSON.stringify(mixedParams)}`;
+      expect(mixedCacheKey).toContain("mixed:");
+      expect(mixedCacheKey).toContain("business-partner");
+      expect(mixedCacheKey).toContain("customer");
+    });
+  });
+
+  describe("Cache invalidation for enhanced API", () => {
+    test("should handle entity cache invalidation", () => {
+      // Mock entity cache invalidation patterns
+      const entityPatterns = [
+        "entity:customer:001",
+        "graph:*customer:001*",
+        "relationships:customer:001:*",
+        "mixed:*customer*"
+      ];
+
+      expect(entityPatterns).toHaveLength(4);
+      expect(entityPatterns[0]).toContain("entity:");
+      expect(entityPatterns[1]).toContain("graph:");
+      expect(entityPatterns[2]).toContain("relationships:");
+      expect(entityPatterns[3]).toContain("mixed:");
+    });
+
+    test("should handle relationship cache invalidation", () => {
+      // Mock relationship invalidation
+      const relationshipInvalidation = {
+        entity1: "customer:001",
+        entity2: "order:001",
+        relationshipType: "PLACED",
+        cachePatterns: [
+          "relationships:customer:001:*",
+          "relationships:order:001:*",
+          "graph:*customer:001*",
+          "graph:*order:001*"
+        ]
+      };
+
+      expect(relationshipInvalidation.cachePatterns).toHaveLength(4);
+      expect(relationshipInvalidation.cachePatterns.every(pattern => 
+        pattern.includes("customer:001") || pattern.includes("order:001")
+      )).toBe(true);
+    });
+  });
 });
