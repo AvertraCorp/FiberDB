@@ -30,7 +30,6 @@ The API server is built on top of the FiberDB core and provides a simple interfa
 | POST   | /query   | Execute a structured query against the database |
 | GET    | /cache   | Retrieve cache statistics |
 | DELETE | /cache   | Clear all caches |
-| GET    | /health  | Check API health status |
 
 ## Query Endpoint
 

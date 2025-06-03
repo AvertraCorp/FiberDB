@@ -136,26 +136,10 @@ Clears all FiberDB caches. This is useful for testing or when you know the data 
 ```json
 {
   "success": true,
-  "cleared": ["documentCache", "queryCache", "fileExistsCache"]
+  "message": "All caches cleared"
 }
 ```
 
-## Health Check Endpoint
-
-**Endpoint**: `/health`  
-**Method**: GET
-
-A simple health check endpoint to verify the API is operational.
-
-#### Response Format
-
-```json
-{
-  "status": "healthy",
-  "version": "1.0.0",
-  "uptime": 3600
-}
-```
 
 ## Error Response Format
 
